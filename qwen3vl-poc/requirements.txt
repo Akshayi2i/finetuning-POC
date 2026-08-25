@@ -1,0 +1,33 @@
+# ============================================================================
+# LINUX GPU BOX ONLY. Do not install this on a Windows workstation:
+#   - ms-swift pulls stringzilla, which has no Windows wheel and needs the MSVC
+#     C++ toolchain to build;
+#   - torch+cu124 and an 8B model cannot train on a workstation GPU anyway.
+# For generating synthetic data and running the no-GPU checks on Windows, use
+# requirements-tools.txt instead.
+# ============================================================================
+# Pinned for the POC. Verified combination for Qwen3-VL + ms-swift QLoRA on a single CUDA GPU.
+# Install torch first, matched to your CUDA build:
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0
+transformers==4.57.1          # first release with Qwen3VLForConditionalGeneration
+ms-swift==3.9.2               # training driver; provides the multimodal collator + -100 masking
+peft==0.17.1
+bitsandbytes==0.48.1
+accelerate==1.10.1
+trl==0.20.0
+qwen-vl-utils==0.0.14
+datasets==3.6.0
+
+# OCR
+mineru[core]==2.1.10
+pymupdf==1.26.3               # page rendering + no-OCR fallback text extraction
+
+# Support
+pillow==11.3.0
+pyyaml==6.0.2
+jsonschema==4.25.0
+
+# Optional but recommended on Ampere+ (build takes a while; code falls back to sdpa without it):
+# flash-attn==2.7.4.post1 --no-build-isolation

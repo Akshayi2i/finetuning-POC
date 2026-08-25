@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+data/input.pdf
+data/gold.json
+data/sample_input.pdf
+data/sample_gold.json
+outputs/ocr/*
+outputs/dataset/*
+outputs/adapter/*
+outputs/merged_v1/*
+outputs/results/*
+!outputs/**/.gitkeep

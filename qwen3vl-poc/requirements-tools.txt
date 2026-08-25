@@ -1,0 +1,20 @@
+# Workstation set: generate synthetic data and run the no-GPU checks.
+# Works on Windows, needs no CUDA, no compiler, no model weights.
+#   pip install -r requirements-tools.txt
+#
+# The synthetic-data generator additionally needs the native GTK3 runtime for
+# WeasyPrint, which pip cannot supply:
+#   Windows:  winget install --id GtkD.GtkPlusRuntime.x64 --source winget
+#   Linux:    sudo apt install -y libpango-1.0-0 libpangoft2-1.0-0 libcairo2
+
+# --- synthetic data generator (dataset generator/policy data.py) ---
+weasyprint
+pypdfium2
+numpy
+pillow
+
+# --- pipeline stages that run without a GPU (run_ocr rendering, build_dataset,
+#     compare, tests/smoke_test.py) ---
+pymupdf
+pyyaml
+jsonschema

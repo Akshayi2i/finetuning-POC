@@ -1,0 +1,83 @@
+# POC: Qwen3-VL-8B-Instruct single-document fine-tuning verification.
+# Every relative path is resolved against the project root (the directory holding this file).
+
+model:
+  base_model_id: Qwen/Qwen3-VL-8B-Instruct
+  revision: null                    # pin at implementation time, e.g. a commit sha
+  attn_implementation: flash_attention_2   # falls back to sdpa if flash-attn is unavailable
+  max_image_long_side_px: 1024        # 15 pages x 784 visual tokens; 1792 would cost 2408/page
+
+qlora:
+  load_in_4bit: true
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  bnb_4bit_use_double_quant: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  # NOTE: this explicit list targets the language model only. The vision-language
+  # projector/merger is NOT matched by these names, despite what the spec's comment
+  # implies. To include it, set target_modules to [all-linear] and add
+  # --freeze_aligner false. LM-only LoRA is sufficient for this overfit test.
+  train_vit: false
+
+training:
+  # For a single example, run enough steps to clearly overfit and prove learning.
+  # Steps = train_documents x epochs / (batch x grad_accum). train.py logs the number and
+  # warns if it is too small to learn anything. With a handful of synthetic documents you
+  # want tens of steps, not a handful: raise this if the loss is still falling at the end.
+  num_train_epochs: 8
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  learning_rate: 1.0e-4
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.05
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  gradient_checkpointing: true
+  bf16: true
+  logging_steps: 1
+  save_strategy: epoch
+  seed: 42
+  # Fused cross-entropy. At ~35k tokens the logits tensor is ~10.7 GB in bf16 and the
+  # fp32 loss upcast multiplies that; turn this on first if the run OOMs on 80 GB.
+  # Needs `pip install liger-kernel` and ms-swift/liger support for Qwen3-VL.
+  use_liger_kernel: false
+  max_seq_length: 40960             # gold answer alone is 11,594 tokens; see README sizing table
+
+corpus:
+  # Every PDF under paths.data_dir is paired with its gold JSON by file name, so you can
+  # organise data/ however you like (subfolders, any naming). Add synthetic documents by
+  # dropping the PDF and its gold JSON in; nothing here needs changing.
+  test_document: null               # doc_id or file stem of the held-out test doc.
+                                    # null = the alphabetically first document.
+  include_test_in_training: false   # false: the test doc is HELD OUT, so a gain proves the
+                                    #        model learned the document TYPE (real evidence).
+                                    # true:  the test doc is also trained on, so a gain only
+                                    #        proves memorisation (guaranteed signal, weaker).
+  min_train_documents: 1            # refuse to train on fewer than this
+
+paths:
+  data_dir: data                    # PDFs + gold JSONs live here, in any layout
+  system_prompt: prompts/system_prompt.txt
+  json_schema: prompts/schema.json
+  ocr_dir: outputs/ocr
+  dataset: outputs/dataset/train.jsonl
+  swift_dataset: outputs/dataset/train_swift.jsonl   # ms-swift native form of the same example
+  adapter_dir: outputs/adapter
+  merged_dir: outputs/merged_v1
+  results_dir: outputs/results
+
+inference:
+  mode: ocr_plus_image              # match the training modality
+  temperature: 0.0                  # deterministic for fair comparison
+  max_new_tokens: 16384             # the gold answer is 11,594 tokens; 2048 would truncate it
+
+ocr:
+  engine: mineru                    # mineru | pymupdf (pymupdf = no-OCR fallback for dry runs)
+  mineru_backend: pipeline          # MinerU 2.x backend
+  mineru_lang: en
+  dpi: 200                          # base render dpi before the long-side cap is applied
