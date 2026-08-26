@@ -21,7 +21,11 @@ qwen-vl-utils==0.0.14
 datasets==3.6.0
 
 # OCR
-mineru[pipeline]==2.1.10   # pipeline backend only: [core] also pulls the gradio UI, whose deps conflict (gradio<6 vs gradio-pdf>=6)
+# 2.1.10 is BROKEN: it loads en_PP-OCRv3_det_infer.pth from opendatalab/PDF-Extract-Kit-1.0,
+# and that repo has since dropped the v3 detection weights for v5/v6. MinerU exits 0 having
+# written nothing. A pinned library does not pin the models it downloads at runtime.
+# [pipeline] only: [core] also drags in the gradio UI, unused here.
+mineru[pipeline]==2.7.6
 pymupdf==1.26.3               # page rendering + no-OCR fallback text extraction
 
 # Support

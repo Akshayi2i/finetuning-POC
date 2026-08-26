@@ -128,6 +128,16 @@ def run_mineru(pdf: Path, n_pages: int, backend: str, lang: str) -> list[str]:
             log.error("MinerU stderr:\n%s", proc.stderr[-4000:])
             raise RuntimeError(f"MinerU exited with code {proc.returncode}")
 
+        produced = [q for q in tmp_dir.rglob("*") if q.is_file()]
+        if not produced:
+            # Exit code 0 with no output at all: almost always a missing model
+            # download or a path MinerU silently refused. Its own log is the only
+            # evidence, so surface it instead of discarding it.
+            log.error("MinerU exited 0 but wrote nothing to %s", tmp_dir)
+            log.error("MinerU stdout:\n%s", proc.stdout[-4000:])
+            log.error("MinerU stderr:\n%s", proc.stderr[-4000:])
+            raise RuntimeError("MinerU produced no output files at all (exit 0)")
+
         content_lists = sorted(tmp_dir.rglob("*_content_list.json"))
         if content_lists:
             items = json.loads(content_lists[0].read_text(encoding="utf-8"))
