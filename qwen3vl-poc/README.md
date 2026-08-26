@@ -17,10 +17,10 @@ data/**.pdf + data/**.json      corpus: every PDF paired with its gold JSON
    └─ run_ocr.py               MinerU -> outputs/ocr/<doc_id>/page_{n}.png + .md
        └─ build_dataset.py     one chat example per document, test document held out
                                -> outputs/dataset/train.jsonl (+ train_swift.jsonl)
-           ├─ infer.py --model base   BEFORE training -> results/<doc>/base_output.json
+           ├─ infer.py --model base   BEFORE training -> results/base model results/<doc>/
            ├─ train.py         ms-swift QLoRA over the corpus -> outputs/adapter/
-           │   └─ merge.py     PEFT merge_and_unload -> outputs/merged_v1/
-           │       └─ infer.py --model v1 -> results/<doc>/v1_output.json
+           │   └─ merge.py     PEFT merge_and_unload -> outputs/merged/<version>/
+           │       └─ infer.py --model v1 -> results/trained model results/v1/<doc>/
            └─ compare.py       -> results/<doc>/comparison.json + verdict
 ```
 
@@ -182,14 +182,30 @@ run OOMs, in order:
 Or stage by stage:
 
 ```bash
-python src/run_ocr.py                  # every document; --doc <id> for one, --skip-existing
-python src/verify_gold.py --ocr        # audit the ground truth before training on it
-python src/build_dataset.py            # per-document token counts, held-out split
-python src/infer.py --model base       # the "before" measurement
-python src/train.py                    # --dry-run prints the swift command only
-python src/merge.py --device cpu       # --device auto to merge on the GPU
-python src/infer.py --model v1         # the "after" measurement
+python src/train.py                    # OCRs + builds the corpus, then trains
+python src/merge.py                    # --device auto to merge on the GPU
+python src/infer.py --model base       # OCRs the document if needed, then extracts
+python src/infer.py --model v1
 python src/compare.py                  # --all-fields, --max-rows N, --doc <id>
+```
+
+**Stages ensure their own inputs**, so you never have to remember the order:
+
+- `train.py` builds the training corpus first if it is missing, or older than the
+  data / prompt / schema it was built from. `--no-build` skips that, `--rebuild` forces it.
+- `build_dataset.py` OCRs any document that has no OCR output yet. `--no-ocr` skips it,
+  `--force-ocr` redoes all of them.
+- `infer.py` OCRs the document it is about to extract, if needed. So extraction is one
+  command: MinerU plus whichever model you name.
+
+Each check is cheap when the work is already done — a second `train.py` prints
+`training corpus is up to date` and goes straight to training. Run the stages
+individually only when you want to inspect what each one produced:
+
+```bash
+python src/run_ocr.py                  # every document; --doc <id> for one, --skip-existing
+python src/verify_gold.py --ocr        # audit the ground truth
+python src/build_dataset.py            # per-document token counts, held-out split
 ```
 
 `train.py` prints the optimizer-step count (`documents × epochs ÷ batch ÷ accum`) and
@@ -217,8 +233,33 @@ not exercise train.py / merge.py / infer.py, which need CUDA.
 
 ## Reading the result
 
-`outputs/results/<doc_id>/comparison.json` holds per-field results for both models, both
-match rates, the per-section breakdown, the confidence delta and the verdict. With
+### Where the outputs live
+
+```
+outputs/
+  ocr/<doc_id>/                              page_N.png + page_N.md
+  dataset/train.jsonl                        the training corpus
+  adapter/                                   the trained LoRA adapter
+  merged/v1/                                 the merged fine-tuned model
+  merged/v2/                                 ... a later version, kept separately
+  results/
+    base model results/<doc_id>/             output.json, raw.txt, meta.json
+    trained model results/
+      v1/<doc_id>/                           output.json, raw.txt, meta.json, comparison.json
+      v2/<doc_id>/                           ... never overwrites v1
+```
+
+Each model's extraction lives in its own folder, so a new version never clobbers an
+earlier one and you can compare v1 against v2 after the fact. The comparison is filed
+under the version it judged.
+
+`model.version` in `config.yaml` names the version a run produces (default `v1`); bump it
+to `v2` for the next run, or pass `--version v2` to `run_all.sh`, `merge.py` and
+`compare.py`. `infer.py --model` takes `base` or any version name.
+
+`outputs/results/trained model results/<version>/<doc_id>/comparison.json` holds per-field
+results for both models, both match rates, the per-section breakdown, the confidence delta
+and the verdict. With
 hundreds of fields the terminal prints the section table plus only the rows where base
 and v1 disagree; `--all-fields` and `--max-rows N` widen that.
 
@@ -283,7 +324,7 @@ v1 should learn, and where the section table should light up.
 
 | Cause | Check |
 | --- | --- |
-| Inference loaded the base weights as v1 | `weight_signature` in `base_meta.json` vs `v1_meta.json` — they must differ. `compare.py` warns when they match. |
+| Inference loaded the base weights as v1 | `weight_signature` in each model's `meta.json` — they must differ. `compare.py` warns when they match. |
 | Prompt or modality drift | `conversation_fingerprint`, recorded per document at build time and re-checked by `infer.py`, which aborts on a mismatch. `compare.py` also flags a result left over from an earlier run. |
 | Too little training | `train_report.json` — the step count and the loss curve. Raise `num_train_epochs`, add documents, or set `include_test_in_training: true` to separate "not learning" from "not generalising". |
 
@@ -292,6 +333,12 @@ v1 should learn, and where the section table should light up.
 - **`src/prompting.py` is the single source of truth for the conversation.** Every
   training example and both inference runs are built by the same function, which is what
   keeps the `ocr_plus_image` modality and the system prompt identical everywhere.
+- **The document reaches the model chunked per page**: a `--- Page N of M ---` header, that
+  page's image, then the OCR text read off that same page. Both modalities go in, paired
+  page by page rather than as one block of images followed by one block of text, so the
+  model never has to infer which slab of markdown belongs to which image. A page whose OCR
+  came back empty is still sent, marked `(none)`, and the prompt tells the model to read it
+  from the image alone.
 - **Two dataset encodings, one corpus.** `train.jsonl` is the chat format (content
   blocks); `train_swift.jsonl` is the same conversations in ms-swift's native form
   (`<image>` tags plus a top-level `images` list), which is what `swift sft` consumes.

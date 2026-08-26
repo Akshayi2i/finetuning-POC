@@ -5,7 +5,10 @@ model:
   base_model_id: Qwen/Qwen3-VL-8B-Instruct
   revision: null                    # pin at implementation time, e.g. a commit sha
   attn_implementation: flash_attention_2   # falls back to sdpa if flash-attn is unavailable
-  max_image_long_side_px: 1024        # 15 pages x 784 visual tokens; 1792 would cost 2408/page
+  version: v1                       # the fine-tuned version this run produces.
+                                    # Bump to v2, v3 ... for later runs; results and merged
+                                    # weights are kept per version, never overwritten.
+  max_image_long_side_px: 1024        # 3 pages x 784 visual tokens
 
 qlora:
   load_in_4bit: true
@@ -46,7 +49,8 @@ training:
   # fp32 loss upcast multiplies that; turn this on first if the run OOMs on 80 GB.
   # Needs `pip install liger-kernel` and ms-swift/liger support for Qwen3-VL.
   use_liger_kernel: false
-  max_seq_length: 40960             # gold answer alone is 11,594 tokens; see README sizing table
+  max_seq_length: 12288             # the declaration example measures ~6,300 tokens;
+                                    # build_dataset.py prints the real count per document
 
 corpus:
   # Every PDF under paths.data_dir is paired with its gold JSON by file name, so you can
@@ -54,7 +58,7 @@ corpus:
   # dropping the PDF and its gold JSON in; nothing here needs changing.
   test_document: null               # doc_id or file stem of the held-out test doc.
                                     # null = the alphabetically first document.
-  include_test_in_training: false   # false: the test doc is HELD OUT, so a gain proves the
+  include_test_in_training: true    # false: the test doc is HELD OUT, so a gain proves the
                                     #        model learned the document TYPE (real evidence).
                                     # true:  the test doc is also trained on, so a gain only
                                     #        proves memorisation (guaranteed signal, weaker).
@@ -68,13 +72,15 @@ paths:
   dataset: outputs/dataset/train.jsonl
   swift_dataset: outputs/dataset/train_swift.jsonl   # ms-swift native form of the same example
   adapter_dir: outputs/adapter
-  merged_dir: outputs/merged_v1
+  merged_root: outputs/merged       # each fine-tuned version lands in merged/<version>
   results_dir: outputs/results
+  base_results_subdir: "base model results"
+  trained_results_subdir: "trained model results"   # then /<version>/<doc_id>/
 
 inference:
   mode: ocr_plus_image              # match the training modality
   temperature: 0.0                  # deterministic for fair comparison
-  max_new_tokens: 16384             # the gold answer is 11,594 tokens; 2048 would truncate it
+  max_new_tokens: 4096              # the gold answer is ~1,500 tokens; this leaves ample room
 
 ocr:
   engine: mineru                    # mineru | pymupdf (pymupdf = no-OCR fallback for dry runs)

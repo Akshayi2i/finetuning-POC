@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/15/2026",
+    "transaction_effective_date": "4/22/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9480803651",
+    "billing_account_number": "9480803651",
+    "contract_number": "G60284",
+    "effective_date": "4/22/2026",
+    "expiration_date": "4/22/2027",
+    "term_amount": "$52,904.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Boone Transport Group Inc",
+    "address": {
+      "street": "7239 Corporate Center Dr",
+      "city": "East Kimberlyton",
+      "state": "NY",
+      "zip": "73370"
+    },
+    "additional_named_insureds": [
+      "Elena G Boone"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "208-236-3940",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$52,904.00",
+    "inception_date": "4/22/2026",
+    "effective_date": "4/22/2026",
+    "net_change_amount": "$52,904.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Isuzu Finance of America Inc",
+      "address": {
+        "street": "3365 Wireless Blvd",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "87297"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7336 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 HINO 268",
+              "2023 KENWORTH T270",
+              "2025 GMC SAVANA 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$14,394.00",
+                  "$13,162.00",
+                  "$10,908.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$260.00",
+                  "$375.00",
+                  "$356.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$799.00",
+                  "$838.00",
+                  "$783.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,494.00",
+                  "$3,388.00",
+                  "$2,670.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$134.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$19,445.00",
+              "$18,262.00",
+              "$15,177.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "HINO",
+      "model": "268",
+      "vin": "PJG0S2SBUS0C83RA2",
+      "body_type": "Truck",
+      "territory": "490",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "7336 Commerce Blvd, South Terrance, NY 07230"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "7270PHCFXW1R64MKN",
+      "body_type": "Tractor",
+      "territory": "149",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7336 Commerce Blvd, South Terrance, NY 07230"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "ECE7AV4V6BACX6W0E",
+      "body_type": "Truck",
+      "territory": "122",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "7336 Commerce Blvd, South Terrance, NY 07230"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Dwayne S Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "302722223",
+      "date_of_birth": "3/9/1962"
+    },
+    {
+      "sequence": 2,
+      "name": "Victor G Osei",
+      "license_state": "NY",
+      "license_number": "578751169",
+      "date_of_birth": "7/17/1981"
+    },
+    {
+      "sequence": 3,
+      "name": "Rosa Ferreira",
+      "license_state": "NY",
+      "license_number": "832564415",
+      "date_of_birth": "10/8/1989"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Furniture Delivery Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7336 Commerce Blvd",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "93725"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/18/2026",
+    "printed_at": "10:30",
+    "total_pages": 3
+  }
+}

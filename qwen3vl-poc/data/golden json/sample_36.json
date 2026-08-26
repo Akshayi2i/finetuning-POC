@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "8/20/2026",
+    "transaction_effective_date": "9/15/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3122403074",
+    "billing_account_number": "3122403074",
+    "contract_number": "G74790",
+    "effective_date": "9/15/2026",
+    "expiration_date": "9/15/2027",
+    "term_amount": "$52,870.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Vargas Enterprises Inc",
+    "address": {
+      "street": "734 Industrial Loop",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "85432"
+    },
+    "additional_named_insureds": [
+      "Elena Mills"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "629-776-7133",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$52,870.00",
+    "inception_date": "9/15/2026",
+    "effective_date": "9/15/2026",
+    "net_change_amount": "$52,870.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "7964 Executive Dr",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "61675"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "301 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 GMC SAVANA 3500",
+              "2024 KENWORTH T270",
+              "2024 ISUZU FTR"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,851.00",
+                  "$13,818.00",
+                  "$14,404.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$335.00",
+                  "$278.00",
+                  "$346.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$705.00",
+                  "$779.00",
+                  "$836.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,931.00",
+                  "$3,142.00",
+                  "$3,024.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$96.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,321.00",
+              "$18,494.00",
+              "$19,035.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "97JER7DX44ETCA44C",
+      "body_type": "Truck",
+      "territory": "493",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "301 Adams Ct, East Kimberlyton, NY 16473"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "EXAXNUDY5HPYN54T6",
+      "body_type": "Box Truck",
+      "territory": "425",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "301 Adams Ct, East Kimberlyton, NY 16473"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "TL68F3W3U2MELNJA8",
+      "body_type": "Box Truck",
+      "territory": "576",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "301 Adams Ct, East Kimberlyton, NY 16473"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rajiv Vargas",
+      "license_state": "NY",
+      "license_number": "126446524",
+      "date_of_birth": "1/2/1985"
+    },
+    {
+      "sequence": 2,
+      "name": "Denise Ramachandran",
+      "license_state": "NY",
+      "license_number": "941093980",
+      "date_of_birth": "3/2/1995"
+    },
+    {
+      "sequence": 3,
+      "name": "Rajiv P Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "254831078",
+      "date_of_birth": "8/5/1976"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "HVAC Contracting Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "301 Adams Ct",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "50986"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Agency Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "8/22/2026",
+    "printed_at": "08:00",
+    "total_pages": 3
+  }
+}

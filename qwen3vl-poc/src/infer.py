@@ -20,29 +20,36 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
     cfg_path,
     ensure_dir,
+    is_version,
     load_config,
+    merged_dir_for,
     read_json,
     recover_json_object,
+    results_dir_for,
     set_vision_env,
     setup_logging,
     validate_against_schema,
     write_json,
     write_text,
 )
+from common import discover_documents  # noqa: E402
 from modeling import load_model_and_processor  # noqa: E402
 from prompting import build_messages, conversation_fingerprint  # noqa: E402
+from run_ocr import ensure_ocr  # noqa: E402
 
 log = setup_logging("infer")
 
 
 def resolve_model_path(cfg: dict, which: str) -> tuple[str, str | None]:
-    """Return (path_or_id, revision) for 'base' or 'v1'."""
+    """Return (path_or_id, revision) for 'base' or for a version like 'v1'."""
     if which == "base":
         return cfg["model"]["base_model_id"], cfg["model"].get("revision")
-    merged = cfg_path(cfg, "merged_dir")
+    if not is_version(which):
+        raise SystemExit(f"--model must be 'base' or a version like v1/v2, got {which!r}")
+    merged = merged_dir_for(cfg, which)
     if not any(merged.glob("*.safetensors")):
         raise FileNotFoundError(
-            f"{merged} holds no merged weights. Run src/merge.py before inferring with v1."
+            f"{merged} holds no merged weights. Run src/merge.py --version {which} first."
         )
     return str(merged), None
 
@@ -170,12 +177,15 @@ def resolve_doc(cfg: dict, requested: str | None) -> tuple[str, str | None]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Extract JSON from a document with base or v1.")
-    ap.add_argument("--model", choices=["base", "v1"], required=True)
+    ap.add_argument("--model", required=True,
+                    help="'base', or a fine-tuned version like v1 / v2")
     ap.add_argument("--config", default=None)
     ap.add_argument("--doc", default=None, help="doc_id to extract (default: the test document)")
     ap.add_argument("--load-in-4bit", action="store_true",
                     help="load in 4-bit for inference on a small GPU (slightly changes outputs)")
     ap.add_argument("--device-map", default="auto")
+    ap.add_argument("--no-ocr", action="store_true",
+                    help="do not OCR the document first; use existing OCR output")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
@@ -186,6 +196,18 @@ def main() -> int:
         return 2
 
     doc_id, expected_fp = resolve_doc(cfg, args.doc)
+
+    # One command does the whole extraction: OCR the document with MinerU if it has
+    # not been done, then run it through the model you asked for.
+    if not args.no_ocr:
+        documents, _, _ = discover_documents(cfg_path(cfg, "data_dir"))
+        target = [d for d in documents if d.doc_id == doc_id]
+        if target:
+            ensure_ocr(cfg, target)
+        else:
+            log.warning("%s is not in %s; using whatever OCR output exists",
+                        doc_id, cfg_path(cfg, "data_dir"))
+
     max_pixels = set_vision_env(cfg)
     log.info("document=%s model=%s MAX_PIXELS=%d", doc_id, args.model, max_pixels)
 
@@ -243,7 +265,7 @@ def main() -> int:
     hit_cap = int(len(new_tokens)) >= int(inference.get("max_new_tokens", 2048))
     schema_ok, schema_errors = (False, ["output did not parse"])
     if parsed is not None:
-        write_json(results_dir / f"{args.model}_output.json", parsed)
+        write_json(results_dir / "output.json", parsed)
         schema_ok, schema_errors = validate_against_schema(parsed, cfg_path(cfg, "json_schema"))
         if repaired:
             # Not valid JSON: only a prefix was recovered. compare.py keeps reporting
@@ -257,12 +279,12 @@ def main() -> int:
         for err in schema_errors[:5]:
             log.warning("  schema: %s", err)
     else:
-        stale = results_dir / f"{args.model}_output.json"
+        stale = results_dir / "output.json"
         if stale.exists():
             stale.unlink()
         log.error("output is not valid JSON (%s); raw text kept in %s_raw.txt", reason, args.model)
 
-    write_json(results_dir / f"{args.model}_meta.json", {
+    write_json(results_dir / "meta.json", {
         "model": args.model,
         "doc_id": doc_id,
         "model_path": model_path,

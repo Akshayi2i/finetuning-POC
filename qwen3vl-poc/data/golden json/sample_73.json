@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "9/19/2026",
+    "transaction_effective_date": "10/20/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "4987368360",
+    "billing_account_number": "4987368360",
+    "contract_number": "G60718",
+    "effective_date": "10/20/2026",
+    "expiration_date": "10/20/2027",
+    "term_amount": "$50,634.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Barrera Transport Group Inc",
+    "address": {
+      "street": "3687 Katherine Parks",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "72350"
+    },
+    "additional_named_insureds": [
+      "Janet"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "951-686-9835",
+      "contact_name": "Andre Lindqvist"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$50,634.00",
+    "inception_date": "10/20/2026",
+    "effective_date": "10/20/2026",
+    "net_change_amount": "$50,634.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "6370 Industrial Loop",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "56745"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7755 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FORD TRANSIT 350",
+              "2025 GMC SAVANA 3500",
+              "2026 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,163.00",
+                  "$11,237.00",
+                  "$14,738.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$340.00",
+                  "$357.00",
+                  "$295.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$743.00",
+                  "$792.00",
+                  "$833.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,719.00",
+                  "$2,783.00",
+                  "$3,142.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,458.00",
+              "$15,650.00",
+              "$19,506.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "WXLB5FP6EDNKWH2T1",
+      "body_type": "Van",
+      "territory": "787",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "7755 Oser Ave, East Kimberlyton, NY 06538"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "Z5KYPUT4EFNB0R69Y",
+      "body_type": "Truck",
+      "territory": "618",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "7755 Oser Ave, East Kimberlyton, NY 06538"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "268",
+      "vin": "X4M49BCT8DRLLAYTE",
+      "body_type": "Truck",
+      "territory": "738",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "7755 Oser Ave, East Kimberlyton, NY 06538"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Grace D Ramachandran",
+      "license_state": "NY",
+      "license_number": "184677007",
+      "date_of_birth": "4/15/1958"
+    },
+    {
+      "sequence": 2,
+      "name": "Erick Ramachandran",
+      "license_state": "NY",
+      "license_number": "692642665",
+      "date_of_birth": "7/11/1983"
+    },
+    {
+      "sequence": 3,
+      "name": "Kevin A Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "391712706",
+      "date_of_birth": "5/20/1998"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Building Materials Dealer"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7755 Oser Ave",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "83128"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "9/25/2026",
+    "printed_at": "12:30",
+    "total_pages": 3
+  }
+}

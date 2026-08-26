@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "10/27/2026",
+    "transaction_effective_date": "11/2/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "6799662307",
+    "billing_account_number": "6799662307",
+    "contract_number": "D30592",
+    "effective_date": "11/2/2026",
+    "expiration_date": "11/2/2027",
+    "term_amount": "$47,882.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Lindqvist Holdings Corp",
+    "address": {
+      "street": "1246 Wireless Blvd",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "48343"
+    },
+    "additional_named_insureds": [
+      "Erick Nakamura"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "517-512-5361",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,882.00",
+    "inception_date": "11/2/2026",
+    "effective_date": "11/2/2026",
+    "net_change_amount": "$47,882.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Isuzu Finance of America Inc",
+      "address": {
+        "street": "1333 Oser Ave",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "56882"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7217 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 KENWORTH T270",
+              "2025 HINO 268",
+              "2023 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,489.00",
+                  "$11,037.00",
+                  "$11,668.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$329.00",
+                  "$274.00",
+                  "$299.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$871.00",
+                  "$766.00",
+                  "$865.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,938.00",
+                  "$3,464.00",
+                  "$3,382.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$134.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,076.00",
+              "$16,074.00",
+              "$16,712.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "NYDLBKPNPNM3S89R9",
+      "body_type": "Truck",
+      "territory": "634",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7217 Commerce Blvd, North Connorshire, NY 13148"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "HINO",
+      "model": "268",
+      "vin": "YW84P3R0K7J6V6JU6",
+      "body_type": "Truck",
+      "territory": "746",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "7217 Commerce Blvd, North Connorshire, NY 13148"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "K9PSG6Y03W0LXCRXA",
+      "body_type": "Tractor",
+      "territory": "256",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "7217 Commerce Blvd, North Connorshire, NY 13148"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Kevin Barrera",
+      "license_state": "NY",
+      "license_number": "402236869",
+      "date_of_birth": "12/1/1966"
+    },
+    {
+      "sequence": 2,
+      "name": "Marcus Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "996611788",
+      "date_of_birth": "4/17/1980"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector Hollingsworth",
+      "license_state": "NY",
+      "license_number": "770018098",
+      "date_of_birth": "5/4/1980"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Food Service Distribution"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7217 Commerce Blvd",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "69620"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "10/29/2026",
+    "printed_at": "11:30",
+    "total_pages": 3
+  }
+}

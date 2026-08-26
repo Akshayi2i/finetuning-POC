@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "3/20/2026",
+    "transaction_effective_date": "4/17/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "6568609664",
+    "billing_account_number": "6568609664",
+    "contract_number": "C85502",
+    "effective_date": "4/17/2026",
+    "expiration_date": "4/17/2027",
+    "term_amount": "$39,156.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Otero Services Corp",
+    "address": {
+      "street": "6487 Price Pkwy",
+      "city": "Ronkonkoma",
+      "state": "NY",
+      "zip": "69122"
+    },
+    "additional_named_insureds": [
+      "Nathan Pierre-Louis"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "546-663-6633",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$39,156.00",
+    "inception_date": "4/17/2026",
+    "effective_date": "4/17/2026",
+    "net_change_amount": "$39,156.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "9649 Industrial Loop",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "89437"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4292 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FORD TRANSIT 350",
+              "2024 RAM 5500",
+              "2024 ISUZU FTR"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$7,265.00",
+                  "$8,217.00",
+                  "$9,736.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$294.00",
+                  "$265.00",
+                  "$355.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$744.00",
+                  "$729.00",
+                  "$794.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,956.00",
+                  "$2,817.00",
+                  "$3,446.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$305.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$11,735.00",
+              "$12,549.00",
+              "$14,852.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "T5FBWJGS738H66BLM",
+      "body_type": "Truck",
+      "territory": "361",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4292 Oser Ave, Farmingdale, NY 13365"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "CC6Y00ZXK614KT2XL",
+      "body_type": "Truck",
+      "territory": "759",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4292 Oser Ave, Farmingdale, NY 13365"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "NERBPE31SWUJ7F7D7",
+      "body_type": "Tractor",
+      "territory": "459",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "4292 Oser Ave, Farmingdale, NY 13365"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Denise Hollingsworth",
+      "license_state": "NY",
+      "license_number": "770415675",
+      "date_of_birth": "6/27/1971"
+    },
+    {
+      "sequence": 2,
+      "name": "Rajiv Lindqvist",
+      "license_state": "NY",
+      "license_number": "686692239",
+      "date_of_birth": "11/28/1980"
+    },
+    {
+      "sequence": 3,
+      "name": "Priya Ramachandran",
+      "license_state": "NY",
+      "license_number": "689477968",
+      "date_of_birth": "10/18/1958"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "HVAC Contracting Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4292 Oser Ave",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "16869"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Company Policy Billed",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/24/2026",
+    "printed_at": "13:45",
+    "total_pages": 3
+  }
+}

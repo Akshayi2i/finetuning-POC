@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/30/2026",
+    "transaction_effective_date": "5/8/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "7209110473",
+    "billing_account_number": "7209110473",
+    "contract_number": "B11188",
+    "effective_date": "5/8/2026",
+    "expiration_date": "5/8/2027",
+    "term_amount": "$47,149.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Mills Services Corp",
+    "address": {
+      "street": "52974 Katherine Parks",
+      "city": "West Connorshire",
+      "state": "NY",
+      "zip": "00515"
+    },
+    "additional_named_insureds": [
+      "Victoria"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "860-636-1614",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,149.00",
+    "inception_date": "5/8/2026",
+    "effective_date": "5/8/2026",
+    "net_change_amount": "$47,149.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "150 Price Pkwy",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "75723"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "150 PRICE PKWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FREIGHTLINER M2",
+              "2025 FREIGHTLINER M2",
+              "2025 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,248.00",
+                  "$11,374.00",
+                  "$11,374.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$289.00",
+                  "$321.00",
+                  "$321.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$757.00",
+                  "$772.00",
+                  "$757.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,985.00",
+                  "$3,389.00",
+                  "$3,317.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,704.00",
+              "$16,281.00",
+              "$16,194.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "6GCBGFEJ1GDFH6586",
+      "body_type": "Truck",
+      "territory": "305",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "150 Price Pkwy, Farmingdale, NY 11735"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "6GBCFADB2EJBD5038",
+      "body_type": "Truck",
+      "territory": "305",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "150 Price Pkwy, Farmingdale, NY 11735"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "0EAGCBJD6ECJJ2183",
+      "body_type": "Truck",
+      "territory": "305",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "150 Price Pkwy, Farmingdale, NY 11735"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Mary P Mills",
+      "license_state": "NY",
+      "license_number": "417036121",
+      "date_of_birth": "10/11/1961"
+    },
+    {
+      "sequence": 2,
+      "name": "ERICK OTERO",
+      "license_state": "NY",
+      "license_number": "989362202",
+      "date_of_birth": "09/18/1952"
+    },
+    {
+      "sequence": 3,
+      "name": "CARLOS TEJEDA ROSALES",
+      "license_state": "NY",
+      "license_number": "132144138",
+      "date_of_birth": "06/05/1968"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Other Retail Trade Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "150 Price Pkwy",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "75723"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "11",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "05/06/2026",
+    "printed_at": "14:00",
+    "total_pages": 3
+  }
+}

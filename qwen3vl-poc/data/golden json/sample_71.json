@@ -1,0 +1,299 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "7/3/2026",
+    "transaction_effective_date": "8/17/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8339637897",
+    "billing_account_number": "8339637897",
+    "contract_number": "C73894",
+    "effective_date": "8/17/2026",
+    "expiration_date": "8/17/2027",
+    "term_amount": "$43,669.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Osei Enterprises Inc",
+    "address": {
+      "street": "8337 Adams Ct",
+      "city": "South Terrance",
+      "state": "NY",
+      "zip": "88096"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "398-658-7497",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$43,669.00",
+    "inception_date": "8/17/2026",
+    "effective_date": "8/17/2026",
+    "net_change_amount": "$43,669.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "358 Adams Ct",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "32267"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4497 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 PETERBILT 337",
+              "2024 MERCEDES-BENZ SPRINTER 3500",
+              "2024 RAM 5500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,863.00",
+                  "$8,634.00",
+                  "$9,553.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$269.00",
+                  "$283.00",
+                  "$304.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$864.00",
+                  "$776.00",
+                  "$842.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$3,026.00",
+                  "$2,858.00",
+                  "$2,947.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$96.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$16,509.00",
+              "$13,012.00",
+              "$14,128.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "K09NMD46KDBK8BJVU",
+      "body_type": "Truck",
+      "territory": "217",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "4497 Commerce Blvd, West Jessicastad, NY 10690"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "UJ73P5389TJJK5X4H",
+      "body_type": "Van",
+      "territory": "832",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "4497 Commerce Blvd, West Jessicastad, NY 10690"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "D5A0YMAA6LF9SLA3H",
+      "body_type": "Truck",
+      "territory": "455",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4497 Commerce Blvd, West Jessicastad, NY 10690"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Victor E Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "673478515",
+      "date_of_birth": "8/16/1991"
+    },
+    {
+      "sequence": 2,
+      "name": "Angela S Barrera",
+      "license_state": "NY",
+      "license_number": "514978223",
+      "date_of_birth": "1/1/1973"
+    },
+    {
+      "sequence": 3,
+      "name": "Priya Ferreira",
+      "license_state": "NY",
+      "license_number": "688937907",
+      "date_of_birth": "8/23/1959"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4497 Commerce Blvd",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "09259"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Agency Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "7/6/2026",
+    "printed_at": "10:30",
+    "total_pages": 3
+  }
+}

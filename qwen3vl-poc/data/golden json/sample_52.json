@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "2/4/2026",
+    "transaction_effective_date": "2/7/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9325941918",
+    "billing_account_number": "9325941918",
+    "contract_number": "C38272",
+    "effective_date": "2/7/2026",
+    "expiration_date": "2/7/2027",
+    "term_amount": "$55,943.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Tejeda Transport Group Inc",
+    "address": {
+      "street": "2943 Oser Ave",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "73276"
+    },
+    "additional_named_insureds": [
+      "Angela Ramachandran",
+      "Angela Vargas"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "tejeda@tejedacorp.com",
+      "contact_name": "Rajiv Ferreira"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$55,943.00",
+    "inception_date": "2/7/2026",
+    "effective_date": "2/7/2026",
+    "net_change_amount": "$55,943.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Ryder Truck Rental Inc",
+      "address": {
+        "street": "1733 Marcus Ave",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "58976"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "1509 SUNRISE HWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 HINO 268",
+              "2026 RAM 5500",
+              "2023 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$15,191.00",
+                  "$12,186.00",
+                  "$13,878.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$280.00",
+                  "$257.00",
+                  "$259.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$871.00",
+                  "$821.00",
+                  "$814.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,216.00",
+                  "$3,269.00",
+                  "$3,441.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$96.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$20,057.00",
+              "$16,976.00",
+              "$18,890.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "HINO",
+      "model": "268",
+      "vin": "RPWHALXHSB5KGWGC0",
+      "body_type": "Truck",
+      "territory": "129",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "1509 Sunrise Hwy, Lake Danielle, NY 19161"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "8ZN1DEDEK78WFDKWH",
+      "body_type": "Truck",
+      "territory": "259",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "1509 Sunrise Hwy, Lake Danielle, NY 19161"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "E3XN93S39JN2J0T8B",
+      "body_type": "Tractor",
+      "territory": "674",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "1509 Sunrise Hwy, Lake Danielle, NY 19161"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Marcus F Osei",
+      "license_state": "NY",
+      "license_number": "231892617",
+      "date_of_birth": "2/7/1970"
+    },
+    {
+      "sequence": 2,
+      "name": "Carlos Boone",
+      "license_state": "NY",
+      "license_number": "715422982",
+      "date_of_birth": "11/25/1984"
+    },
+    {
+      "sequence": 3,
+      "name": "Andre D Whitfield",
+      "license_state": "NY",
+      "license_number": "152862518",
+      "date_of_birth": "9/28/1989"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "1509 Sunrise Hwy",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "85955"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "2/10/2026",
+    "printed_at": "14:15",
+    "total_pages": 3
+  }
+}

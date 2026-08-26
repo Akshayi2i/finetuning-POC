@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/18/2026",
+    "transaction_effective_date": "7/8/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9563827305",
+    "billing_account_number": "9563827305",
+    "contract_number": "D24942",
+    "effective_date": "7/8/2026",
+    "expiration_date": "7/8/2027",
+    "term_amount": "$39,846.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Otero Enterprises Inc",
+    "address": {
+      "street": "5305 Executive Dr",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "88561"
+    },
+    "additional_named_insureds": [
+      "Lucia Mills"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "342-521-4417",
+      "contact_name": "Victor Ramachandran"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$39,846.00",
+    "inception_date": "7/8/2026",
+    "effective_date": "7/8/2026",
+    "net_change_amount": "$39,846.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "9554 Oser Ave",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "24316"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3283 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FORD F-650",
+              "2024 ISUZU FTR",
+              "2026 CHEVROLET SILVERADO 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,929.00",
+                  "$8,760.00",
+                  "$8,150.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$322.00",
+                  "$360.00",
+                  "$381.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$839.00",
+                  "$828.00",
+                  "$725.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,316.00",
+                  "$3,069.00",
+                  "$2,752.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$78.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,831.00",
+              "$13,476.00",
+              "$12,519.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "FFFTUS9Z5L2LH23M4",
+      "body_type": "Truck",
+      "territory": "771",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3283 Adams Ct, Yaphank, NY 06812"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "A5H284KRSRDANCK24",
+      "body_type": "Truck",
+      "territory": "437",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "3283 Adams Ct, Yaphank, NY 06812"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "MAZBUG8JR7BFKME8W",
+      "body_type": "Tractor",
+      "territory": "183",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3283 Adams Ct, Yaphank, NY 06812"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Kevin Vargas",
+      "license_state": "NY",
+      "license_number": "818230875",
+      "date_of_birth": "6/14/1992"
+    },
+    {
+      "sequence": 2,
+      "name": "Andre J Nakamura",
+      "license_state": "NY",
+      "license_number": "267714924",
+      "date_of_birth": "4/8/1992"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "381540483",
+      "date_of_birth": "3/4/1976"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3283 Adams Ct",
+        "city": "Ronkonkoma",
+        "state": "NY",
+        "zip": "37928"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/23/2026",
+    "printed_at": "14:45",
+    "total_pages": 3
+  }
+}

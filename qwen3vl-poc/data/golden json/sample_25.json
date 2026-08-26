@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/7/2026",
+    "transaction_effective_date": "5/22/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3717661415",
+    "billing_account_number": "3717661415",
+    "contract_number": "G62834",
+    "effective_date": "5/22/2026",
+    "expiration_date": "5/22/2027",
+    "term_amount": "$38,726.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Mills Logistics LLC",
+    "address": {
+      "street": "8499 Industrial Loop",
+      "city": "East Kimberlyton",
+      "state": "NY",
+      "zip": "34127"
+    },
+    "additional_named_insureds": [
+      "Erick"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "214-985-5774",
+      "contact_name": "Elena Nakamura"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$38,726.00",
+    "inception_date": "5/22/2026",
+    "effective_date": "5/22/2026",
+    "net_change_amount": "$38,726.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Ryder Truck Rental Inc",
+      "address": {
+        "street": "7383 Katherine Parks",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "77473"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "464 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 MERCEDES-BENZ SPRINTER 3500",
+              "2023 FORD TRANSIT 350",
+              "2024 MERCEDES-BENZ SPRINTER 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,924.00",
+                  "$8,734.00",
+                  "$7,992.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$285.00",
+                  "$354.00",
+                  "$335.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$773.00",
+                  "$695.00",
+                  "$773.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,791.00",
+                  "$2,603.00",
+                  "$3,008.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$305.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,277.00",
+              "$12,879.00",
+              "$12,550.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "4ZM6WVWV69W5Z1YXV",
+      "body_type": "Tractor",
+      "territory": "345",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "464 Commerce Blvd, West Jessicastad, NY 14180"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "ZT7TUNLCP5C1MJ5VG",
+      "body_type": "Truck",
+      "territory": "755",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "464 Commerce Blvd, West Jessicastad, NY 14180"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "4LE9RE2Y9DZ9JCMM3",
+      "body_type": "Tractor",
+      "territory": "626",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "464 Commerce Blvd, West Jessicastad, NY 14180"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Tanya Castellano",
+      "license_state": "NY",
+      "license_number": "250890302",
+      "date_of_birth": "1/25/1972"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "418047136",
+      "date_of_birth": "9/8/1954"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary S Krishnan",
+      "license_state": "NY",
+      "license_number": "623905060",
+      "date_of_birth": "10/3/1985"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Furniture Delivery Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "464 Commerce Blvd",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "94511"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "11",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/9/2026",
+    "printed_at": "17:30",
+    "total_pages": 3
+  }
+}

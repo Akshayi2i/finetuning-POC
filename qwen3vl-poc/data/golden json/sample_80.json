@@ -1,0 +1,299 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "1/18/2026",
+    "transaction_effective_date": "2/12/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8132855227",
+    "billing_account_number": "8132855227",
+    "contract_number": "B89469",
+    "effective_date": "2/12/2026",
+    "expiration_date": "2/12/2027",
+    "term_amount": "$49,398.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Nakamura Services Corp",
+    "address": {
+      "street": "7869 Engineers Rd",
+      "city": "Lake Danielle",
+      "state": "NY",
+      "zip": "95549"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "nakamura@nakamuracorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$49,398.00",
+    "inception_date": "2/12/2026",
+    "effective_date": "2/12/2026",
+    "net_change_amount": "$49,398.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "362 Adams Ct",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "21604"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "9357 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FREIGHTLINER M2",
+              "2023 HINO L6",
+              "2025 INTERNATIONAL MV607"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,886.00",
+                  "$12,671.00",
+                  "$10,392.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$326.00",
+                  "$268.00",
+                  "$334.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$766.00",
+                  "$901.00",
+                  "$768.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,976.00",
+                  "$3,374.00",
+                  "$3,326.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$112.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$16,396.00",
+              "$17,713.00",
+              "$15,269.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "0LK30FCK3AVJ1K2T8",
+      "body_type": "Box Truck",
+      "territory": "144",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9357 Commerce Blvd, East Kimberlyton, NY 09342"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "4NZRSS3GN3KDN2C6B",
+      "body_type": "Van",
+      "territory": "651",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9357 Commerce Blvd, East Kimberlyton, NY 09342"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "INTERNATIONAL",
+      "model": "MV607",
+      "vin": "8E5LVV0PMEL3A271P",
+      "body_type": "Truck",
+      "territory": "770",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "9357 Commerce Blvd, East Kimberlyton, NY 09342"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Omar Nakamura",
+      "license_state": "NY",
+      "license_number": "752198970",
+      "date_of_birth": "8/11/1969"
+    },
+    {
+      "sequence": 2,
+      "name": "Janet M Hollingsworth",
+      "license_state": "NY",
+      "license_number": "989018495",
+      "date_of_birth": "7/28/1963"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary Whitfield",
+      "license_state": "NY",
+      "license_number": "380803827",
+      "date_of_birth": "3/3/1995"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Other Retail Trade Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "9357 Commerce Blvd",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "38395"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Agency Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "1/23/2026",
+    "printed_at": "12:00",
+    "total_pages": 3
+  }
+}

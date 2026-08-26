@@ -211,6 +211,37 @@ def ocr_document(doc: Document, cfg: dict, engine: str) -> dict:
 # --------------------------------------------------------------------------- main
 
 
+def has_ocr(cfg: dict, doc_id: str) -> bool:
+    """Does this document already have usable OCR output on disk?"""
+    out = ocr_dir_for(cfg, doc_id)
+    return (out / "ocr_meta.json").exists() and any(out.glob("page_*.md"))
+
+
+def ensure_ocr(cfg: dict, documents: list, engine: str | None = None,
+               force: bool = False) -> list[str]:
+    """OCR any document that does not have output yet. Returns the ids that failed.
+
+    Called by build_dataset.py and infer.py so neither needs OCR to have been run
+    by hand first. Documents already done are skipped, so this is cheap to call
+    on every run.
+    """
+    engine = engine or cfg.get("ocr", {}).get("engine", "mineru")
+    todo = [d for d in documents if force or not has_ocr(cfg, d.doc_id)]
+    if not todo:
+        log.info("OCR already present for all %d document(s)", len(documents))
+        return []
+    log.info("OCR needed for %d of %d document(s), engine=%s",
+             len(todo), len(documents), engine)
+    failed = []
+    for doc in todo:
+        try:
+            ocr_document(doc, cfg, engine)
+        except Exception as exc:
+            log.error("[%s] OCR FAILED: %s", doc.doc_id, exc)
+            failed.append(doc.doc_id)
+    return failed
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="OCR every document in the corpus.")
     ap.add_argument("--config", default=None)

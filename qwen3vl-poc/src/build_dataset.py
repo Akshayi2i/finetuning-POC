@@ -39,6 +39,7 @@ from prompting import (  # noqa: E402
     conversation_fingerprint,
     to_swift_record,
 )
+from run_ocr import ensure_ocr  # noqa: E402
 
 log = setup_logging("build_dataset")
 
@@ -142,6 +143,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Build the training corpus JSONL.")
     ap.add_argument("--config", default=None)
     ap.add_argument("--no-token-count", action="store_true", help="skip loading the processor")
+    ap.add_argument("--no-ocr", action="store_true",
+                    help="do not OCR missing documents first (fail instead)")
+    ap.add_argument("--force-ocr", action="store_true", help="re-OCR every document")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
@@ -152,6 +156,13 @@ def main() -> int:
         return 2
     for pdf in unpaired_pdfs:
         log.error("PDF with no gold JSON, excluded: %s", pdf)
+
+    # Stage 1 runs itself: any document without OCR output is OCR'd now, so the
+    # corpus can be built with one command instead of two.
+    if not args.no_ocr:
+        failed = ensure_ocr(cfg, documents, force=args.force_ocr)
+        if failed:
+            log.error("OCR failed for %s; those documents cannot be used", failed)
 
     test_doc = pick_test_document(cfg, documents)
     include_test = bool(corpus_cfg.get("include_test_in_training", False))

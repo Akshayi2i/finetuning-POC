@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "8/27/2026",
+    "transaction_effective_date": "9/1/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "7173764612",
+    "billing_account_number": "5955188983",
+    "contract_number": "G96106",
+    "effective_date": "9/1/2026",
+    "expiration_date": "9/1/2027",
+    "term_amount": "$37,892.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ferreira Supply Co",
+    "address": {
+      "street": "7224 Oser Ave",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "21616"
+    },
+    "additional_named_insureds": [
+      "Tanya Osei"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "304-377-0110",
+      "contact_name": "Carlos Whitfield"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$37,892.00",
+    "inception_date": "9/1/2026",
+    "effective_date": "9/1/2026",
+    "net_change_amount": "$37,892.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "7190 Industrial Loop",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "37766"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "5257 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FREIGHTLINER CASCADIA",
+              "2025 FORD TRANSIT 350",
+              "2026 ISUZU NPR HD"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,088.00",
+                  "$6,723.00",
+                  "$7,708.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$309.00",
+                  "$354.00",
+                  "$355.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$805.00",
+                  "$768.00",
+                  "$712.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$3,209.00",
+                  "$2,663.00",
+                  "$2,734.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,905.00",
+              "$11,007.00",
+              "$11,940.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "4ESLRE6T5ZNMGU77K",
+      "body_type": "Tractor",
+      "territory": "617",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "5257 Corporate Center Dr, Yaphank, NY 13600"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "JLHGK7BJUMJRA0MA3",
+      "body_type": "Van",
+      "territory": "115",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "5257 Corporate Center Dr, Yaphank, NY 13600"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "E9MJP9PTADRF713KD",
+      "body_type": "Box Truck",
+      "territory": "149",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "5257 Corporate Center Dr, Yaphank, NY 13600"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Steven J Castellano",
+      "license_state": "NY",
+      "license_number": "897500131",
+      "date_of_birth": "12/14/1956"
+    },
+    {
+      "sequence": 2,
+      "name": "Erick A Ferreira",
+      "license_state": "NY",
+      "license_number": "177803798",
+      "date_of_birth": "10/27/1980"
+    },
+    {
+      "sequence": 3,
+      "name": "Lucia Mills",
+      "license_state": "NY",
+      "license_number": "281824409",
+      "date_of_birth": "12/15/1984"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "5257 Corporate Center Dr",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "62787"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "8/27/2026",
+    "printed_at": "16:15",
+    "total_pages": 3
+  }
+}

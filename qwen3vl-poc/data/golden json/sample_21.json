@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "3/14/2026",
+    "transaction_effective_date": "4/23/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "7981874754",
+    "billing_account_number": "7981874754",
+    "contract_number": "B17778",
+    "effective_date": "4/23/2026",
+    "expiration_date": "4/23/2027",
+    "term_amount": "$46,548.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Holdings Corp",
+    "address": {
+      "street": "1541 Oser Ave",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "11102"
+    },
+    "additional_named_insureds": [
+      "Andre"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "krishnan@krishnancorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,548.00",
+    "inception_date": "4/23/2026",
+    "effective_date": "4/23/2026",
+    "net_change_amount": "$46,548.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "2264 Adams Ct",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "45498"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6078 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 PETERBILT 337",
+              "2025 KENWORTH T270",
+              "2026 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,071.00",
+                  "$10,757.00",
+                  "$10,761.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$292.00",
+                  "$332.00",
+                  "$334.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$761.00",
+                  "$758.00",
+                  "$849.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,009.00",
+                  "$2,974.00",
+                  "$3,223.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$96.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,593.00",
+              "$15,287.00",
+              "$15,648.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "BE42S1UG4XU2D6ZAV",
+      "body_type": "Box Truck",
+      "territory": "228",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "6078 Corporate Center Dr, East Kimberlyton, NY 13594"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "D0XKMW5YJJ8E8ENVN",
+      "body_type": "Truck",
+      "territory": "666",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "6078 Corporate Center Dr, East Kimberlyton, NY 13594"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "268",
+      "vin": "XCLGJ1BKN82BNY0V1",
+      "body_type": "Truck",
+      "territory": "144",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6078 Corporate Center Dr, East Kimberlyton, NY 13594"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Sofia Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "447827747",
+      "date_of_birth": "12/22/1984"
+    },
+    {
+      "sequence": 2,
+      "name": "Rajiv Mills",
+      "license_state": "NY",
+      "license_number": "819689704",
+      "date_of_birth": "9/18/1978"
+    },
+    {
+      "sequence": 3,
+      "name": "Elena Krishnan",
+      "license_state": "NY",
+      "license_number": "793681430",
+      "date_of_birth": "3/25/1963"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6078 Corporate Center Dr",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "87441"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/15/2026",
+    "printed_at": "12:00",
+    "total_pages": 3
+  }
+}

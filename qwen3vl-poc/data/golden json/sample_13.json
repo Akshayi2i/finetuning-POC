@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "9/14/2026",
+    "transaction_effective_date": "9/22/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "2520137838",
+    "billing_account_number": "2520137838",
+    "contract_number": "C77600",
+    "effective_date": "9/22/2026",
+    "expiration_date": "9/22/2027",
+    "term_amount": "$42,857.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ramachandran Holdings Corp",
+    "address": {
+      "street": "1354 Wireless Blvd",
+      "city": "Farmingdale",
+      "state": "NY",
+      "zip": "12099"
+    },
+    "additional_named_insureds": [
+      "Marcus"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "ramachandran@ramachandrancorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$42,857.00",
+    "inception_date": "9/22/2026",
+    "effective_date": "9/22/2026",
+    "net_change_amount": "$42,857.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "7503 Executive Dr",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "83796"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6778 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 ISUZU FTR",
+              "2026 KENWORTH T270",
+              "2023 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,807.00",
+                  "$8,970.00",
+                  "$9,272.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$269.00",
+                  "$366.00",
+                  "$315.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$768.00",
+                  "$872.00",
+                  "$814.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,491.00",
+                  "$3,095.00",
+                  "$3,395.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$72.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,830.00",
+              "$13,734.00",
+              "$14,273.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "0ZS3S6BLNHJ97VBCR",
+      "body_type": "Box Truck",
+      "territory": "730",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6778 Adams Ct, New Marcusview, NY 08475"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "0HF5CCNE22LGRGRFV",
+      "body_type": "Truck",
+      "territory": "871",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "6778 Adams Ct, New Marcusview, NY 08475"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "1PG0WJA4GA16DBMMZ",
+      "body_type": "Truck",
+      "territory": "200",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6778 Adams Ct, New Marcusview, NY 08475"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Andre A Barrera",
+      "license_state": "NY",
+      "license_number": "441678412",
+      "date_of_birth": "12/25/1985"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia Hollingsworth",
+      "license_state": "NY",
+      "license_number": "713258872",
+      "date_of_birth": "5/17/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Omar V Mills",
+      "license_state": "NY",
+      "license_number": "528889313",
+      "date_of_birth": "2/12/1969"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6778 Adams Ct",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "12049"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "9/18/2026",
+    "printed_at": "08:00",
+    "total_pages": 3
+  }
+}

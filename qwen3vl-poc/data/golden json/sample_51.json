@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "2/24/2026",
+    "transaction_effective_date": "3/2/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9846377405",
+    "billing_account_number": "9846377405",
+    "contract_number": "C39417",
+    "effective_date": "3/2/2026",
+    "expiration_date": "3/2/2027",
+    "term_amount": "$51,784.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Otero Logistics LLC",
+    "address": {
+      "street": "2532 Wireless Blvd",
+      "city": "Ronkonkoma",
+      "state": "NY",
+      "zip": "82565"
+    },
+    "additional_named_insureds": [
+      "Elena Lindqvist"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "249-287-2616",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$51,784.00",
+    "inception_date": "3/2/2026",
+    "effective_date": "3/2/2026",
+    "net_change_amount": "$51,784.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "5176 Wireless Blvd",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "61773"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3708 SUNRISE HWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 KENWORTH T270",
+              "2024 MERCEDES-BENZ SPRINTER 3500",
+              "2024 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$14,025.00",
+                  "$10,281.00",
+                  "$13,202.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$382.00",
+                  "$285.00",
+                  "$317.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$770.00",
+                  "$758.00",
+                  "$736.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$3,456.00",
+                  "$2,770.00",
+                  "$3,383.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$19,093.00",
+              "$14,553.00",
+              "$18,098.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "HLGZZ6SBXHX504BV7",
+      "body_type": "Tractor",
+      "territory": "563",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3708 Sunrise Hwy, Hauppauge, NY 08212"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "11H90U5LKX988F80R",
+      "body_type": "Truck",
+      "territory": "528",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "3708 Sunrise Hwy, Hauppauge, NY 08212"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "6PXTUHUGCEG9NB3B4",
+      "body_type": "Truck",
+      "territory": "500",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3708 Sunrise Hwy, Hauppauge, NY 08212"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Priya S Ramachandran",
+      "license_state": "NY",
+      "license_number": "350372275",
+      "date_of_birth": "10/17/1956"
+    },
+    {
+      "sequence": 2,
+      "name": "Marcus Vargas",
+      "license_state": "NY",
+      "license_number": "291576764",
+      "date_of_birth": "4/7/1960"
+    },
+    {
+      "sequence": 3,
+      "name": "Rajiv J Castellano",
+      "license_state": "NY",
+      "license_number": "705090393",
+      "date_of_birth": "11/20/1961"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3708 Sunrise Hwy",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "07039"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "2/28/2026",
+    "printed_at": "17:30",
+    "total_pages": 3
+  }
+}

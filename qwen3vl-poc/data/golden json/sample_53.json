@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "10/14/2026",
+    "transaction_effective_date": "11/27/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "2048909389",
+    "billing_account_number": "2048909389",
+    "contract_number": "D61980",
+    "effective_date": "11/27/2026",
+    "expiration_date": "11/27/2027",
+    "term_amount": "$40,499.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ramachandran Services Corp",
+    "address": {
+      "street": "1436 Katherine Parks",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "23043"
+    },
+    "additional_named_insureds": [
+      "Dwayne"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "544-635-4656",
+      "contact_name": "Marcus Nakamura"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$40,499.00",
+    "inception_date": "11/27/2026",
+    "effective_date": "11/27/2026",
+    "net_change_amount": "$40,499.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "8900 Wireless Blvd",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "55078"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4817 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 RAM 5500",
+              "2024 HINO 268",
+              "2025 RAM 5500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,809.00",
+                  "$9,577.00",
+                  "$8,762.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$268.00",
+                  "$285.00",
+                  "$346.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$818.00",
+                  "$804.00",
+                  "$739.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,799.00",
+                  "$3,086.00",
+                  "$2,765.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,188.00",
+              "$14,194.00",
+              "$13,077.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "BUFF99MSMAEU9CADU",
+      "body_type": "Truck",
+      "territory": "879",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4817 Oser Ave, East Kimberlyton, NY 10213"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "HINO",
+      "model": "268",
+      "vin": "8GKD0YXEL24ZRLKCS",
+      "body_type": "Truck",
+      "territory": "648",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "4817 Oser Ave, East Kimberlyton, NY 10213"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "MXNKHKSW3VPV2N65H",
+      "body_type": "Truck",
+      "territory": "524",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4817 Oser Ave, East Kimberlyton, NY 10213"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Nathan Ferreira",
+      "license_state": "NY",
+      "license_number": "436864122",
+      "date_of_birth": "10/3/1974"
+    },
+    {
+      "sequence": 2,
+      "name": "Denise Hollingsworth",
+      "license_state": "NY",
+      "license_number": "928077665",
+      "date_of_birth": "1/27/1958"
+    },
+    {
+      "sequence": 3,
+      "name": "Denise Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "180881281",
+      "date_of_birth": "1/23/1961"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4817 Oser Ave",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "76362"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "10/20/2026",
+    "printed_at": "12:45",
+    "total_pages": 3
+  }
+}

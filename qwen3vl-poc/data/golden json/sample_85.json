@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "8/11/2026",
+    "transaction_effective_date": "9/21/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3795552791",
+    "billing_account_number": "3795552791",
+    "contract_number": "G71795",
+    "effective_date": "9/21/2026",
+    "expiration_date": "9/21/2027",
+    "term_amount": "$44,617.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Castellano Logistics LLC",
+    "address": {
+      "street": "156 Price Pkwy",
+      "city": "Bay Shore",
+      "state": "NY",
+      "zip": "51197"
+    },
+    "additional_named_insureds": [
+      "Andre T Boone"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "castellano@castellanocorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,617.00",
+    "inception_date": "9/21/2026",
+    "effective_date": "9/21/2026",
+    "net_change_amount": "$44,617.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "7176 Adams Ct",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "09056"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "2826 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FREIGHTLINER M2",
+              "2024 FORD F-650",
+              "2024 MERCEDES-BENZ SPRINTER 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,125.00",
+                  "$11,183.00",
+                  "$8,169.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$360.00",
+                  "$379.00",
+                  "$319.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$810.00",
+                  "$757.00",
+                  "$691.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,214.00",
+                  "$3,339.00",
+                  "$2,798.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,986.00",
+              "$16,157.00",
+              "$12,454.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "VDXWLCB9XD5ZUF2RH",
+      "body_type": "Truck",
+      "territory": "419",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2826 Commerce Blvd, Port Adrianfort, NY 18492"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "4BFJS3LJ825KJZ4E0",
+      "body_type": "Van",
+      "territory": "276",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2826 Commerce Blvd, Port Adrianfort, NY 18492"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "5J07ZGJ3YJFTLCX9C",
+      "body_type": "Truck",
+      "territory": "678",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "2826 Commerce Blvd, Port Adrianfort, NY 18492"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Kevin D Delgado",
+      "license_state": "NY",
+      "license_number": "693635257",
+      "date_of_birth": "5/2/1960"
+    },
+    {
+      "sequence": 2,
+      "name": "Mary H Hollingsworth",
+      "license_state": "NY",
+      "license_number": "517988387",
+      "date_of_birth": "2/8/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Janet C Vargas",
+      "license_state": "NY",
+      "license_number": "963723129",
+      "date_of_birth": "11/13/1980"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Furniture Delivery Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "2826 Commerce Blvd",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "58460"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Agency Billed",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "8/15/2026",
+    "printed_at": "14:45",
+    "total_pages": 3
+  }
+}

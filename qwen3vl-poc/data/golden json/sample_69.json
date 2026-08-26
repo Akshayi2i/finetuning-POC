@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/18/2026",
+    "transaction_effective_date": "4/27/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8783524011",
+    "billing_account_number": "7055683867",
+    "contract_number": "B45423",
+    "effective_date": "4/27/2026",
+    "expiration_date": "4/27/2027",
+    "term_amount": "$46,035.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Transport Group Inc",
+    "address": {
+      "street": "7245 Katherine Parks",
+      "city": "New Marcusview",
+      "state": "NY",
+      "zip": "89137"
+    },
+    "additional_named_insureds": [
+      "Janet C Delgado"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "748-575-0886",
+      "contact_name": "Carlos Tejeda Rosales"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,035.00",
+    "inception_date": "4/27/2026",
+    "effective_date": "4/27/2026",
+    "net_change_amount": "$46,035.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "8214 Engineers Rd",
+        "city": "East Kimberlyton",
+        "state": "NY",
+        "zip": "85243"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8994 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 CHEVROLET SILVERADO 3500",
+              "2024 INTERNATIONAL MV607",
+              "2025 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,182.00",
+                  "$11,901.00",
+                  "$11,156.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$355.00",
+                  "$296.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$701.00",
+                  "$817.00",
+                  "$812.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,920.00",
+                  "$2,935.00",
+                  "$3,228.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$78.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,645.00",
+              "$16,391.00",
+              "$15,979.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "VN8YLJ62Z6BSW5V0Z",
+      "body_type": "Truck",
+      "territory": "853",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8994 Adams Ct, North Connorshire, NY 16917"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "INTERNATIONAL",
+      "model": "MV607",
+      "vin": "PBB6GK9BZ01AZWMU3",
+      "body_type": "Truck",
+      "territory": "601",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8994 Adams Ct, North Connorshire, NY 16917"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "WPGFNHJXNJDY0SHXS",
+      "body_type": "Truck",
+      "territory": "883",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8994 Adams Ct, North Connorshire, NY 16917"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Nathan P Krishnan",
+      "license_state": "NY",
+      "license_number": "793257873",
+      "date_of_birth": "6/18/1995"
+    },
+    {
+      "sequence": 2,
+      "name": "Tanya F Otero",
+      "license_state": "NY",
+      "license_number": "207964532",
+      "date_of_birth": "9/17/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Elena J Mills",
+      "license_state": "NY",
+      "license_number": "451524449",
+      "date_of_birth": "5/14/1958"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8994 Adams Ct",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "58106"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/22/2026",
+    "printed_at": "08:30",
+    "total_pages": 3
+  }
+}

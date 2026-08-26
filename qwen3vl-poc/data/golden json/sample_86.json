@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "5/4/2026",
+    "transaction_effective_date": "6/1/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "4773500900",
+    "billing_account_number": "4773500900",
+    "contract_number": "D12952",
+    "effective_date": "6/1/2026",
+    "expiration_date": "6/1/2027",
+    "term_amount": "$43,949.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Supply Co",
+    "address": {
+      "street": "2193 Adams Ct",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "78241"
+    },
+    "additional_named_insureds": [
+      "Sofia N Lindqvist"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "886-677-3852",
+      "contact_name": "Erick Whitfield"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$43,949.00",
+    "inception_date": "6/1/2026",
+    "effective_date": "6/1/2026",
+    "net_change_amount": "$43,949.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "4144 Katherine Parks",
+        "city": "East Kimberlyton",
+        "state": "NY",
+        "zip": "60573"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8615 MARCUS AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 MERCEDES-BENZ SPRINTER 3500",
+              "2025 PETERBILT 337",
+              "2023 RAM 5500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,309.00",
+                  "$11,477.00",
+                  "$10,396.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$282.00",
+                  "$276.00",
+                  "$260.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$736.00",
+                  "$807.00",
+                  "$808.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$2,605.00",
+                  "$3,439.00",
+                  "$3,128.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$78.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$305.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$12,391.00",
+              "$16,464.00",
+              "$15,074.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "U4HEF8NU9H2WTN9NR",
+      "body_type": "Truck",
+      "territory": "310",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "8615 Marcus Ave, Lake Danielle, NY 17608"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "MT82XFLAEDNHP2FP4",
+      "body_type": "Truck",
+      "territory": "621",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8615 Marcus Ave, Lake Danielle, NY 17608"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "TY0BSK0E606WHXGB6",
+      "body_type": "Tractor",
+      "territory": "539",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8615 Marcus Ave, Lake Danielle, NY 17608"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rosa H Lindqvist",
+      "license_state": "NY",
+      "license_number": "904765822",
+      "date_of_birth": "5/14/1960"
+    },
+    {
+      "sequence": 2,
+      "name": "Carlos Mills",
+      "license_state": "NY",
+      "license_number": "264325732",
+      "date_of_birth": "9/14/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary Osei",
+      "license_state": "NY",
+      "license_number": "517232770",
+      "date_of_birth": "12/22/1995"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Food Service Distribution"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8615 Marcus Ave",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "10213"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "5/5/2026",
+    "printed_at": "09:15",
+    "total_pages": 3
+  }
+}

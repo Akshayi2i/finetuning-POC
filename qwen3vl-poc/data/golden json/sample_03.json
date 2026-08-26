@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "1/17/2026",
+    "transaction_effective_date": "2/10/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "4168236819",
+    "billing_account_number": "4168236819",
+    "contract_number": "B16346",
+    "effective_date": "2/10/2026",
+    "expiration_date": "2/10/2027",
+    "term_amount": "$47,262.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Osei Distributors Inc",
+    "address": {
+      "street": "6331 Oser Ave",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "15004"
+    },
+    "additional_named_insureds": [
+      "Sofia C Lindqvist"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "osei@oseicorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,262.00",
+    "inception_date": "2/10/2026",
+    "effective_date": "2/10/2026",
+    "net_change_amount": "$47,262.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "443 Engineers Rd",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "21433"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "772 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 RAM 5500",
+              "2024 HINO 268",
+              "2025 PETERBILT 337"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,493.00",
+                  "$11,536.00",
+                  "$11,919.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$381.00",
+                  "$373.00",
+                  "$331.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$743.00",
+                  "$779.00",
+                  "$829.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,273.00",
+                  "$2,943.00",
+                  "$3,259.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,383.00",
+              "$16,090.00",
+              "$16,769.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "TMH32Z6Z1BX6VM1HE",
+      "body_type": "Truck",
+      "territory": "378",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "772 Adams Ct, Bay Shore, NY 12223"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "HINO",
+      "model": "268",
+      "vin": "UD2B702UKMCN7Z3XB",
+      "body_type": "Box Truck",
+      "territory": "415",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "772 Adams Ct, Bay Shore, NY 12223"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "89H7S97FXCXPMAFKW",
+      "body_type": "Box Truck",
+      "territory": "149",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "772 Adams Ct, Bay Shore, NY 12223"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Nathan Barrera",
+      "license_state": "NY",
+      "license_number": "274351391",
+      "date_of_birth": "3/8/1991"
+    },
+    {
+      "sequence": 2,
+      "name": "Victor Nakamura",
+      "license_state": "NY",
+      "license_number": "500338679",
+      "date_of_birth": "3/7/1953"
+    },
+    {
+      "sequence": 3,
+      "name": "Kevin Osei",
+      "license_state": "NY",
+      "license_number": "324719058",
+      "date_of_birth": "9/19/1974"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "772 Adams Ct",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "33907"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "1/20/2026",
+    "printed_at": "16:00",
+    "total_pages": 3
+  }
+}

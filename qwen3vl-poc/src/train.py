@@ -23,13 +23,16 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import (  # noqa: E402
+    adapter_dir_for,
     cfg_path,
     ensure_dir,
     load_config,
+    model_version,
     set_vision_env,
     setup_logging,
     write_json,
 )
+from common import discover_documents, is_stale  # noqa: E402
 from modeling import resolve_attn_impl  # noqa: E402
 
 log = setup_logging("train")
@@ -217,6 +220,11 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="QLoRA fine-tune on the training corpus.")
     ap.add_argument("--config", default=None)
     ap.add_argument("--dry-run", action="store_true", help="print the swift command and exit")
+    ap.add_argument("--no-build", action="store_true",
+                    help="do not build the dataset first; use whatever is on disk")
+    ap.add_argument("--rebuild", action="store_true", help="rebuild the dataset even if current")
+    ap.add_argument("--version", default=None,
+                    help="version to train, e.g. v1 / v2 (default: model.version in config)")
     ap.add_argument("--allow-flat-loss", action="store_true",
                     help="do not fail when the loss does not decrease")
     args = ap.parse_args()
@@ -224,6 +232,30 @@ def main() -> int:
     cfg = load_config(args.config)
 
     dataset = cfg_path(cfg, "swift_dataset")
+
+    # Stages 1-2 run themselves: OCR anything missing, then (re)build the corpus if
+    # it is absent or older than the data, prompt or schema it was built from. One
+    # command trains; nothing has to be remembered in order.
+    if not args.no_build and not args.dry_run:
+        docs, _, _ = discover_documents(cfg_path(cfg, "data_dir"))
+        sources = [cfg_path(cfg, "system_prompt"), cfg_path(cfg, "json_schema"),
+                   Path(cfg["_config_file"])]
+        sources += [d.gold for d in docs] + [d.pdf for d in docs]
+        reason = "--rebuild requested" if args.rebuild else is_stale(dataset, sources)
+        if reason:
+            log.info("building the training corpus first (%s)", reason)
+            # Run it as its own process so its argparse, logging and exit code stay
+            # exactly what they are when you invoke build_dataset.py by hand.
+            code = subprocess.call([
+                sys.executable, str(Path(__file__).with_name("build_dataset.py")),
+                "--config", str(cfg["_config_file"]),
+            ])
+            if code != 0:
+                log.error("dataset build failed (exit %d); not training", code)
+                return code
+        else:
+            log.info("training corpus is up to date: %s", dataset)
+
     if not dataset.exists():
         if not args.dry_run:
             log.error("dataset not found: %s. Run src/build_dataset.py first.", dataset)
@@ -243,7 +275,9 @@ def main() -> int:
                     "Raise training.num_train_epochs (or add documents) if the loss is still "
                     "falling at the end of the run.", steps)
 
-    adapter_dir = cfg_path(cfg, "adapter_dir")
+    version = args.version or model_version(cfg)
+    adapter_dir = adapter_dir_for(cfg, version)
+    log.info("training %s -> %s", version, adapter_dir)
     swift_output = ensure_dir(adapter_dir / "swift_run")
     cmd = build_command(cfg, swift_output)
 
@@ -285,6 +319,7 @@ def main() -> int:
         log.warning("%s", labels["note"])
 
     report = {
+        "version": version,
         "checkpoint": str(checkpoint),
         "training_examples": n_examples,
         "optimizer_steps_planned": steps,

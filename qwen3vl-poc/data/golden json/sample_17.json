@@ -1,0 +1,307 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "2/13/2026",
+    "transaction_effective_date": "3/8/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1912596141",
+    "billing_account_number": "1912596141",
+    "contract_number": "D65532",
+    "effective_date": "3/8/2026",
+    "expiration_date": "3/8/2027",
+    "term_amount": "$44,451.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Pierre-Louis Industries Corp",
+    "address": {
+      "street": "1244 Engineers Rd",
+      "city": "Bay Shore",
+      "state": "NY",
+      "zip": "47748"
+    },
+    "additional_named_insureds": [
+      "Omar",
+      "Erick"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "pierre-louis@pierre-louiscorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,451.00",
+    "inception_date": "3/8/2026",
+    "effective_date": "3/8/2026",
+    "net_change_amount": "$44,451.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "6325 Commerce Blvd",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "89416"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3349 WIRELESS BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FORD TRANSIT 350",
+              "2025 GMC SAVANA 3500",
+              "2026 FORD TRANSIT 350"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,861.00",
+                  "$10,411.00",
+                  "$10,413.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$371.00",
+                  "$379.00",
+                  "$290.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$726.00",
+                  "$674.00",
+                  "$788.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,805.00",
+                  "$2,594.00",
+                  "$2,638.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$134.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,267.00",
+              "$14,539.00",
+              "$14,605.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "3PM59ZH474G7CZBYM",
+      "body_type": "Tractor",
+      "territory": "860",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "3349 Wireless Blvd, Hauppauge, NY 10299"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "MZEVSJVH0ELSVPHNC",
+      "body_type": "Van",
+      "territory": "652",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "3349 Wireless Blvd, Hauppauge, NY 10299"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "23JDNE29PCJL5LYYC",
+      "body_type": "Tractor",
+      "territory": "232",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "3349 Wireless Blvd, Hauppauge, NY 10299"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Andre Delgado",
+      "license_state": "NY",
+      "license_number": "907588005",
+      "date_of_birth": "10/7/1963"
+    },
+    {
+      "sequence": 2,
+      "name": "Elena N Osei",
+      "license_state": "NY",
+      "license_number": "119015102",
+      "date_of_birth": "5/25/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector L Hollingsworth",
+      "license_state": "NY",
+      "license_number": "128947820",
+      "date_of_birth": "2/5/1954"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Furniture Delivery Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3349 Wireless Blvd",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "52870"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Agency Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "2/16/2026",
+    "printed_at": "09:00",
+    "total_pages": 3
+  }
+}

@@ -15,7 +15,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import cfg_path, ensure_dir, load_config, read_json, setup_logging, write_json  # noqa: E402
+from common import (  # noqa: E402
+    adapter_dir_for, ensure_dir, load_config, merged_dir_for, model_version, read_json,
+    setup_logging, write_json,
+)
 from modeling import load_model_and_processor  # noqa: E402
 
 log = setup_logging("merge")
@@ -26,12 +29,16 @@ def main() -> int:
     ap.add_argument("--config", default=None)
     ap.add_argument("--device", default="cpu",
                     help="device_map for the merge: cpu (safe, ~16GB RAM) or auto (GPU)")
-    ap.add_argument("--force", action="store_true", help="overwrite an existing merged_v1")
+    ap.add_argument("--version", default=None,
+                    help="version to produce, e.g. v1 / v2 (default: model.version in config)")
+    ap.add_argument("--force", action="store_true", help="overwrite an existing merged model")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
-    adapter_dir = cfg_path(cfg, "adapter_dir")
-    merged_dir = cfg_path(cfg, "merged_dir")
+    version = args.version or model_version(cfg)
+    adapter_dir = adapter_dir_for(cfg, version)
+    merged_dir = merged_dir_for(cfg, version)
+    log.info("producing %s -> %s", version, merged_dir)
 
     if not (adapter_dir / "adapter_config.json").exists():
         log.error("no adapter_config.json in %s. Run src/train.py first.", adapter_dir)
@@ -84,6 +91,7 @@ def main() -> int:
     size_gb = sum(p.stat().st_size for p in merged_dir.glob("*.safetensors")) / 1e9
 
     write_json(merged_dir / "merge_report.json", {
+        "version": version,
         "base_model_id": base_id,
         "adapter_dir": str(adapter_dir),
         "lora_tensor_count": len(trainable),

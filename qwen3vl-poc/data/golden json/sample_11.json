@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/18/2026",
+    "transaction_effective_date": "7/23/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "7453393175",
+    "billing_account_number": "1672931602",
+    "contract_number": "D28334",
+    "effective_date": "7/23/2026",
+    "expiration_date": "7/23/2027",
+    "term_amount": "$47,946.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Pierre-Louis Transport Group Inc",
+    "address": {
+      "street": "2382 Sunrise Hwy",
+      "city": "Farmingdale",
+      "state": "NY",
+      "zip": "88595"
+    },
+    "additional_named_insureds": [
+      "Nathan F Delgado"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "pierre-louis@pierre-louiscorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,946.00",
+    "inception_date": "7/23/2026",
+    "effective_date": "7/23/2026",
+    "net_change_amount": "$47,946.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "1635 Executive Dr",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "78475"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "1720 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FORD F-650",
+              "2026 HINO L6",
+              "2026 FORD F-650"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,751.00",
+                  "$11,651.00",
+                  "$11,100.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$278.00",
+                  "$317.00",
+                  "$296.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$779.00",
+                  "$760.00",
+                  "$772.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,226.00",
+                  "$3,575.00",
+                  "$3,073.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,477.00",
+              "$16,728.00",
+              "$15,701.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "CMC1MPTFDYF0L8MZ1",
+      "body_type": "Van",
+      "territory": "105",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1720 Commerce Blvd, Elmsford, NY 07654"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "7BT14HUMF3CNUB8VJ",
+      "body_type": "Box Truck",
+      "territory": "749",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1720 Commerce Blvd, Elmsford, NY 07654"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "1C4071WP9ETK40MBA",
+      "body_type": "Tractor",
+      "territory": "624",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1720 Commerce Blvd, Elmsford, NY 07654"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Kevin J Ramachandran",
+      "license_state": "NY",
+      "license_number": "114214210",
+      "date_of_birth": "1/21/1995"
+    },
+    {
+      "sequence": 2,
+      "name": "Angela S Barrera",
+      "license_state": "NY",
+      "license_number": "704396836",
+      "date_of_birth": "9/22/1957"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary G Vargas",
+      "license_state": "NY",
+      "license_number": "430221850",
+      "date_of_birth": "6/27/1986"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "1720 Commerce Blvd",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "31774"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/20/2026",
+    "printed_at": "17:15",
+    "total_pages": 3
+  }
+}

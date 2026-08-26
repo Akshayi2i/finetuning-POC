@@ -73,6 +73,9 @@ def make_config(work: Path) -> Path:
     cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
     cfg["ocr"]["engine"] = "pymupdf"
     cfg["corpus"]["test_document"] = "client_application_0"
+    # Pin the split explicitly: these assertions describe the held-out path, and must
+    # not depend on whatever config.yaml happens to be set to for a real run.
+    cfg["corpus"]["include_test_in_training"] = False
     # The repo's schema describes the real document; the synthetic sample gets its own.
     sample_schema = work / "schema.json"
     sample_schema.write_text(json.dumps({
@@ -90,7 +93,7 @@ def make_config(work: Path) -> Path:
         "dataset": str(work / "dataset" / "train.jsonl"),
         "swift_dataset": str(work / "dataset" / "train_swift.jsonl"),
         "adapter_dir": str(work / "adapter"),
-        "merged_dir": str(work / "merged_v1"),
+        "merged_root": str(work / "merged"),
         "results_dir": str(work / "results"),
     })
     cfg_file = work / "config.yaml"
@@ -112,13 +115,22 @@ def degraded_output() -> dict:
     return out
 
 
-def write_result(results: Path, name: str, payload: dict, **meta) -> None:
-    results.mkdir(parents=True, exist_ok=True)
-    (results / f"{name}_output.json").write_text(json.dumps(payload), encoding="utf-8")
-    base = {"model": name, "json_valid_strict": True, "repaired_from_truncation": False,
+def result_dir(work: Path, model: str, doc_id: str) -> Path:
+    """Mirror common.results_dir_for: per-model folders, versions kept apart."""
+    root = work / "results"
+    if model == "base":
+        return root / "base model results" / doc_id
+    return root / "trained model results" / model / doc_id
+
+
+def write_result(work: Path, model: str, doc_id: str, payload: dict, **meta) -> None:
+    out = result_dir(work, model, doc_id)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "output.json").write_text(json.dumps(payload), encoding="utf-8")
+    base = {"model": model, "json_valid_strict": True, "repaired_from_truncation": False,
             "hit_max_new_tokens": False}
     base.update(meta)
-    (results / f"{name}_meta.json").write_text(json.dumps(base), encoding="utf-8")
+    (out / "meta.json").write_text(json.dumps(base), encoding="utf-8")
 
 
 def confidence(mean: float, tokens: int = 500, low: float = 0.1) -> dict:
@@ -275,7 +287,8 @@ def unit_checks() -> None:
           "additional_content" in prompt_text and "additional_content" in schema["properties"])
     for phrase in ("COMPLETE extraction", "MINIMUM, not a limit", "account for every page"):
         check(f"prompt demands completeness: {phrase!r}", phrase in prompt_text)
-    for rule in ("[NOT ASKED]", "null", "no markdown code fences", "verbatim"):
+    # Rules the extraction prompt must always carry, whatever the document type.
+    for rule in ("null", "no markdown code fences", "verbatim", "Never repair"):
         check(f"prompt states the {rule!r} rule", rule in prompt_text)
 
     # ms-swift's [LABELS] line is the spec's label-masking check.
@@ -331,6 +344,16 @@ def main() -> int:
             user = record["messages"][1]["content"]
             check("user turn has an image block", any(b["type"] == "image" for b in user))
             check("user turn has a text block", any(b["type"] == "text" for b in user))
+            # Each page is a chunk: header, that page's image, that page's OCR - so the
+            # model never has to work out which slab of text belongs to which image.
+            kinds = [b["type"] for b in user]
+            check("content is interleaved per page (text, image, text, ...)",
+                  kinds == ["text", "image", "text"] * (len(kinds) // 3) and len(kinds) % 3 == 0,
+                  str(kinds))
+            check("each page chunk is headed with its page number",
+                  user[0]["text"].startswith("--- Page 1 of "), user[0].get("text", "")[:40])
+            check("each image is followed by that page's OCR",
+                  user[2]["text"].startswith("OCR text of page 1"), user[2].get("text", "")[:40])
             golds = {compact_json(variant(i)) for i in range(1, CORPUS_SIZE)}
             assistants = {json.loads(ln)["messages"][2]["content"] for ln in lines}
             check("each assistant turn is that document's own gold", assistants == golds)
@@ -373,15 +396,14 @@ def main() -> int:
               image_tokens([str(probe)] * 15) == 784 * 15)
 
         print("\n=== stage 7: compare (base worse, v1 perfect) ===")
-        results = work / "results" / test_doc
         fp = read_json(work / "dataset" / "dataset_meta.json")["test_fingerprint"]
-        write_result(results, "base", degraded_output(), conversation_fingerprint=fp,
+        write_result(work, "base", test_doc, degraded_output(), conversation_fingerprint=fp,
                      confidence=confidence(0.62, low=0.18), weight_signature=1.0)
-        write_result(results, "v1", GOLD, conversation_fingerprint=fp,
+        write_result(work, "v1", test_doc, GOLD, conversation_fingerprint=fp,
                      confidence=confidence(0.91, low=0.03), weight_signature=2.0)
         proc = run("compare", "src/compare.py", "--config", cfg, "--quiet")
         check("compare exits 0 (PASS verdict)", proc.returncode == 0, proc.stdout[-400:])
-        comparison = work / "results" / test_doc / "comparison.json"
+        comparison = result_dir(work, "v1", test_doc) / "comparison.json"
         check("comparison.json written", comparison.exists())
         if comparison.exists():
             report = read_json(comparison)
@@ -389,8 +411,8 @@ def main() -> int:
             check("report names the scored document", report["document"] == test_doc)
             check("report records the held-out split", report["test_held_out"] is True)
             check("report records the corpus size", report["corpus_size"] == CORPUS_SIZE)
-            check("v1 scores 100% against gold", report["v1_match_rate"] == 1.0,
-                  str(report["v1_match_rate"]))
+            check("v1 scores 100% against gold", report["trained_match_rate"] == 1.0,
+                  str(report["trained_match_rate"]))
             check("base scores below v1", report["base_match_rate"] < 1.0,
                   str(report["base_match_rate"]))
             # Only policy_number, insured_name, premiums and coverage premiums differ
@@ -427,8 +449,29 @@ def main() -> int:
                   report["list_counts"]["base"]["coverages"] == {"gold": 3, "got": 2},
                   str(report["list_counts"]["base"].get("coverages")))
 
+        print("\n=== compare: a second version (v2) ===")
+        # Everything above runs as v1, so a value hardcoded to "v1" anywhere in the
+        # version-aware paths would go unnoticed. Scoring v2 is what catches it.
+        write_result(work, "v2", test_doc, GOLD, conversation_fingerprint=fp,
+                     confidence=confidence(0.93, low=0.02), weight_signature=3.0)
+        proc = run("compare (v2)", "src/compare.py", "--config", cfg, "--version", "v2", "--quiet")
+        check("a second version scores without error", proc.returncode == 0,
+              (proc.stdout + proc.stderr)[-300:])
+        v2_report = result_dir(work, "v2", test_doc) / "comparison.json"
+        check("v2 writes its own comparison, leaving v1's intact",
+              v2_report.exists() and comparison.exists())
+        if v2_report.exists():
+            r2 = read_json(v2_report)
+            check("the report names the version it scored", r2.get("version") == "v2",
+                  str(r2.get("version")))
+            check("no report key is hardcoded to v1",
+                  not any("v1" in k for k in r2), str([k for k in r2 if "v1" in k]))
+            check("the verdict text names v2, not v1",
+                  any("v2" in reason for reason in r2["reasons"]),
+                  str(r2["reasons"]))
+
         print("\n=== compare: v1 no better than base ===")
-        write_result(results, "v1", degraded_output(), conversation_fingerprint=fp,
+        write_result(work, "v1", test_doc, degraded_output(), conversation_fingerprint=fp,
                      confidence=confidence(0.62), weight_signature=1.0)
         proc = run("compare (equal outputs)", "src/compare.py", "--config", cfg, "--quiet")
         check("compare exits 1 on INVESTIGATE", proc.returncode == 1)
@@ -444,20 +487,20 @@ def main() -> int:
 
         full = compact_json(GOLD)
         recovered, _, _ = recover_json_object(full[: int(len(full) * 0.9)])
-        write_result(results, "v1", recovered, conversation_fingerprint=fp,
+        write_result(work, "v1", test_doc, recovered, conversation_fingerprint=fp,
                      json_valid_strict=False, repaired_from_truncation=True,
                      hit_max_new_tokens=True, confidence=confidence(0.8), weight_signature=2.0)
         run("compare (repaired v1)", "src/compare.py", "--config", cfg, "--quiet")
         report = read_json(comparison)
-        check("repaired v1 is scored, not zeroed", report["v1_match_rate"] > 0.5,
-              str(report["v1_match_rate"]))
+        check("repaired v1 is scored, not zeroed", report["trained_match_rate"] > 0.5,
+              str(report["trained_match_rate"]))
         check("repaired v1 still reports json_valid false",
               report["summary"]["v1"]["json_valid"] is False)
         check("repaired v1 warns that criterion 2 failed",
               any("NOT valid JSON" in r for r in report["reasons"]), str(report["reasons"]))
 
         print("\n=== compare: a result left over from an earlier run ===")
-        write_result(results, "v1", GOLD, conversation_fingerprint="fingerprint_from_an_old_run",
+        write_result(work, "v1", test_doc, GOLD, conversation_fingerprint="fingerprint_from_an_old_run",
                      confidence=confidence(0.9), weight_signature=2.0)
         run("compare (stale v1)", "src/compare.py", "--config", cfg, "--quiet")
         report = read_json(comparison)
@@ -465,12 +508,13 @@ def main() -> int:
               any("STALE" in r for r in report["reasons"]), str(report["reasons"]))
 
         print("\n=== compare: v1 emitted unparseable output ===")
-        (results / "v1_output.json").unlink()
-        (results / "v1_meta.json").unlink()
-        (results / "v1_raw.txt").write_text("Sure! Here is the JSON: {oops", encoding="utf-8")
+        (result_dir(work, "v1", test_doc) / "output.json").unlink()
+        (result_dir(work, "v1", test_doc) / "meta.json").unlink()
+        (result_dir(work, "v1", test_doc) / "raw.txt").write_text(
+            "Sure! Here is the JSON: {oops", encoding="utf-8")
         run("compare (invalid v1)", "src/compare.py", "--config", cfg, "--quiet")
         report = read_json(comparison)
-        check("invalid v1 scores 0", report["v1_match_rate"] == 0.0)
+        check("invalid v1 scores 0", report["trained_match_rate"] == 0.0)
         check("invalid v1 flagged", any("nothing scoreable" in r for r in report["reasons"]),
               str(report["reasons"]))
 

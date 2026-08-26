@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "5/29/2026",
+    "transaction_effective_date": "6/23/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "7024297086",
+    "billing_account_number": "7024297086",
+    "contract_number": "D21096",
+    "effective_date": "6/23/2026",
+    "expiration_date": "6/23/2027",
+    "term_amount": "$33,851.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Otero Transport Group Inc",
+    "address": {
+      "street": "1174 Adams Ct",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "46606"
+    },
+    "additional_named_insureds": [
+      "Dwayne H Barrera",
+      "Marcus B Tejeda Rosales"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "otero@oterocorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$33,851.00",
+    "inception_date": "6/23/2026",
+    "effective_date": "6/23/2026",
+    "net_change_amount": "$33,851.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "9799 Corporate Center Dr",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "59709"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "460 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 CHEVROLET SILVERADO 3500",
+              "2025 FORD TRANSIT 350",
+              "2024 FORD TRANSIT 350"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$7,337.00",
+                  "$6,872.00",
+                  "$7,152.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$375.00",
+                  "$323.00",
+                  "$372.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$771.00",
+                  "$702.00",
+                  "$768.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$2,700.00",
+                  "$2,544.00",
+                  "$2,513.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$112.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$288.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$11,614.00",
+              "$10,935.00",
+              "$11,282.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "8KV4LHD3BUPEK8TV3",
+      "body_type": "Van",
+      "territory": "540",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "460 Oser Ave, South Terrance, NY 16823"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "3846L0JKFYT73VB4A",
+      "body_type": "Box Truck",
+      "territory": "113",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "460 Oser Ave, South Terrance, NY 16823"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "EG4KC2MKAN90ENZT1",
+      "body_type": "Van",
+      "territory": "386",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "460 Oser Ave, South Terrance, NY 16823"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Denise Krishnan",
+      "license_state": "NY",
+      "license_number": "631846328",
+      "date_of_birth": "7/10/1954"
+    },
+    {
+      "sequence": 2,
+      "name": "Erick K Barrera",
+      "license_state": "NY",
+      "license_number": "813865314",
+      "date_of_birth": "8/22/1960"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary S Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "673350361",
+      "date_of_birth": "10/6/1961"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Building Materials Dealer"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "460 Oser Ave",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "08129"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/3/2026",
+    "printed_at": "17:45",
+    "total_pages": 3
+  }
+}

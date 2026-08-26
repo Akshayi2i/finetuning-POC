@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "3/18/2026",
+    "transaction_effective_date": "5/2/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1742026506",
+    "billing_account_number": "1742026506",
+    "contract_number": "B39283",
+    "effective_date": "5/2/2026",
+    "expiration_date": "5/2/2027",
+    "term_amount": "$47,777.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Osei Holdings Corp",
+    "address": {
+      "street": "3619 Industrial Loop",
+      "city": "South Terrance",
+      "state": "NY",
+      "zip": "40446"
+    },
+    "additional_named_insureds": [
+      "Erick D Otero"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "296-750-0103",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,777.00",
+    "inception_date": "5/2/2026",
+    "effective_date": "5/2/2026",
+    "net_change_amount": "$47,777.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "9278 Corporate Center Dr",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "31715"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8621 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 KENWORTH T270",
+              "2026 FORD F-650",
+              "2024 PETERBILT 337"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,506.00",
+                  "$11,561.00",
+                  "$11,144.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$278.00",
+                  "$345.00",
+                  "$257.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$773.00",
+                  "$758.00",
+                  "$867.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,317.00",
+                  "$3,152.00",
+                  "$3,374.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,340.00",
+              "$16,298.00",
+              "$16,119.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "EYAHU3YLATS6CSS5C",
+      "body_type": "Box Truck",
+      "territory": "323",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8621 Adams Ct, Elmsford, NY 06572"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "N1DCJWA10L3F16C7W",
+      "body_type": "Van",
+      "territory": "234",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8621 Adams Ct, Elmsford, NY 06572"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "LZP82ZBB43UAMC0C7",
+      "body_type": "Tractor",
+      "territory": "178",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8621 Adams Ct, Elmsford, NY 06572"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Omar Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "565991629",
+      "date_of_birth": "12/17/1959"
+    },
+    {
+      "sequence": 2,
+      "name": "Angela R Ramachandran",
+      "license_state": "NY",
+      "license_number": "767085599",
+      "date_of_birth": "3/28/1981"
+    },
+    {
+      "sequence": 3,
+      "name": "Marcus Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "851927908",
+      "date_of_birth": "2/6/1956"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "HVAC Contracting Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8621 Adams Ct",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "51901"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/22/2026",
+    "printed_at": "11:15",
+    "total_pages": 3
+  }
+}

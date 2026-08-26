@@ -1,0 +1,307 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "11/16/2026",
+    "transaction_effective_date": "11/20/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "2958402653",
+    "billing_account_number": "2958402653",
+    "contract_number": "G29590",
+    "effective_date": "11/20/2026",
+    "expiration_date": "11/20/2027",
+    "term_amount": "$39,238.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Aguilar Logistics LLC",
+    "address": {
+      "street": "3542 Industrial Loop",
+      "city": "South Terrance",
+      "state": "NY",
+      "zip": "24726"
+    },
+    "additional_named_insureds": [
+      "Rosa",
+      "Dwayne Delgado"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "566-803-5350",
+      "contact_name": "Sofia Lindqvist"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$39,238.00",
+    "inception_date": "11/20/2026",
+    "effective_date": "11/20/2026",
+    "net_change_amount": "$39,238.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "3149 Wireless Blvd",
+        "city": "Ronkonkoma",
+        "state": "NY",
+        "zip": "20019"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7787 COMMERCE BLVD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 GMC SAVANA 3500",
+              "2024 FORD F-650",
+              "2023 ISUZU NPR HD"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$7,473.00",
+                  "$10,108.00",
+                  "$8,219.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$322.00",
+                  "$293.00",
+                  "$294.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$713.00",
+                  "$858.00",
+                  "$762.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,785.00",
+                  "$3,053.00",
+                  "$2,817.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$134.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$11,797.00",
+              "$14,810.00",
+              "$12,591.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "FYXEYBGC25RR05AWB",
+      "body_type": "Tractor",
+      "territory": "461",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "7787 Commerce Blvd, Ronkonkoma, NY 16571"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "1HKA8T0NN8VWYDX6T",
+      "body_type": "Truck",
+      "territory": "242",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7787 Commerce Blvd, Ronkonkoma, NY 16571"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "FB2LGA3MVB732T12F",
+      "body_type": "Truck",
+      "territory": "267",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "7787 Commerce Blvd, Ronkonkoma, NY 16571"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Steven B Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "418004601",
+      "date_of_birth": "4/7/1956"
+    },
+    {
+      "sequence": 2,
+      "name": "Priya A Lindqvist",
+      "license_state": "NY",
+      "license_number": "249681242",
+      "date_of_birth": "5/9/1977"
+    },
+    {
+      "sequence": 3,
+      "name": "Denise Ramachandran",
+      "license_state": "NY",
+      "license_number": "705359998",
+      "date_of_birth": "6/19/1983"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7787 Commerce Blvd",
+        "city": "Ronkonkoma",
+        "state": "NY",
+        "zip": "60789"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "11/20/2026",
+    "printed_at": "18:00",
+    "total_pages": 3
+  }
+}

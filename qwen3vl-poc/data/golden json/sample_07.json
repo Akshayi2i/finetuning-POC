@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "7/24/2026",
+    "transaction_effective_date": "8/8/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "4993699263",
+    "billing_account_number": "4993699263",
+    "contract_number": "D25139",
+    "effective_date": "8/8/2026",
+    "expiration_date": "8/8/2027",
+    "term_amount": "$42,401.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Delgado Transport Group Inc",
+    "address": {
+      "street": "7056 Executive Dr",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "35685"
+    },
+    "additional_named_insureds": [
+      "Mary Whitfield"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "delgado@delgadocorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$42,401.00",
+    "inception_date": "8/8/2026",
+    "effective_date": "8/8/2026",
+    "net_change_amount": "$42,401.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "9443 Price Pkwy",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "11743"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4432 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 HINO 268",
+              "2026 HINO L6",
+              "2025 ISUZU NPR HD"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,710.00",
+                  "$10,458.00",
+                  "$7,928.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$265.00",
+                  "$325.00",
+                  "$260.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$839.00",
+                  "$824.00",
+                  "$757.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,115.00",
+                  "$3,561.00",
+                  "$2,971.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$96.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$288.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,388.00",
+              "$15,628.00",
+              "$12,365.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "M0BHMK3WGWL14TP7Z",
+      "body_type": "Truck",
+      "territory": "175",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "4432 Corporate Center Dr, Bay Shore, NY 18780"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "ERYKMC6G8XSBPP1VJ",
+      "body_type": "Van",
+      "territory": "126",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4432 Corporate Center Dr, Bay Shore, NY 18780"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "LDU94J0NDY0TBWRTX",
+      "body_type": "Box Truck",
+      "territory": "877",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "4432 Corporate Center Dr, Bay Shore, NY 18780"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Elena F Otero",
+      "license_state": "NY",
+      "license_number": "899246886",
+      "date_of_birth": "11/26/1971"
+    },
+    {
+      "sequence": 2,
+      "name": "Carlos C Mills",
+      "license_state": "NY",
+      "license_number": "811616121",
+      "date_of_birth": "11/17/1953"
+    },
+    {
+      "sequence": 3,
+      "name": "Erick P Castellano",
+      "license_state": "NY",
+      "license_number": "166360245",
+      "date_of_birth": "7/5/1977"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4432 Corporate Center Dr",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "69425"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Agency Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "7/26/2026",
+    "printed_at": "18:00",
+    "total_pages": 3
+  }
+}

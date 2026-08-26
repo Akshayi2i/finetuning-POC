@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "1/16/2026",
+    "transaction_effective_date": "2/23/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3223920021",
+    "billing_account_number": "3223920021",
+    "contract_number": "D30923",
+    "effective_date": "2/23/2026",
+    "expiration_date": "2/23/2027",
+    "term_amount": "$43,249.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Osei Services Corp",
+    "address": {
+      "street": "3891 Corporate Center Dr",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "61054"
+    },
+    "additional_named_insureds": [
+      "Kevin Nakamura"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "714-255-7104",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$43,249.00",
+    "inception_date": "2/23/2026",
+    "effective_date": "2/23/2026",
+    "net_change_amount": "$43,249.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "2420 Oser Ave",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "21928"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "2915 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 ISUZU FTR",
+              "2025 ISUZU FTR",
+              "2026 HINO L6"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,889.00",
+                  "$9,047.00",
+                  "$9,807.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$275.00",
+                  "$301.00",
+                  "$368.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$871.00",
+                  "$805.00",
+                  "$891.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,233.00",
+                  "$3,211.00",
+                  "$3,108.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$134.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,745.00",
+              "$13,862.00",
+              "$14,622.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "RACPE0UWGDK5VTLFN",
+      "body_type": "Truck",
+      "territory": "710",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "2915 Corporate Center Dr, East Kimberlyton, NY 06695"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "DDKDE552Z24SBC6BM",
+      "body_type": "Van",
+      "territory": "821",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "2915 Corporate Center Dr, East Kimberlyton, NY 06695"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "MEVY8ZD310V2Y92SK",
+      "body_type": "Tractor",
+      "territory": "558",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2915 Corporate Center Dr, East Kimberlyton, NY 06695"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Andre Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "609873361",
+      "date_of_birth": "8/25/1963"
+    },
+    {
+      "sequence": 2,
+      "name": "Denise W Whitfield",
+      "license_state": "NY",
+      "license_number": "178789266",
+      "date_of_birth": "2/15/1978"
+    },
+    {
+      "sequence": 3,
+      "name": "Erick Vargas",
+      "license_state": "NY",
+      "license_number": "879087227",
+      "date_of_birth": "9/16/1956"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "2915 Corporate Center Dr",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "54573"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "1/21/2026",
+    "printed_at": "13:00",
+    "total_pages": 3
+  }
+}

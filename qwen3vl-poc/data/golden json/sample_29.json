@@ -1,0 +1,307 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "7/22/2026",
+    "transaction_effective_date": "8/20/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1796311478",
+    "billing_account_number": "1796311478",
+    "contract_number": "G80998",
+    "effective_date": "8/20/2026",
+    "expiration_date": "8/20/2027",
+    "term_amount": "$46,092.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Tejeda Enterprises Inc",
+    "address": {
+      "street": "5463 Sunrise Hwy",
+      "city": "New Marcusview",
+      "state": "NY",
+      "zip": "42485"
+    },
+    "additional_named_insureds": [
+      "Rajiv",
+      "Angela M Vargas"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "tejeda@tejedacorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,092.00",
+    "inception_date": "8/20/2026",
+    "effective_date": "8/20/2026",
+    "net_change_amount": "$46,092.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "1788 Sunrise Hwy",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "86578"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3678 PRICE PKWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 GMC SAVANA 3500",
+              "2026 FREIGHTLINER CASCADIA",
+              "2024 KENWORTH T270"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,486.00",
+                  "$12,350.00",
+                  "$10,902.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$334.00",
+                  "$334.00",
+                  "$329.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$693.00",
+                  "$898.00",
+                  "$854.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,941.00",
+                  "$3,556.00",
+                  "$2,966.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$12,903.00",
+              "$17,637.00",
+              "$15,512.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "8MN35EHYHMTKDKVK1",
+      "body_type": "Truck",
+      "territory": "232",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "3678 Price Pkwy, Hauppauge, NY 14956"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "RCA799ADYHTD49AZD",
+      "body_type": "Truck",
+      "territory": "809",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3678 Price Pkwy, Hauppauge, NY 14956"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "TYCZK5PTL3Y9EKZW6",
+      "body_type": "Van",
+      "territory": "548",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3678 Price Pkwy, Hauppauge, NY 14956"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Marcus Castellano",
+      "license_state": "NY",
+      "license_number": "319242263",
+      "date_of_birth": "5/10/1962"
+    },
+    {
+      "sequence": 2,
+      "name": "Kevin T Lindqvist",
+      "license_state": "NY",
+      "license_number": "504583613",
+      "date_of_birth": "10/22/1974"
+    },
+    {
+      "sequence": 3,
+      "name": "Nathan P Barrera",
+      "license_state": "NY",
+      "license_number": "402942702",
+      "date_of_birth": "8/6/1981"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3678 Price Pkwy",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "75109"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "7/27/2026",
+    "printed_at": "18:15",
+    "total_pages": 3
+  }
+}

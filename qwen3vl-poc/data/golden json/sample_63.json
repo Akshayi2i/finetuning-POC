@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "8/15/2026",
+    "transaction_effective_date": "8/27/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "4587809229",
+    "billing_account_number": "4587809229",
+    "contract_number": "C52787",
+    "effective_date": "8/27/2026",
+    "expiration_date": "8/27/2027",
+    "term_amount": "$42,249.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Boone Transport Group Inc",
+    "address": {
+      "street": "7617 Executive Dr",
+      "city": "Lake Danielle",
+      "state": "NY",
+      "zip": "36842"
+    },
+    "additional_named_insureds": [
+      "Angela",
+      "Dwayne"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "218-563-2718",
+      "contact_name": "Elena Vargas"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$42,249.00",
+    "inception_date": "8/27/2026",
+    "effective_date": "8/27/2026",
+    "net_change_amount": "$42,249.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "5189 Commerce Blvd",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "81280"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4151 KATHERINE PARKS",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 CHEVROLET SILVERADO 3500",
+              "2024 INTERNATIONAL MV607",
+              "2025 CHEVROLET SILVERADO 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,857.00",
+                  "$10,303.00",
+                  "$9,768.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$373.00",
+                  "$276.00",
+                  "$347.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$722.00",
+                  "$739.00",
+                  "$738.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,829.00",
+                  "$3,249.00",
+                  "$2,667.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$112.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,212.00",
+              "$15,032.00",
+              "$13,985.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "9MF99PP24Y74J9CLX",
+      "body_type": "Box Truck",
+      "territory": "608",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4151 Katherine Parks, North Connorshire, NY 16590"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "INTERNATIONAL",
+      "model": "MV607",
+      "vin": "KK9LPDGRUWLMPXJF2",
+      "body_type": "Tractor",
+      "territory": "766",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "4151 Katherine Parks, North Connorshire, NY 16590"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "3BZX52VLYBD8TFGBH",
+      "body_type": "Box Truck",
+      "territory": "278",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4151 Katherine Parks, North Connorshire, NY 16590"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Omar Ferreira",
+      "license_state": "NY",
+      "license_number": "255767404",
+      "date_of_birth": "6/16/1964"
+    },
+    {
+      "sequence": 2,
+      "name": "Hector P Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "830904927",
+      "date_of_birth": "3/12/1971"
+    },
+    {
+      "sequence": 3,
+      "name": "Erick G Hollingsworth",
+      "license_state": "NY",
+      "license_number": "591181743",
+      "date_of_birth": "11/6/1984"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4151 Katherine Parks",
+        "city": "East Kimberlyton",
+        "state": "NY",
+        "zip": "38553"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "11",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "8/21/2026",
+    "printed_at": "14:45",
+    "total_pages": 3
+  }
+}

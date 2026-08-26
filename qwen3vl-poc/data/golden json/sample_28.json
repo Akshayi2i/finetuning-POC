@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "7/13/2026",
+    "transaction_effective_date": "7/17/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9229130523",
+    "billing_account_number": "9229130523",
+    "contract_number": "G59693",
+    "effective_date": "7/17/2026",
+    "expiration_date": "7/17/2027",
+    "term_amount": "$42,679.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Vargas Logistics LLC",
+    "address": {
+      "street": "723 Industrial Loop",
+      "city": "Yaphank",
+      "state": "NY",
+      "zip": "67977"
+    },
+    "additional_named_insureds": [
+      "Victor Barrera"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "510-814-5805",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$42,679.00",
+    "inception_date": "7/17/2026",
+    "effective_date": "7/17/2026",
+    "net_change_amount": "$42,679.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Isuzu Finance of America Inc",
+      "address": {
+        "street": "8263 Price Pkwy",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "43136"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7189 ENGINEERS RD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 PETERBILT 337",
+              "2026 RAM 5500",
+              "2023 ISUZU NPR HD"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,439.00",
+                  "$9,870.00",
+                  "$8,684.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$343.00",
+                  "$274.00",
+                  "$370.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$818.00",
+                  "$816.00",
+                  "$714.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,186.00",
+                  "$2,938.00",
+                  "$2,759.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$78.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,284.00",
+              "$14,329.00",
+              "$13,026.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "LU69Y7JJDXCZ71ABY",
+      "body_type": "Tractor",
+      "territory": "786",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "7189 Engineers Rd, Deer Park, NY 18623"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "2U9RV6JTJ6KBA8LUG",
+      "body_type": "Truck",
+      "territory": "772",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "7189 Engineers Rd, Deer Park, NY 18623"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "3AZ477Z7JMGRA656H",
+      "body_type": "Van",
+      "territory": "771",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "7189 Engineers Rd, Deer Park, NY 18623"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Nathan Mills",
+      "license_state": "NY",
+      "license_number": "595843749",
+      "date_of_birth": "5/3/1988"
+    },
+    {
+      "sequence": 2,
+      "name": "Grace Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "595119233",
+      "date_of_birth": "8/19/1953"
+    },
+    {
+      "sequence": 3,
+      "name": "Erick H Vargas",
+      "license_state": "NY",
+      "license_number": "331660802",
+      "date_of_birth": "8/9/1959"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7189 Engineers Rd",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "85097"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "7/13/2026",
+    "printed_at": "09:45",
+    "total_pages": 3
+  }
+}

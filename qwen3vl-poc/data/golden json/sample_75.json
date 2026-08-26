@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/15/2026",
+    "transaction_effective_date": "5/2/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "2236174769",
+    "billing_account_number": "2236174769",
+    "contract_number": "G88971",
+    "effective_date": "5/2/2026",
+    "expiration_date": "5/2/2027",
+    "term_amount": "$56,852.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ramachandran Transport Group Inc",
+    "address": {
+      "street": "3610 Adams Ct",
+      "city": "Ronkonkoma",
+      "state": "NY",
+      "zip": "16889"
+    },
+    "additional_named_insureds": [
+      "Denise H Lindqvist",
+      "Grace Pierre-Louis"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "791-684-4000",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$56,852.00",
+    "inception_date": "5/2/2026",
+    "effective_date": "5/2/2026",
+    "net_change_amount": "$56,852.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Ryder Truck Rental Inc",
+      "address": {
+        "street": "634 Oser Ave",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "68940"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3136 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 RAM 5500",
+              "2025 FREIGHTLINER M2",
+              "2026 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$12,749.00",
+                  "$15,111.00",
+                  "$14,701.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$366.00",
+                  "$270.00",
+                  "$329.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$768.00",
+                  "$806.00",
+                  "$778.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,233.00",
+                  "$3,165.00",
+                  "$3,217.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$17,565.00",
+              "$19,777.00",
+              "$19,490.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "K6UEJCAL8D64A85GW",
+      "body_type": "Truck",
+      "territory": "351",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "3136 Industrial Loop, Ronkonkoma, NY 13095"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "GWKLDDALAX74KCR60",
+      "body_type": "Box Truck",
+      "territory": "106",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3136 Industrial Loop, Ronkonkoma, NY 13095"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "268",
+      "vin": "PHSF0ZRU44GCMB970",
+      "body_type": "Tractor",
+      "territory": "889",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "3136 Industrial Loop, Ronkonkoma, NY 13095"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rosa Delgado",
+      "license_state": "NY",
+      "license_number": "532816332",
+      "date_of_birth": "9/19/1993"
+    },
+    {
+      "sequence": 2,
+      "name": "Rosa H Hollingsworth",
+      "license_state": "NY",
+      "license_number": "574531626",
+      "date_of_birth": "10/23/1967"
+    },
+    {
+      "sequence": 3,
+      "name": "Andre V Ferreira",
+      "license_state": "NY",
+      "license_number": "620583530",
+      "date_of_birth": "4/23/1992"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3136 Industrial Loop",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "16024"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "11",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/20/2026",
+    "printed_at": "17:30",
+    "total_pages": 3
+  }
+}

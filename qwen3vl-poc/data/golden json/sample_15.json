@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/13/2026",
+    "transaction_effective_date": "7/10/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8765402551",
+    "billing_account_number": "8765402551",
+    "contract_number": "D72078",
+    "effective_date": "7/10/2026",
+    "expiration_date": "7/10/2027",
+    "term_amount": "$46,724.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Transport Group Inc",
+    "address": {
+      "street": "4597 Marcus Ave",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "06199"
+    },
+    "additional_named_insureds": [
+      "Carlos Krishnan"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "krishnan@krishnancorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,724.00",
+    "inception_date": "7/10/2026",
+    "effective_date": "7/10/2026",
+    "net_change_amount": "$46,724.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "5046 Oser Ave",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "90288"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "159 KATHERINE PARKS",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 HINO L6",
+              "2023 ISUZU NPR HD",
+              "2024 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$12,592.00",
+                  "$9,496.00",
+                  "$10,291.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$379.00",
+                  "$365.00",
+                  "$373.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$839.00",
+                  "$749.00",
+                  "$829.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,492.00",
+                  "$2,684.00",
+                  "$3,169.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$134.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$17,785.00",
+              "$13,798.00",
+              "$15,121.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "STDB4MNLBJ8NLGYJ9",
+      "body_type": "Truck",
+      "territory": "304",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "159 Katherine Parks, North Connorshire, NY 07975"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "LKNNX1FS39EWY1HFV",
+      "body_type": "Truck",
+      "territory": "619",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "159 Katherine Parks, North Connorshire, NY 07975"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "P0KWCW7FFBK8CHV6J",
+      "body_type": "Truck",
+      "territory": "146",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "159 Katherine Parks, North Connorshire, NY 07975"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Denise Ferreira",
+      "license_state": "NY",
+      "license_number": "619223077",
+      "date_of_birth": "6/24/1994"
+    },
+    {
+      "sequence": 2,
+      "name": "Victor W Nakamura",
+      "license_state": "NY",
+      "license_number": "659523550",
+      "date_of_birth": "2/21/1977"
+    },
+    {
+      "sequence": 3,
+      "name": "Tanya Hollingsworth",
+      "license_state": "NY",
+      "license_number": "691871585",
+      "date_of_birth": "2/19/1975"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "159 Katherine Parks",
+        "city": "Ronkonkoma",
+        "state": "NY",
+        "zip": "80172"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/16/2026",
+    "printed_at": "17:15",
+    "total_pages": 3
+  }
+}

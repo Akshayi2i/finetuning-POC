@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "12/6/2025",
+    "transaction_effective_date": "1/13/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3668703378",
+    "billing_account_number": "3668703378",
+    "contract_number": "G48972",
+    "effective_date": "1/13/2026",
+    "expiration_date": "1/13/2027",
+    "term_amount": "$47,603.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Nakamura Holdings Corp",
+    "address": {
+      "street": "3336 Engineers Rd",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "27912"
+    },
+    "additional_named_insureds": [
+      "Denise Boone"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "nakamura@nakamuracorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,603.00",
+    "inception_date": "1/13/2026",
+    "effective_date": "1/13/2026",
+    "net_change_amount": "$47,603.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Ascentium Capital LLC",
+      "address": {
+        "street": "2820 Sunrise Hwy",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "10689"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4108 PRICE PKWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 FREIGHTLINER M2",
+              "2024 HINO 268",
+              "2026 FORD F-650"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,588.00",
+                  "$10,733.00",
+                  "$11,831.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$261.00",
+                  "$326.00",
+                  "$269.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$856.00",
+                  "$867.00",
+                  "$799.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,138.00",
+                  "$3,436.00",
+                  "$3,066.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$84.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,303.00",
+              "$15,856.00",
+              "$16,424.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "EXLR2G7E4R711UB24",
+      "body_type": "Truck",
+      "territory": "458",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4108 Price Pkwy, Port Adrianfort, NY 10006"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "HINO",
+      "model": "268",
+      "vin": "TJ742VDSB8BCUNVZG",
+      "body_type": "Tractor",
+      "territory": "897",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "4108 Price Pkwy, Port Adrianfort, NY 10006"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "WJ3TD2E9LZHP1W1GT",
+      "body_type": "Box Truck",
+      "territory": "680",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4108 Price Pkwy, Port Adrianfort, NY 10006"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Angela Lindqvist",
+      "license_state": "NY",
+      "license_number": "476794018",
+      "date_of_birth": "7/22/1964"
+    },
+    {
+      "sequence": 2,
+      "name": "Dwayne Krishnan",
+      "license_state": "NY",
+      "license_number": "200818815",
+      "date_of_birth": "5/19/1997"
+    },
+    {
+      "sequence": 3,
+      "name": "Victor Lindqvist",
+      "license_state": "NY",
+      "license_number": "392308992",
+      "date_of_birth": "8/27/1998"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4108 Price Pkwy",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "82714"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Company Policy Billed",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "12/6/2025",
+    "printed_at": "12:30",
+    "total_pages": 3
+  }
+}

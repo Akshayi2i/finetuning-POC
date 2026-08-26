@@ -1,0 +1,307 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "9/29/2026",
+    "transaction_effective_date": "11/10/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "6751582607",
+    "billing_account_number": "9308915773",
+    "contract_number": "C75234",
+    "effective_date": "11/10/2026",
+    "expiration_date": "11/10/2027",
+    "term_amount": "$47,275.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Vargas Holdings Corp",
+    "address": {
+      "street": "986 Marcus Ave",
+      "city": "South Terrance",
+      "state": "NY",
+      "zip": "49615"
+    },
+    "additional_named_insureds": [
+      "Marcus Barrera",
+      "Steven H Aguilar"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "277-852-3243",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,275.00",
+    "inception_date": "11/10/2026",
+    "effective_date": "11/10/2026",
+    "net_change_amount": "$47,275.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "4181 Adams Ct",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "69225"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "2933 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 ISUZU FTR",
+              "2024 FREIGHTLINER CASCADIA",
+              "2026 ISUZU NPR HD"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,461.00",
+                  "$12,572.00",
+                  "$8,893.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$371.00",
+                  "$283.00",
+                  "$308.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$865.00",
+                  "$764.00",
+                  "$706.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,478.00",
+                  "$3,194.00",
+                  "$2,899.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$112.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$16,674.00",
+              "$17,312.00",
+              "$13,249.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "GT5M5HXT2WLDWJ6Y6",
+      "body_type": "Truck",
+      "territory": "723",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "2933 Oser Ave, Lake Danielle, NY 18816"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "X3G0ZDTAEZD44JV4G",
+      "body_type": "Box Truck",
+      "territory": "596",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2933 Oser Ave, Lake Danielle, NY 18816"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "3HNDJFTMT66JT8LAZ",
+      "body_type": "Van",
+      "territory": "466",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "2933 Oser Ave, Lake Danielle, NY 18816"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Janet Ferreira",
+      "license_state": "NY",
+      "license_number": "376698878",
+      "date_of_birth": "3/22/1991"
+    },
+    {
+      "sequence": 2,
+      "name": "Victor Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "453273165",
+      "date_of_birth": "6/12/1998"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary Castellano",
+      "license_state": "NY",
+      "license_number": "519312075",
+      "date_of_birth": "10/7/1993"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "2933 Oser Ave",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "55931"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "11",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "10/4/2026",
+    "printed_at": "11:00",
+    "total_pages": 3
+  }
+}

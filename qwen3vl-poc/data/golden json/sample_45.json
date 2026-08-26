@@ -1,0 +1,299 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/9/2026",
+    "transaction_effective_date": "5/6/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "2136149935",
+    "billing_account_number": "2136149935",
+    "contract_number": "G72082",
+    "effective_date": "5/6/2026",
+    "expiration_date": "5/6/2027",
+    "term_amount": "$46,061.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Tejeda Distributors Inc",
+    "address": {
+      "street": "3432 Commerce Blvd",
+      "city": "Yaphank",
+      "state": "NY",
+      "zip": "99005"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "537-903-7451",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,061.00",
+    "inception_date": "5/6/2026",
+    "effective_date": "5/6/2026",
+    "net_change_amount": "$46,061.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "2608 Corporate Center Dr",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "14668"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3998 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 RAM 5500",
+              "2026 PETERBILT 337",
+              "2024 PETERBILT 337"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,056.00",
+                  "$10,719.00",
+                  "$10,905.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$271.00",
+                  "$313.00",
+                  "$321.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$836.00",
+                  "$842.00",
+                  "$863.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,211.00",
+                  "$3,104.00",
+                  "$3,227.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,857.00",
+              "$15,426.00",
+              "$15,758.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "JXSKX599C55SDTLPY",
+      "body_type": "Van",
+      "territory": "384",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "3998 Adams Ct, East Kimberlyton, NY 19464"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "VW3U2FCGD0MXL0GDJ",
+      "body_type": "Tractor",
+      "territory": "196",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "3998 Adams Ct, East Kimberlyton, NY 19464"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "NPTBENSP1G5LTME1B",
+      "body_type": "Box Truck",
+      "territory": "810",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "3998 Adams Ct, East Kimberlyton, NY 19464"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Tanya V Lindqvist",
+      "license_state": "NY",
+      "license_number": "211913749",
+      "date_of_birth": "11/24/1995"
+    },
+    {
+      "sequence": 2,
+      "name": "Dwayne Delgado",
+      "license_state": "NY",
+      "license_number": "244399268",
+      "date_of_birth": "6/25/1958"
+    },
+    {
+      "sequence": 3,
+      "name": "Rosa Krishnan",
+      "license_state": "NY",
+      "license_number": "945617622",
+      "date_of_birth": "12/24/1964"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3998 Adams Ct",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "83086"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Agency Billed",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/14/2026",
+    "printed_at": "12:45",
+    "total_pages": 3
+  }
+}

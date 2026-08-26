@@ -1,90 +1,80 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Signed commercial auto application package extraction",
-  "description": "Floor, not ceiling: these sections must be present, and extra keys are allowed everywhere so that content the structure does not anticipate is kept rather than dropped.",
+  "title": "Commercial auto policy declaration extraction",
+  "description": "Floor, not ceiling: these sections must be present, and extra keys are allowed everywhere so content the structure does not anticipate is kept rather than dropped.",
   "type": "object",
   "required": [
-    "document_metadata",
-    "general_policy_information",
-    "coverages_premium_and_payment_information",
-    "business_and_owner_information",
-    "business_usage",
-    "business_filings",
-    "additional_coverages_for_your_business",
+    "document_type",
+    "carrier_name",
+    "transaction",
+    "named_insured",
+    "contact_info",
+    "line_of_business",
+    "additional_interests",
+    "states",
     "vehicles",
-    "stated_amount_note",
-    "business_owner_and_driver_information",
-    "drivers_disclosure",
-    "additional_interests_lienholders",
-    "authorized_representatives",
-    "disclosures",
-    "application_signature_page",
-    "new_york_information_and_option_form",
-    "auto_pay_enrollment_letter",
-    "signatures_summary",
-    "data_quality_notes"
+    "drivers",
+    "commercial_policy_information",
+    "locations",
+    "pay_plan",
+    "disclaimer",
+    "document_metadata"
   ],
   "additionalProperties": true,
   "properties": {
-    "document_metadata": {
-      "type": "object"
-    },
-    "general_policy_information": {
-      "type": "object"
-    },
-    "coverages_premium_and_payment_information": {
-      "type": "object"
-    },
-    "business_and_owner_information": {
-      "type": "array"
-    },
-    "business_usage": {
-      "type": "array"
-    },
-    "business_filings": {
-      "type": "array"
-    },
-    "additional_coverages_for_your_business": {
-      "type": "object"
-    },
-    "vehicles": {
-      "type": "array"
-    },
-    "stated_amount_note": {
+    "document_type": {
       "type": [
         "string",
         "null"
       ]
     },
-    "business_owner_and_driver_information": {
+    "carrier_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transaction": {
+      "type": "object"
+    },
+    "named_insured": {
+      "type": "object"
+    },
+    "contact_info": {
       "type": "array"
     },
-    "drivers_disclosure": {
+    "line_of_business": {
       "type": "object"
     },
-    "additional_interests_lienholders": {
+    "additional_interests": {
       "type": "array"
     },
-    "authorized_representatives": {
+    "states": {
       "type": "array"
     },
-    "disclosures": {
-      "type": "object"
-    },
-    "application_signature_page": {
-      "type": "object"
-    },
-    "new_york_information_and_option_form": {
-      "type": "object"
-    },
-    "auto_pay_enrollment_letter": {
-      "type": "object"
-    },
-    "signatures_summary": {
-      "type": "object"
-    },
-    "data_quality_notes": {
+    "vehicles": {
       "type": "array"
+    },
+    "drivers": {
+      "type": "array"
+    },
+    "commercial_policy_information": {
+      "type": "object"
+    },
+    "locations": {
+      "type": "array"
+    },
+    "pay_plan": {
+      "type": "object"
+    },
+    "disclaimer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "document_metadata": {
+      "type": "object"
     },
     "additional_content": {
       "description": "Anything present in the document that the sections above do not cover.",

@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/28/2026",
+    "transaction_effective_date": "6/9/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3360235147",
+    "billing_account_number": "8262213244",
+    "contract_number": "G32586",
+    "effective_date": "6/9/2026",
+    "expiration_date": "6/9/2027",
+    "term_amount": "$51,539.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Mills Industries Corp",
+    "address": {
+      "street": "3948 Industrial Loop",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "17961"
+    },
+    "additional_named_insureds": [
+      "Kevin Lindqvist"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "886-720-7681",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$51,539.00",
+    "inception_date": "6/9/2026",
+    "effective_date": "6/9/2026",
+    "net_change_amount": "$51,539.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "9360 Price Pkwy",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "43299"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "9315 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 KENWORTH T270",
+              "2023 FORD TRANSIT 350",
+              "2026 FORD F-650"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$13,382.00",
+                  "$10,052.00",
+                  "$14,107.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$334.00",
+                  "$367.00",
+                  "$275.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$753.00",
+                  "$757.00",
+                  "$763.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,077.00",
+                  "$2,897.00",
+                  "$3,380.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$96.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$18,023.00",
+              "$14,522.00",
+              "$18,974.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "VK4XGUKYAZVTZEJ3M",
+      "body_type": "Truck",
+      "territory": "237",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9315 Industrial Loop, Bay Shore, NY 07982"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "L9EK6JF39ULLUSGSB",
+      "body_type": "Tractor",
+      "territory": "392",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "9315 Industrial Loop, Bay Shore, NY 07982"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "12BE8RWST3H57ABGB",
+      "body_type": "Tractor",
+      "territory": "700",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9315 Industrial Loop, Bay Shore, NY 07982"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Hector Lindqvist",
+      "license_state": "NY",
+      "license_number": "254049779",
+      "date_of_birth": "5/21/1993"
+    },
+    {
+      "sequence": 2,
+      "name": "Andre T Aguilar",
+      "license_state": "NY",
+      "license_number": "914012529",
+      "date_of_birth": "6/24/1992"
+    },
+    {
+      "sequence": 3,
+      "name": "Lucia G Ramachandran",
+      "license_state": "NY",
+      "license_number": "764665204",
+      "date_of_birth": "12/13/1989"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "9315 Industrial Loop",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "87847"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/29/2026",
+    "printed_at": "13:15",
+    "total_pages": 3
+  }
+}

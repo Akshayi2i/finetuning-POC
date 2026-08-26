@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "1/7/2026",
+    "transaction_effective_date": "2/16/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8104287549",
+    "billing_account_number": "8104287549",
+    "contract_number": "C97268",
+    "effective_date": "2/16/2026",
+    "expiration_date": "2/16/2027",
+    "term_amount": "$47,198.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Enterprises Inc",
+    "address": {
+      "street": "9071 Marcus Ave",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "82963"
+    },
+    "additional_named_insureds": [
+      "Carlos"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "238-987-5080",
+      "contact_name": "Victor Barrera"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,198.00",
+    "inception_date": "2/16/2026",
+    "effective_date": "2/16/2026",
+    "net_change_amount": "$47,198.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "7311 Corporate Center Dr",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "36541"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8268 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FREIGHTLINER M2",
+              "2026 FORD TRANSIT 350",
+              "2026 FREIGHTLINER CASCADIA"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,632.00",
+                  "$8,404.00",
+                  "$12,963.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$325.00",
+                  "$312.00",
+                  "$319.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$736.00",
+                  "$686.00",
+                  "$792.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,422.00",
+                  "$2,767.00",
+                  "$3,257.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$16,609.00",
+              "$12,685.00",
+              "$17,864.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "ARJ5NF4UM7BHLHYPP",
+      "body_type": "Truck",
+      "territory": "337",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8268 Adams Ct, New Marcusview, NY 07003"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "N0JG4PRJ869EPA6XU",
+      "body_type": "Truck",
+      "territory": "149",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8268 Adams Ct, New Marcusview, NY 07003"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "RXTT9PXWD0MV8UKJG",
+      "body_type": "Van",
+      "territory": "515",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8268 Adams Ct, New Marcusview, NY 07003"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Marcus M Krishnan",
+      "license_state": "NY",
+      "license_number": "395967446",
+      "date_of_birth": "8/12/1977"
+    },
+    {
+      "sequence": 2,
+      "name": "Rajiv P Mills",
+      "license_state": "NY",
+      "license_number": "172128536",
+      "date_of_birth": "4/22/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Victor B Vargas",
+      "license_state": "NY",
+      "license_number": "706527955",
+      "date_of_birth": "7/19/1967"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8268 Adams Ct",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "30279"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "1/11/2026",
+    "printed_at": "09:45",
+    "total_pages": 3
+  }
+}

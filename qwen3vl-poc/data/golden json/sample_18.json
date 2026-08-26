@@ -1,0 +1,304 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "11/5/2026",
+    "transaction_effective_date": "11/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "6917547541",
+    "billing_account_number": "6917547541",
+    "contract_number": "D31694",
+    "effective_date": "11/28/2026",
+    "expiration_date": "11/28/2027",
+    "term_amount": "$45,292.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Lindqvist Logistics LLC",
+    "address": {
+      "street": "973 Price Pkwy",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "08934"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "215-518-6180",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$45,292.00",
+    "inception_date": "11/28/2026",
+    "effective_date": "11/28/2026",
+    "net_change_amount": "$45,292.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "4759 Corporate Center Dr",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "30837"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6837 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FREIGHTLINER M2",
+              "2023 RAM 5500",
+              "2026 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,814.00",
+                  "$9,366.00",
+                  "$11,084.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$258.00",
+                  "$350.00",
+                  "$343.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$848.00",
+                  "$786.00",
+                  "$871.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,092.00",
+                  "$2,912.00",
+                  "$3,159.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$78.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,489.00",
+              "$13,857.00",
+              "$15,906.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "DXAYVEARU2YW890F0",
+      "body_type": "Box Truck",
+      "territory": "261",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "6837 Corporate Center Dr, West Jessicastad, NY 11055"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "U6TUANBLB1TNXUP88",
+      "body_type": "Truck",
+      "territory": "594",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "6837 Corporate Center Dr, West Jessicastad, NY 11055"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "268",
+      "vin": "NZD3U8YG0PXVD4HR7",
+      "body_type": "Truck",
+      "territory": "724",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6837 Corporate Center Dr, West Jessicastad, NY 11055"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Denise M Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "135694773",
+      "date_of_birth": "9/7/1952"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia Boone",
+      "license_state": "NY",
+      "license_number": "329202679",
+      "date_of_birth": "6/22/1952"
+    },
+    {
+      "sequence": 3,
+      "name": "Marcus Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "292234796",
+      "date_of_birth": "11/5/1989"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6837 Corporate Center Dr",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "91265"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Agency Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "11/9/2026",
+    "printed_at": "16:00",
+    "total_pages": 3
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/15/2026",
+    "transaction_effective_date": "7/14/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8700974615",
+    "billing_account_number": "8700974615",
+    "contract_number": "C13351",
+    "effective_date": "7/14/2026",
+    "expiration_date": "7/14/2027",
+    "term_amount": "$43,610.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Aguilar Enterprises Inc",
+    "address": {
+      "street": "855 Corporate Center Dr",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "15153"
+    },
+    "additional_named_insureds": [
+      "Erick C Vargas"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "845-421-5980",
+      "contact_name": "Omar Mills"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$43,610.00",
+    "inception_date": "7/14/2026",
+    "effective_date": "7/14/2026",
+    "net_change_amount": "$43,610.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Ascentium Capital LLC",
+      "address": {
+        "street": "2814 Adams Ct",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "49164"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "996 MARCUS AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 ISUZU FTR",
+              "2026 RAM 5500",
+              "2023 CHEVROLET SILVERADO 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,417.00",
+                  "$9,594.00",
+                  "$9,350.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$318.00",
+                  "$369.00",
+                  "$283.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$804.00",
+                  "$832.00",
+                  "$697.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$3,205.00",
+                  "$3,228.00",
+                  "$2,991.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$134.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,248.00",
+              "$14,510.00",
+              "$13,832.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "0L1F72XVYV7UBVJDM",
+      "body_type": "Tractor",
+      "territory": "646",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "996 Marcus Ave, Yaphank, NY 16767"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "C4VASCJ2A274C7G1Z",
+      "body_type": "Box Truck",
+      "territory": "448",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "996 Marcus Ave, Yaphank, NY 16767"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "VDUY8NCW7RDG7DJNH",
+      "body_type": "Truck",
+      "territory": "728",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "996 Marcus Ave, Yaphank, NY 16767"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Victor Nakamura",
+      "license_state": "NY",
+      "license_number": "443227463",
+      "date_of_birth": "2/18/1974"
+    },
+    {
+      "sequence": 2,
+      "name": "Omar Otero",
+      "license_state": "NY",
+      "license_number": "702836195",
+      "date_of_birth": "9/24/1957"
+    },
+    {
+      "sequence": 3,
+      "name": "Omar W Nakamura",
+      "license_state": "NY",
+      "license_number": "767235548",
+      "date_of_birth": "10/4/1985"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Building Materials Dealer"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "996 Marcus Ave",
+        "city": "East Kimberlyton",
+        "state": "NY",
+        "zip": "70243"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/16/2026",
+    "printed_at": "08:30",
+    "total_pages": 3
+  }
+}

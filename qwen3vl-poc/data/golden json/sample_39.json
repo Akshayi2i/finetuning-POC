@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "12/16/2025",
+    "transaction_effective_date": "1/5/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "6668532919",
+    "billing_account_number": "6668532919",
+    "contract_number": "D16851",
+    "effective_date": "1/5/2026",
+    "expiration_date": "1/5/2027",
+    "term_amount": "$48,530.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Hollingsworth Distributors Inc",
+    "address": {
+      "street": "7041 Commerce Blvd",
+      "city": "Elmsford",
+      "state": "NY",
+      "zip": "14487"
+    },
+    "additional_named_insureds": [
+      "Janet Tejeda Rosales"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "945-298-1314",
+      "contact_name": "Sofia Delgado"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$48,530.00",
+    "inception_date": "1/5/2026",
+    "effective_date": "1/5/2026",
+    "net_change_amount": "$48,530.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "PACCAR Financial Corp",
+      "address": {
+        "street": "6976 Sunrise Hwy",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "41406"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7141 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FORD F-650",
+              "2023 KENWORTH T270",
+              "2023 HINO 268"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,428.00",
+                  "$10,701.00",
+                  "$11,739.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$270.00",
+                  "$314.00",
+                  "$364.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$737.00",
+                  "$825.00",
+                  "$789.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,263.00",
+                  "$3,184.00",
+                  "$3,420.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$96.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$16,192.00",
+              "$15,557.00",
+              "$16,761.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "3PM29JTJCMCJT6MXN",
+      "body_type": "Truck",
+      "territory": "315",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7141 Adams Ct, Lake Danielle, NY 06256"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "BK73ZV091K6E6S441",
+      "body_type": "Truck",
+      "territory": "392",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7141 Adams Ct, Lake Danielle, NY 06256"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "CDKJG1RRGXVXKAVE1",
+      "body_type": "Van",
+      "territory": "618",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "7141 Adams Ct, Lake Danielle, NY 06256"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rajiv Lindqvist",
+      "license_state": "NY",
+      "license_number": "864752793",
+      "date_of_birth": "6/19/1983"
+    },
+    {
+      "sequence": 2,
+      "name": "Carlos A Delgado",
+      "license_state": "NY",
+      "license_number": "561360855",
+      "date_of_birth": "12/25/1975"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector Ferreira",
+      "license_state": "NY",
+      "license_number": "102511843",
+      "date_of_birth": "1/25/1990"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Other Retail Trade Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7141 Adams Ct",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "49997"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "12/17/2025",
+    "printed_at": "10:45",
+    "total_pages": 3
+  }
+}

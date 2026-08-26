@@ -1,0 +1,299 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "10/24/2026",
+    "transaction_effective_date": "11/27/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8364393974",
+    "billing_account_number": "8364393974",
+    "contract_number": "B67333",
+    "effective_date": "11/27/2026",
+    "expiration_date": "11/27/2027",
+    "term_amount": "$43,546.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Pierre-Louis Holdings Corp",
+    "address": {
+      "street": "7670 Adams Ct",
+      "city": "Yaphank",
+      "state": "NY",
+      "zip": "93568"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "pierre-louis@pierre-louiscorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$43,546.00",
+    "inception_date": "11/27/2026",
+    "effective_date": "11/27/2026",
+    "net_change_amount": "$43,546.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "4494 Marcus Ave",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "78151"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "9598 MARCUS AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 PETERBILT 337",
+              "2026 KENWORTH T270",
+              "2025 KENWORTH T270"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,346.00",
+                  "$10,045.00",
+                  "$9,875.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$263.00",
+                  "$272.00",
+                  "$289.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$743.00",
+                  "$741.00",
+                  "$736.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,067.00",
+                  "$3,309.00",
+                  "$3,303.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$112.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$305.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,930.00",
+              "$14,878.00",
+              "$14,718.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "41JLC73GUARK9D7XD",
+      "body_type": "Truck",
+      "territory": "278",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "9598 Marcus Ave, Bay Shore, NY 12853"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "UYXET87KTGMS7EDML",
+      "body_type": "Truck",
+      "territory": "174",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9598 Marcus Ave, Bay Shore, NY 12853"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "48XCCFDTPWWSUTGLS",
+      "body_type": "Van",
+      "territory": "117",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "9598 Marcus Ave, Bay Shore, NY 12853"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Lucia Ramachandran",
+      "license_state": "NY",
+      "license_number": "107535595",
+      "date_of_birth": "6/7/1992"
+    },
+    {
+      "sequence": 2,
+      "name": "Marcus Boone",
+      "license_state": "NY",
+      "license_number": "561083565",
+      "date_of_birth": "8/4/1993"
+    },
+    {
+      "sequence": 3,
+      "name": "Angela Krishnan",
+      "license_state": "NY",
+      "license_number": "852483255",
+      "date_of_birth": "10/14/1964"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Furniture Delivery Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "9598 Marcus Ave",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "70401"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "10/24/2026",
+    "printed_at": "15:30",
+    "total_pages": 3
+  }
+}

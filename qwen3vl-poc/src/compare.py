@@ -1,4 +1,4 @@
-"""Stage 6 - score base vs v1 against the gold JSON and emit the verdict.
+"""Stage 6 - score the base model against a fine-tuned version, on the gold JSON.
 
 Scoring is field level over the flattened gold JSON, with light normalization so
 formatting differences (currency symbols, thousands separators, date styles,
@@ -17,9 +17,13 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import (  # noqa: E402
+    adapter_dir_for,
     cfg_path,
+    is_version,
     load_config,
+    model_version,
     read_json,
+    results_dir_for,
     setup_logging,
     validate_against_schema,
     write_json,
@@ -298,16 +302,16 @@ def load_candidate(results_dir: Path, name: str) -> tuple[Any | None, str, dict]
     recoverable prefix, so strict JSON validity comes from the meta file, not
     from the mere existence of a parseable file.
     """
-    meta_file = results_dir / f"{name}_meta.json"
+    meta_file = results_dir / "meta.json"
     meta = {}
     if meta_file.exists():
         try:
             meta = read_json(meta_file)
         except Exception:
             meta = {}
-    path = results_dir / f"{name}_output.json"
+    path = results_dir / "output.json"
     if not path.exists():
-        raw = results_dir / f"{name}_raw.txt"
+        raw = results_dir / "raw.txt"
         note = "raw output exists but did not parse as JSON" if raw.exists() else "no output file"
         return None, f"{path.name} missing: {note}", meta
     try:
@@ -333,27 +337,27 @@ def section_breakdown(base: dict, v1: dict) -> list[dict]:
         if name.endswith("#count"):
             continue
         row = sections.setdefault(section_of(name), {"section": section_of(name), "fields": 0,
-                                                     "base": 0, "v1": 0})
+                                                     "base": 0, "trained": 0})
         row["fields"] += 1
         row["base"] += bool(field["match"])
-        row["v1"] += bool(v1_by_field.get(name, {}).get("match"))
+        row["trained"] += bool(v1_by_field.get(name, {}).get("match"))
     out = []
     for row in sections.values():
         row["base_rate"] = round(row["base"] / row["fields"], 4)
-        row["v1_rate"] = round(row["v1"] / row["fields"], 4)
-        row["delta"] = round(row["v1_rate"] - row["base_rate"], 4)
+        row["trained_rate"] = round(row["trained"] / row["fields"], 4)
+        row["delta"] = round(row["trained_rate"] - row["base_rate"], 4)
         out.append(row)
     return sorted(out, key=lambda r: (-r["delta"], r["section"]))
 
 
 def print_sections(rows: list[dict]) -> None:
     width = min(max((len(r["section"]) for r in rows), default=12), 44)
-    header = f"{'SECTION'.ljust(width)}  {'FIELDS':>6}  {'BASE':>6}  {'V1':>6}  {'DELTA':>7}"
+    header = f"{'SECTION'.ljust(width)}  {'FIELDS':>6}  {'BASE':>6}  {'TRAINED':>7}  {'DELTA':>7}"
     print("\n" + header)
     print("-" * len(header))
     for row in rows:
         print(f"{row['section'][:width].ljust(width)}  {row['fields']:>6}  "
-              f"{row['base_rate']:>6.0%}  {row['v1_rate']:>6.0%}  {row['delta']:>+7.0%}")
+              f"{row['base_rate']:>6.0%}  {row['trained_rate']:>6.0%}  {row['delta']:>+7.0%}")
     print("-" * len(header))
 
 
@@ -392,13 +396,17 @@ def print_table(base: dict, v1: dict, limit: int, only_changed: bool) -> None:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Score base vs v1 against the gold JSON.")
+    ap = argparse.ArgumentParser(
+        description="Score the base model against a fine-tuned version on the gold JSON.")
     ap.add_argument("--config", default=None)
     ap.add_argument("--quiet", action="store_true", help="suppress the tables")
     ap.add_argument("--max-rows", type=int, default=40, help="cap on printed field rows")
     ap.add_argument("--all-fields", action="store_true",
                     help="print every field, not only those where base and v1 disagree")
     ap.add_argument("--doc", default=None, help="doc_id to score (default: the test document)")
+    ap.add_argument("--version", default=None,
+                    help="fine-tuned version to score against base, e.g. v1 / v2 "
+                         "(default: model.version in config)")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
@@ -428,14 +436,19 @@ def main() -> int:
             return 2
         gold_path = match.gold
     gold = read_json(gold_path)
-    results_dir = cfg_path(cfg, "results_dir") / doc_id
+    version = args.version or model_version(cfg)
+    if not is_version(version):
+        log.error("--version must look like v1 / v2, got %r", version)
+        return 2
     schema_file = cfg_path(cfg, "json_schema")
+    log.info("comparing base vs %s on %s", version, doc_id)
 
     summary = {}
     scores = {}
     candidates: dict[str, Any] = {}
-    for name in ("base", "v1"):
-        candidate, note, meta = load_candidate(results_dir, name)
+    models = ("base", version)
+    for name in models:
+        candidate, note, meta = load_candidate(results_dir_for(cfg, name, doc_id), name)
         candidates[name] = candidate
         loaded = candidate is not None
         repaired = bool(meta.get("repaired_from_truncation"))
@@ -467,27 +480,29 @@ def main() -> int:
                  scores[name]["total_fields"], scores[name]["match_rate"] * 100)
 
     base_rate = scores["base"]["match_rate"]
-    v1_rate = scores["v1"]["match_rate"]
+    v1_rate = scores[version]["match_rate"]
     verdict = "PASS" if v1_rate > base_rate else "INVESTIGATE"
 
     reasons = []
     if verdict == "PASS":
-        reasons.append(f"v1 match rate {v1_rate:.1%} exceeds base {base_rate:.1%}")
+        reasons.append(f"{version} match rate {v1_rate:.1%} exceeds base {base_rate:.1%}")
         if v1_rate < 1.0:
-            reasons.append("v1 does not fully reproduce the gold JSON; more epochs would tighten the fit")
+            reasons.append(f"{version} does not fully reproduce the gold JSON; "
+                           "more epochs would tighten the fit")
     else:
-        if not summary["v1"]["scored"]:
-            reasons.append("v1 produced nothing scoreable")
+        if not summary[version]["scored"]:
+            reasons.append(f"{version} produced nothing scoreable")
         elif abs(v1_rate - base_rate) < 1e-9:
             reasons.append(
-                "identical match rates: check that training loss fell, that merge.py ran, "
-                "and that infer.py --model v1 loaded outputs/merged_v1 (compare weight_signature "
-                "in base_meta.json vs v1_meta.json)"
+                f"identical match rates: check that training loss fell, that merge.py ran, "
+                f"and that infer.py --model {version} loaded the merged weights "
+                f"(compare weight_signature in each model's meta.json)"
             )
         else:
-            reasons.append("v1 scored below base: check prompt/modality drift and the learning rate")
+            reasons.append(f"{version} scored below base: check prompt/modality drift "
+                           "and the learning rate")
 
-    for name in ("base", "v1"):
+    for name in models:
         if summary[name]["repaired_from_truncation"]:
             capped = " after hitting max_new_tokens" if summary[name]["hit_max_new_tokens"] else ""
             reasons.append(
@@ -495,16 +510,17 @@ def main() -> int:
                 f"recoverable prefix, so its match rate is a floor, not a measurement "
                 f"(spec criterion 2 fails for {name})"
             )
-    for name in ("base", "v1"):
-        meta = results_dir / f"{name}_meta.json"
+    for name in models:
+        meta = results_dir_for(cfg, name, doc_id) / "meta.json"
         if meta.exists():
             summary[name]["weight_signature"] = read_json(meta).get("weight_signature")
     sig_base = summary["base"].get("weight_signature")
-    sig_v1 = summary["v1"].get("weight_signature")
+    sig_v1 = summary[version].get("weight_signature")
     if sig_base is not None and sig_base == sig_v1:
-        reasons.append("WARNING: base and v1 have identical weight signatures - v1 may be the base model")
+        reasons.append(f"WARNING: base and {version} have identical weight signatures - "
+                       f"{version} may be the base model")
 
-    train_report = cfg_path(cfg, "adapter_dir") / "train_report.json"
+    train_report = adapter_dir_for(cfg, version) / "train_report.json"
     training = read_json(train_report) if train_report.exists() else None
     if training and not training.get("loss_decreased"):
         reasons.append("WARNING: training loss did not decrease (see outputs/adapter/train_report.json)")
@@ -513,7 +529,7 @@ def main() -> int:
     # Both results must carry the fingerprint of the dataset currently on disk.
     current_fp = doc_entry.get("fingerprint") or dataset_meta.get("test_fingerprint")
     if current_fp:
-        for name in ("base", "v1"):
+        for name in models:
             result_fp = summary[name].get("conversation_fingerprint")
             if result_fp and result_fp != current_fp:
                 reasons.append(
@@ -530,7 +546,7 @@ def main() -> int:
         from prompting import build_ocr_text
 
         ocr_text = build_ocr_text(require_pages(ocr_dir_for(cfg, doc_id)))
-        for name in ("base", "v1"):
+        for name in models:
             report_ = coverage_report(ocr_text, candidates.get(name))
             if report_:
                 coverage[name] = report_
@@ -540,15 +556,15 @@ def main() -> int:
     except Exception as exc:
         log.warning("could not measure OCR coverage: %s", exc)
 
-    if coverage.get("base") and coverage.get("v1"):
+    if coverage.get("base") and coverage.get(version):
         log.info("OCR number coverage: base %.1f%% -> v1 %.1f%% (gold itself %.1f%%)",
                  (coverage["base"]["number_coverage"] or 0) * 100,
-                 (coverage["v1"]["number_coverage"] or 0) * 100,
+                 (coverage[version]["number_coverage"] or 0) * 100,
                  (coverage.get("gold", {}).get("number_coverage") or 0) * 100)
-        if coverage["v1"]["missing_numbers_total"]:
+        if coverage[version]["missing_numbers_total"]:
             log.info("v1 left %d number(s) from the OCR out of its output, e.g. %s",
-                     coverage["v1"]["missing_numbers_total"],
-                     ", ".join(coverage["v1"]["missing_numbers"][:8]))
+                     coverage[version]["missing_numbers_total"],
+                     ", ".join(coverage[version]["missing_numbers"][:8]))
 
     # Split the score: fields that vary across the corpus are the real extraction
     # work; fields identical in every document are boilerplate the model can learn
@@ -573,10 +589,10 @@ def main() -> int:
         n_var = sum(1 for v in variability.values() if v)
         log.info("corpus field variability: %d of %d field(s) differ between documents",
                  n_var, len(variability))
-        for name in ("base", "v1"):
+        for name in models:
             split[name] = split_by_variability(scores[name]["fields"], variability)
         v_base = split["base"].get("variable", {}).get("match_rate")
-        v_v1 = split["v1"].get("variable", {}).get("match_rate")
+        v_v1 = split[version].get("variable", {}).get("match_rate")
         if v_base is not None and v_v1 is not None:
             reasons.append(
                 f"on the fields that actually vary between documents (the extraction work), "
@@ -589,27 +605,28 @@ def main() -> int:
     # Confidence: the model's own probability for the tokens it chose. Rising
     # confidence is a second signal, independent of the field match rate.
     conf_base = summary["base"].get("confidence") or {}
-    conf_v1 = summary["v1"].get("confidence") or {}
+    conf_v1 = summary[version].get("confidence") or {}
     confidence = None
     if conf_base.get("tokens") and conf_v1.get("tokens"):
         b = conf_base["mean_token_probability"]
         v = conf_v1["mean_token_probability"]
         confidence = {
             "base_mean_token_probability": b,
-            "v1_mean_token_probability": v,
+            "trained_mean_token_probability": v,
             "delta": round(v - b, 6),
             "improved": v > b,
             "base_low_confidence_fraction": conf_base.get("low_confidence_fraction"),
-            "v1_low_confidence_fraction": conf_v1.get("low_confidence_fraction"),
+            "trained_low_confidence_fraction": conf_v1.get("low_confidence_fraction"),
         }
         reasons.append(
             f"confidence {'rose' if v > b else 'did not rise'}: mean token probability "
             f"{b:.3f} -> {v:.3f}"
         )
 
-    sections = section_breakdown(scores["base"], scores["v1"])
+    sections = section_breakdown(scores["base"], scores[version])
     report = {
         "verdict": verdict,
+        "version": version,
         "document": doc_id,
         "test_held_out": held_out,
         "corpus_size": dataset_meta.get("corpus_size"),
@@ -621,7 +638,7 @@ def main() -> int:
         "static_fields": sum(1 for v in variability.values() if not v) if variability else None,
         "sections": sections,
         "base_match_rate": base_rate,
-        "v1_match_rate": v1_rate,
+        "trained_match_rate": v1_rate,
         "delta": round(v1_rate - base_rate, 4),
         "reasons": reasons,
         "summary": summary,
@@ -630,36 +647,40 @@ def main() -> int:
             "last_loss": training.get("last_loss"),
             "loss_decreased": training.get("loss_decreased"),
         } if training else None,
-        "per_field": {name: scores[name]["fields"] for name in ("base", "v1")},
-        "list_counts": {name: scores[name]["list_counts"] for name in ("base", "v1")},
-        "missing_fields": {name: scores[name]["missing_fields"] for name in ("base", "v1")},
-        "extra_fields": {name: scores[name]["extra_fields"] for name in ("base", "v1")},
+        "per_field": {name: scores[name]["fields"] for name in models},
+        "list_counts": {name: scores[name]["list_counts"] for name in models},
+        "missing_fields": {name: scores[name]["missing_fields"] for name in models},
+        "extra_fields": {name: scores[name]["extra_fields"] for name in models},
     }
-    out = results_dir / "comparison.json"
+    # The comparison belongs to the version it judged, so v1's verdict never
+    # overwrites v2's.
+    out = results_dir_for(cfg, version, doc_id) / "comparison.json"
     write_json(out, report)
 
     if not args.quiet:
         print_sections(sections)
-        print_table(scores["base"], scores["v1"], args.max_rows, not args.all_fields)
+        print_table(scores["base"], scores[version], args.max_rows, not args.all_fields)
     print()
     print(f"document        : {doc_id}"
           + ("  (held out of training)" if held_out else "  (included in training)"))
     print(f"trained on      : {dataset_meta.get('training_examples', '?')} document(s) "
           f"of {dataset_meta.get('corpus_size', '?')}")
     print(f"base match rate : {base_rate:.1%}  ({scores['base']['matched_fields']}/{scores['base']['total_fields']} fields)")
-    print(f"v1   match rate : {v1_rate:.1%}  ({scores['v1']['matched_fields']}/{scores['v1']['total_fields']} fields)")
+    trained = scores[version]
+    print(f"{version:<4} match rate : {v1_rate:.1%}  "
+          f"({trained['matched_fields']}/{trained['total_fields']} fields)")
     print(f"delta           : {v1_rate - base_rate:+.1%}")
     if split:
         for bucket, label in (("variable", "extraction"), ("static", "boilerplate")):
             b = split["base"].get(bucket, {})
-            v = split["v1"].get(bucket, {})
+            v = split[version].get(bucket, {})
             if b.get("match_rate") is None:
                 continue
             print(f"  {bucket + ' fields':16} ({label:11}): "
                   f"{b['match_rate']:.1%} -> {v['match_rate']:.1%}  "
                   f"({b['total']} field(s))")
-    if coverage.get("base") and coverage.get("v1"):
-        b, v = coverage["base"], coverage["v1"]
+    if coverage.get("base") and coverage.get(version):
+        b, v = coverage["base"], coverage[version]
         g = coverage.get("gold", {})
         print(f"OCR coverage    : numbers {b['number_coverage']:.1%} -> {v['number_coverage']:.1%}"
               + (f"  (gold {g['number_coverage']:.1%})" if g.get("number_coverage") else ""))
@@ -667,7 +688,7 @@ def main() -> int:
               + (f"  (gold {g['word_coverage']:.1%})" if g.get("word_coverage") else ""))
     if confidence:
         print(f"confidence      : {confidence['base_mean_token_probability']:.3f} -> "
-              f"{confidence['v1_mean_token_probability']:.3f} "
+              f"{confidence['trained_mean_token_probability']:.3f} "
               f"({confidence['delta']:+.3f} mean token probability)")
     for reason in reasons:
         print(f"  - {reason}")

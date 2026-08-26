@@ -1,0 +1,306 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "7/16/2026",
+    "transaction_effective_date": "8/17/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9388221083",
+    "billing_account_number": "9388221083",
+    "contract_number": "B65302",
+    "effective_date": "8/17/2026",
+    "expiration_date": "8/17/2027",
+    "term_amount": "$49,097.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Barrera Transport Group Inc",
+    "address": {
+      "street": "6910 Katherine Parks",
+      "city": "Deer Park",
+      "state": "NY",
+      "zip": "42827"
+    },
+    "additional_named_insureds": [
+      "Rajiv Delgado"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "456-862-1843",
+      "contact_name": "Carlos Otero"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$49,097.00",
+    "inception_date": "8/17/2026",
+    "effective_date": "8/17/2026",
+    "net_change_amount": "$49,097.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Isuzu Finance of America Inc",
+      "address": {
+        "street": "6933 Price Pkwy",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "16205"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "7029 SUNRISE HWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FREIGHTLINER CASCADIA",
+              "2025 PETERBILT 337",
+              "2023 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$12,482.00",
+                  "$11,566.00",
+                  "$10,480.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$302.00",
+                  "$292.00",
+                  "$362.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$798.00",
+                  "$797.00",
+                  "$780.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,132.00",
+                  "$3,493.00",
+                  "$3,222.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$17,192.00",
+              "$16,573.00",
+              "$15,292.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "22P32D4YLT368VHEB",
+      "body_type": "Truck",
+      "territory": "781",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7029 Sunrise Hwy, Farmingdale, NY 14230"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "VS7TFDCKZMP0AL3JD",
+      "body_type": "Truck",
+      "territory": "371",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "7029 Sunrise Hwy, Farmingdale, NY 14230"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "076RGNLJG4L8SMF3U",
+      "body_type": "Truck",
+      "territory": "749",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "7029 Sunrise Hwy, Farmingdale, NY 14230"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Sofia R Vargas",
+      "license_state": "NY",
+      "license_number": "361074518",
+      "date_of_birth": "10/19/1971"
+    },
+    {
+      "sequence": 2,
+      "name": "Beatriz E Castellano",
+      "license_state": "NY",
+      "license_number": "338069940",
+      "date_of_birth": "12/21/1952"
+    },
+    {
+      "sequence": 3,
+      "name": "Carlos Ferreira",
+      "license_state": "NY",
+      "license_number": "493869841",
+      "date_of_birth": "11/23/1977"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "7029 Sunrise Hwy",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "71975"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "7/19/2026",
+    "printed_at": "13:15",
+    "total_pages": 3
+  }
+}

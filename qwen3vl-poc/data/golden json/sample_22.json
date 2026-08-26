@@ -1,0 +1,307 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "3/16/2026",
+    "transaction_effective_date": "3/27/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8885827044",
+    "billing_account_number": "8885827044",
+    "contract_number": "C92774",
+    "effective_date": "3/27/2026",
+    "expiration_date": "3/27/2027",
+    "term_amount": "$50,971.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Lindqvist Services Corp",
+    "address": {
+      "street": "6375 Katherine Parks",
+      "city": "Hauppauge",
+      "state": "NY",
+      "zip": "68126"
+    },
+    "additional_named_insureds": [
+      "Mary Tejeda Rosales",
+      "Mary Hollingsworth"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "858-734-9596",
+      "contact_name": "Mary Nakamura"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$50,971.00",
+    "inception_date": "3/27/2026",
+    "effective_date": "3/27/2026",
+    "net_change_amount": "$50,971.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Ascentium Capital LLC",
+      "address": {
+        "street": "983 Engineers Rd",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "63717"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "1798 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 GMC SAVANA 3500",
+              "2024 GMC SAVANA 3500",
+              "2024 HINO L6"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,329.00",
+                  "$11,683.00",
+                  "$15,193.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$364.00",
+                  "$282.00",
+                  "$318.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$780.00",
+                  "$771.00",
+                  "$901.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,688.00",
+                  "$2,614.00",
+                  "$3,527.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$96.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,638.00",
+              "$15,833.00",
+              "$20,460.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "KUNGXC0FJEUUZG7G9",
+      "body_type": "Truck",
+      "territory": "857",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "1798 Adams Ct, Farmingdale, NY 19807"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "RYSZP25BMU4RZZDX5",
+      "body_type": "Truck",
+      "territory": "663",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "1798 Adams Ct, Farmingdale, NY 19807"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "M63JK28RFNZHYXKH1",
+      "body_type": "Van",
+      "territory": "192",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1798 Adams Ct, Farmingdale, NY 19807"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Victor T Krishnan",
+      "license_state": "NY",
+      "license_number": "297745045",
+      "date_of_birth": "9/14/1998"
+    },
+    {
+      "sequence": 2,
+      "name": "Priya H Hollingsworth",
+      "license_state": "NY",
+      "license_number": "688781081",
+      "date_of_birth": "12/20/1952"
+    },
+    {
+      "sequence": 3,
+      "name": "Janet Castellano",
+      "license_state": "NY",
+      "license_number": "202563221",
+      "date_of_birth": "12/15/1962"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "HVAC Contracting Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "1798 Adams Ct",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "70903"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/20/2026",
+    "printed_at": "11:30",
+    "total_pages": 3
+  }
+}

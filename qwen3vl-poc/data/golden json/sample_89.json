@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/25/2026",
+    "transaction_effective_date": "7/16/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "5365653304",
+    "billing_account_number": "5365653304",
+    "contract_number": "G57320",
+    "effective_date": "7/16/2026",
+    "expiration_date": "7/16/2027",
+    "term_amount": "$54,982.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Tejeda Logistics LLC",
+    "address": {
+      "street": "8122 Marcus Ave",
+      "city": "Lake Danielle",
+      "state": "NY",
+      "zip": "61158"
+    },
+    "additional_named_insureds": [
+      "Marcus"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "868-930-7147",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$54,982.00",
+    "inception_date": "7/16/2026",
+    "effective_date": "7/16/2026",
+    "net_change_amount": "$54,982.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Ascentium Capital LLC",
+      "address": {
+        "street": "1602 Price Pkwy",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "36073"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "267 ENGINEERS RD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 HINO 268",
+              "2024 RAM 5500",
+              "2024 FREIGHTLINER CASCADIA"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$13,567.00",
+                  "$12,016.00",
+                  "$14,808.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$331.00",
+                  "$258.00",
+                  "$334.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$807.00",
+                  "$739.00",
+                  "$836.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,097.00",
+                  "$3,120.00",
+                  "$3,649.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$84.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$18,300.00",
+              "$16,610.00",
+              "$20,052.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "63SCK6NMGE76P6LC1",
+      "body_type": "Tractor",
+      "territory": "796",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "267 Engineers Rd, Elmsford, NY 13004"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "45EX6L0MB2UN8KMS2",
+      "body_type": "Truck",
+      "territory": "574",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "267 Engineers Rd, Elmsford, NY 13004"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "Z4HAXGF567SXCXBB1",
+      "body_type": "Box Truck",
+      "territory": "205",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "267 Engineers Rd, Elmsford, NY 13004"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Janet R Boone",
+      "license_state": "NY",
+      "license_number": "379654572",
+      "date_of_birth": "8/18/1966"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia V Aguilar",
+      "license_state": "NY",
+      "license_number": "499737843",
+      "date_of_birth": "7/2/1965"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector Vargas",
+      "license_state": "NY",
+      "license_number": "635899265",
+      "date_of_birth": "9/9/1990"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "267 Engineers Rd",
+        "city": "East Kimberlyton",
+        "state": "NY",
+        "zip": "37888"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/30/2026",
+    "printed_at": "12:00",
+    "total_pages": 3
+  }
+}

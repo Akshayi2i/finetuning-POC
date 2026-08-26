@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "9/10/2026",
+    "transaction_effective_date": "9/18/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1942321399",
+    "billing_account_number": "3436679459",
+    "contract_number": "D76587",
+    "effective_date": "9/18/2026",
+    "expiration_date": "9/18/2027",
+    "term_amount": "$46,887.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Otero Transport Group Inc",
+    "address": {
+      "street": "3130 Industrial Loop",
+      "city": "New Marcusview",
+      "state": "NY",
+      "zip": "18001"
+    },
+    "additional_named_insureds": [
+      "Elena G Aguilar"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "430-267-0070",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,887.00",
+    "inception_date": "9/18/2026",
+    "effective_date": "9/18/2026",
+    "net_change_amount": "$46,887.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "PACCAR Financial Corp",
+      "address": {
+        "street": "729 Katherine Parks",
+        "city": "Ronkonkoma",
+        "state": "NY",
+        "zip": "62439"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6213 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 HINO 268",
+              "2023 HINO 268",
+              "2024 PETERBILT 337"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,878.00",
+                  "$10,812.00",
+                  "$10,942.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$316.00",
+                  "$323.00",
+                  "$362.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$774.00",
+                  "$838.00",
+                  "$830.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,025.00",
+                  "$3,227.00",
+                  "$3,137.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$96.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,424.00",
+              "$15,695.00",
+              "$15,748.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "HINO",
+      "model": "268",
+      "vin": "SPVTDZBRW3P92C434",
+      "body_type": "Box Truck",
+      "territory": "257",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6213 Industrial Loop, Yaphank, NY 14363"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "HINO",
+      "model": "268",
+      "vin": "XEVF0D1KA8M5SWFKL",
+      "body_type": "Truck",
+      "territory": "312",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "6213 Industrial Loop, Yaphank, NY 14363"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "FT736EZHGN783X6RC",
+      "body_type": "Tractor",
+      "territory": "601",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "6213 Industrial Loop, Yaphank, NY 14363"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Lucia Ferreira",
+      "license_state": "NY",
+      "license_number": "130323351",
+      "date_of_birth": "12/2/1977"
+    },
+    {
+      "sequence": 2,
+      "name": "Rosa S Castellano",
+      "license_state": "NY",
+      "license_number": "729268995",
+      "date_of_birth": "4/7/1981"
+    },
+    {
+      "sequence": 3,
+      "name": "Andre R Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "698554887",
+      "date_of_birth": "7/19/1960"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6213 Industrial Loop",
+        "city": "Deer Park",
+        "state": "NY",
+        "zip": "16206"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "9/15/2026",
+    "printed_at": "12:45",
+    "total_pages": 3
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "12/28/2025",
+    "transaction_effective_date": "1/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1412293556",
+    "billing_account_number": "3136569899",
+    "contract_number": "B17929",
+    "effective_date": "1/28/2026",
+    "expiration_date": "1/28/2027",
+    "term_amount": "$45,049.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Mills Supply Co",
+    "address": {
+      "street": "5614 Oser Ave",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "79912"
+    },
+    "additional_named_insureds": [
+      "Sofia J Lindqvist"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "mills@millscorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$45,049.00",
+    "inception_date": "1/28/2026",
+    "effective_date": "1/28/2026",
+    "net_change_amount": "$45,049.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Mitsubishi HC Capital America",
+      "address": {
+        "street": "6014 Executive Dr",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "36352"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8965 PRICE PKWY",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 ISUZU NPR HD",
+              "2024 RAM 5500",
+              "2026 HINO L6"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$9,086.00",
+                  "$10,439.00",
+                  "$11,542.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$342.00",
+                  "$330.00",
+                  "$373.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$735.00",
+                  "$724.00",
+                  "$787.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$2,819.00",
+                  "$2,998.00",
+                  "$3,436.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,459.00",
+              "$14,967.00",
+              "$16,603.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "9X49U55PSZDAVM6ND",
+      "body_type": "Box Truck",
+      "territory": "521",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8965 Price Pkwy, North Connorshire, NY 06957"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "RAM",
+      "model": "5500",
+      "vin": "U5MYRCDFZAFR019MK",
+      "body_type": "Truck",
+      "territory": "848",
+      "gvw": "19,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8965 Price Pkwy, North Connorshire, NY 06957"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "M91KJY0ZZ1MK60R9J",
+      "body_type": "Truck",
+      "territory": "353",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "8965 Price Pkwy, North Connorshire, NY 06957"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Kevin Aguilar",
+      "license_state": "NY",
+      "license_number": "589141355",
+      "date_of_birth": "12/17/1992"
+    },
+    {
+      "sequence": 2,
+      "name": "Omar Ramachandran",
+      "license_state": "NY",
+      "license_number": "163757847",
+      "date_of_birth": "6/6/1967"
+    },
+    {
+      "sequence": 3,
+      "name": "Elena Krishnan",
+      "license_state": "NY",
+      "license_number": "534211020",
+      "date_of_birth": "4/10/1989"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Building Materials Dealer"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8965 Price Pkwy",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "89102"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Agency Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "1/3/2026",
+    "printed_at": "16:45",
+    "total_pages": 3
+  }
+}

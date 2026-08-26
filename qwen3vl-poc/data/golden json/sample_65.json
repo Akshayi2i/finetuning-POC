@@ -1,0 +1,304 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "2/2/2026",
+    "transaction_effective_date": "3/4/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3397986183",
+    "billing_account_number": "6375383548",
+    "contract_number": "C68028",
+    "effective_date": "3/4/2026",
+    "expiration_date": "3/4/2027",
+    "term_amount": "$52,850.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Vargas Holdings Corp",
+    "address": {
+      "street": "1414 Industrial Loop",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "51878"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "294-555-1043",
+      "contact_name": "Marcus Barrera"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$52,850.00",
+    "inception_date": "3/4/2026",
+    "effective_date": "3/4/2026",
+    "net_change_amount": "$52,850.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "5744 Marcus Ave",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "99867"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "2595 EXECUTIVE DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 ISUZU FTR",
+              "2025 HINO 268",
+              "2025 GMC SAVANA 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$14,138.00",
+                  "$13,276.00",
+                  "$11,119.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$258.00",
+                  "$282.00",
+                  "$321.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$837.00",
+                  "$872.00",
+                  "$714.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,315.00",
+                  "$3,362.00",
+                  "$2,875.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$96.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$19,063.00",
+              "$18,258.00",
+              "$15,489.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "HPZN7HJ0C54VTK8WG",
+      "body_type": "Van",
+      "territory": "614",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "2595 Executive Dr, Farmingdale, NY 10498"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "HINO",
+      "model": "268",
+      "vin": "HCWX2DW9N38YVMR5F",
+      "body_type": "Van",
+      "territory": "875",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "2595 Executive Dr, Farmingdale, NY 10498"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "AH5868F6S91CEDWZC",
+      "body_type": "Tractor",
+      "territory": "506",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "2595 Executive Dr, Farmingdale, NY 10498"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Angela F Ramachandran",
+      "license_state": "NY",
+      "license_number": "452159932",
+      "date_of_birth": "11/27/1988"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "202572149",
+      "date_of_birth": "3/26/1966"
+    },
+    {
+      "sequence": 3,
+      "name": "Omar E Osei",
+      "license_state": "NY",
+      "license_number": "897158852",
+      "date_of_birth": "10/6/1997"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "2595 Executive Dr",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "92272"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "2/3/2026",
+    "printed_at": "09:30",
+    "total_pages": 3
+  }
+}

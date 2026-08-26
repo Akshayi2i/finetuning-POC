@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/21/2026",
+    "transaction_effective_date": "6/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1058278741",
+    "billing_account_number": "1058278741",
+    "contract_number": "C82888",
+    "effective_date": "6/28/2026",
+    "expiration_date": "6/28/2027",
+    "term_amount": "$37,516.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Nakamura Holdings Corp",
+    "address": {
+      "street": "3154 Corporate Center Dr",
+      "city": "Hauppauge",
+      "state": "NY",
+      "zip": "87203"
+    },
+    "additional_named_insureds": [
+      "Nathan Whitfield",
+      "Angela D Pierre-Louis"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "582-539-9969",
+      "contact_name": "Lucia Barrera"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$37,516.00",
+    "inception_date": "6/28/2026",
+    "effective_date": "6/28/2026",
+    "net_change_amount": "$37,516.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "50,000/100,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "6138 Wireless Blvd",
+        "city": "Bay Shore",
+        "state": "NY",
+        "zip": "06132"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6204 ADAMS CT",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 PETERBILT 337",
+              "2026 MERCEDES-BENZ SPRINTER 3500",
+              "2023 GMC SAVANA 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,160.00",
+                  "$7,383.00",
+                  "$6,861.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$260.00",
+                  "$337.00",
+                  "$359.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$820.00",
+                  "$708.00",
+                  "$793.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,027.00",
+                  "$2,626.00",
+                  "$2,737.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "50,000/100,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$96.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$14,715.00",
+              "$11,532.00",
+              "$11,249.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "AXCAM2U5A8NNVDBCU",
+      "body_type": "Truck",
+      "territory": "402",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "6204 Adams Ct, Deer Park, NY 13353"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "DG9MPSRE500MPY57H",
+      "body_type": "Tractor",
+      "territory": "544",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "6204 Adams Ct, Deer Park, NY 13353"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "GXGS5BJ1P0417N61D",
+      "body_type": "Truck",
+      "territory": "632",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "6204 Adams Ct, Deer Park, NY 13353"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Marcus A Otero",
+      "license_state": "NY",
+      "license_number": "884377931",
+      "date_of_birth": "7/26/1978"
+    },
+    {
+      "sequence": 2,
+      "name": "Elena Lindqvist",
+      "license_state": "NY",
+      "license_number": "410309859",
+      "date_of_birth": "11/22/1974"
+    },
+    {
+      "sequence": 3,
+      "name": "Priya S Barrera",
+      "license_state": "NY",
+      "license_number": "890290040",
+      "date_of_birth": "2/26/1963"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Appliance Sales And Service"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6204 Adams Ct",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "58171"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "10",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/27/2026",
+    "printed_at": "14:45",
+    "total_pages": 3
+  }
+}

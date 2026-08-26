@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "2/26/2026",
+    "transaction_effective_date": "3/26/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8948968568",
+    "billing_account_number": "8948968568",
+    "contract_number": "G54043",
+    "effective_date": "3/26/2026",
+    "expiration_date": "3/26/2027",
+    "term_amount": "$46,683.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Krishnan Holdings Corp",
+    "address": {
+      "street": "6656 Price Pkwy",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "68877"
+    },
+    "additional_named_insureds": [
+      "Angela H Osei"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "808-534-9603",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$46,683.00",
+    "inception_date": "3/26/2026",
+    "effective_date": "3/26/2026",
+    "net_change_amount": "$46,683.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "6582 Price Pkwy",
+        "city": "Lake Danielle",
+        "state": "NY",
+        "zip": "22462"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "4279 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FORD F-650",
+              "2026 ISUZU FTR",
+              "2026 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$11,017.00",
+                  "$11,077.00",
+                  "$10,298.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$263.00",
+                  "$368.00",
+                  "$326.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$774.00",
+                  "$801.00",
+                  "$742.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,987.00",
+                  "$3,331.00",
+                  "$3,314.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$134.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$271.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,500.00",
+              "$16,058.00",
+              "$15,105.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FORD",
+      "model": "F-650",
+      "vin": "PVXD4JK71WDFVB2AY",
+      "body_type": "Truck",
+      "territory": "772",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4279 Industrial Loop, North Connorshire, NY 16848"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "X1BPLDXKK7TDA2LL8",
+      "body_type": "Box Truck",
+      "territory": "160",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "4279 Industrial Loop, North Connorshire, NY 16848"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "16BAFZBGU03SRY4AR",
+      "body_type": "Truck",
+      "territory": "295",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "4279 Industrial Loop, North Connorshire, NY 16848"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Erick Ferreira",
+      "license_state": "NY",
+      "license_number": "393791694",
+      "date_of_birth": "6/9/1986"
+    },
+    {
+      "sequence": 2,
+      "name": "Rosa D Nakamura",
+      "license_state": "NY",
+      "license_number": "997298253",
+      "date_of_birth": "6/3/1958"
+    },
+    {
+      "sequence": 3,
+      "name": "Lucia D Whitfield",
+      "license_state": "NY",
+      "license_number": "504218683",
+      "date_of_birth": "10/3/1971"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "4279 Industrial Loop",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "76479"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Full Pay",
+    "number_of_payments": "1",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/3/2026",
+    "printed_at": "15:15",
+    "total_pages": 3
+  }
+}

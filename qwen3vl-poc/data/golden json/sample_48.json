@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "3/3/2026",
+    "transaction_effective_date": "3/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "1137577651",
+    "billing_account_number": "1477840987",
+    "contract_number": "C59339",
+    "effective_date": "3/28/2026",
+    "expiration_date": "3/28/2027",
+    "term_amount": "$40,413.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Hollingsworth Holdings Corp",
+    "address": {
+      "street": "3004 Engineers Rd",
+      "city": "North Connorshire",
+      "state": "NY",
+      "zip": "29878"
+    },
+    "additional_named_insureds": [
+      "Marcus"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "hollingsworth@hollingsworthcorp.com",
+      "contact_name": "Omar Hollingsworth"
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$40,413.00",
+    "inception_date": "3/28/2026",
+    "effective_date": "3/28/2026",
+    "net_change_amount": "$40,413.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Daimler Truck Financial Services USA",
+      "address": {
+        "street": "1548 Wireless Blvd",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "07472"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "2304 CORPORATE CENTER DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FREIGHTLINER M2",
+              "2024 KENWORTH T270",
+              "2025 MERCEDES-BENZ SPRINTER 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,881.00",
+                  "$10,112.00",
+                  "$7,903.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$325.00",
+                  "$376.00",
+                  "$380.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$782.00",
+                  "$755.00",
+                  "$681.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,990.00",
+                  "$3,015.00",
+                  "$2,713.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$84.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$134.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,443.00",
+              "$14,774.00",
+              "$12,176.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "0HWPWYP4TGMSRTZ1M",
+      "body_type": "Truck",
+      "territory": "323",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2304 Corporate Center Dr, Deer Park, NY 06185"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "DFMZY9CS20BZFK7WU",
+      "body_type": "Truck",
+      "territory": "553",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "2304 Corporate Center Dr, Deer Park, NY 06185"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "BFN5XFAG2K7NHAULG",
+      "body_type": "Van",
+      "territory": "110",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "2304 Corporate Center Dr, Deer Park, NY 06185"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rosa Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "740874349",
+      "date_of_birth": "7/20/1996"
+    },
+    {
+      "sequence": 2,
+      "name": "Sofia Tejeda Rosales",
+      "license_state": "NY",
+      "license_number": "250491532",
+      "date_of_birth": "11/13/1995"
+    },
+    {
+      "sequence": 3,
+      "name": "Lucia Barrera",
+      "license_state": "NY",
+      "license_number": "862193924",
+      "date_of_birth": "10/27/1994"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Other Retail Trade Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "2304 Corporate Center Dr",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "25210"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "3/8/2026",
+    "printed_at": "14:15",
+    "total_pages": 3
+  }
+}

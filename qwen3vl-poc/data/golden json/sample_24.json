@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/30/2026",
+    "transaction_effective_date": "6/7/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8415379184",
+    "billing_account_number": "4981854427",
+    "contract_number": "D37753",
+    "effective_date": "6/7/2026",
+    "expiration_date": "6/7/2027",
+    "term_amount": "$59,953.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ramachandran Holdings Corp",
+    "address": {
+      "street": "2929 Executive Dr",
+      "city": "West Jessicastad",
+      "state": "NY",
+      "zip": "95548"
+    },
+    "additional_named_insureds": [
+      "Dwayne L Barrera"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Business Phone",
+      "information": "572-418-6125",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$59,953.00",
+    "inception_date": "6/7/2026",
+    "effective_date": "6/7/2026",
+    "net_change_amount": "$59,953.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "25,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "1650 Katherine Parks",
+        "city": "South Terrance",
+        "state": "NY",
+        "zip": "12184"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "3867 ENGINEERS RD",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 PETERBILT 337",
+              "2026 FREIGHTLINER M2",
+              "2023 HINO L6"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$14,902.00",
+                  "$14,455.00",
+                  "$16,279.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "25,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$264.00",
+                  "$267.00",
+                  "$266.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$801.00",
+                  "$732.00",
+                  "$792.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$3,491.00",
+                  "$2,977.00",
+                  "$3,312.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$112.00",
+                  "$78.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$305.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$19,957.00",
+              "$18,896.00",
+              "$21,080.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "YLYNR2080NDDYAPMP",
+      "body_type": "Box Truck",
+      "territory": "899",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "3867 Engineers Rd, South Terrance, NY 12044"
+    },
+    {
+      "sequence": 2,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "6CX77JJF91HVXA5FX",
+      "body_type": "Van",
+      "territory": "786",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3867 Engineers Rd, South Terrance, NY 12044"
+    },
+    {
+      "sequence": 3,
+      "year": "2023",
+      "make": "HINO",
+      "model": "L6",
+      "vin": "FGJ17M6HD4P6E2SK6",
+      "body_type": "Box Truck",
+      "territory": "260",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "3867 Engineers Rd, South Terrance, NY 12044"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Priya W Aguilar",
+      "license_state": "NY",
+      "license_number": "146530159",
+      "date_of_birth": "5/2/1978"
+    },
+    {
+      "sequence": 2,
+      "name": "Nathan T Barrera",
+      "license_state": "NY",
+      "license_number": "159967515",
+      "date_of_birth": "11/12/1978"
+    },
+    {
+      "sequence": 3,
+      "name": "Mary A Whitfield",
+      "license_state": "NY",
+      "license_number": "457492539",
+      "date_of_birth": "1/22/1973"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Landscaping Services Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "3867 Engineers Rd",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "71959"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "5/6/2026",
+    "printed_at": "18:30",
+    "total_pages": 3
+  }
+}

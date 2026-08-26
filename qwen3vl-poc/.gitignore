@@ -8,6 +8,6 @@ data/sample_gold.json
 outputs/ocr/*
 outputs/dataset/*
 outputs/adapter/*
-outputs/merged_v1/*
+outputs/merged/*
 outputs/results/*
 !outputs/**/.gitkeep

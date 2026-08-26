@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/10/2026",
+    "transaction_effective_date": "5/12/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8991018298",
+    "billing_account_number": "8991018298",
+    "contract_number": "B65545",
+    "effective_date": "5/12/2026",
+    "expiration_date": "5/12/2027",
+    "term_amount": "$44,459.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Aguilar Enterprises Inc",
+    "address": {
+      "street": "8311 Oser Ave",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "67802"
+    },
+    "additional_named_insureds": [
+      "Dwayne"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "566-873-4239",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,459.00",
+    "inception_date": "5/12/2026",
+    "effective_date": "5/12/2026",
+    "net_change_amount": "$44,459.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Interest",
+      "name": "Wells Fargo Equipment Finance",
+      "address": {
+        "street": "9311 Adams Ct",
+        "city": "Port Adrianfort",
+        "state": "NY",
+        "zip": "66083"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8031 KATHERINE PARKS",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 PETERBILT 337",
+              "2024 ISUZU FTR",
+              "2025 FORD TRANSIT 350"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,688.00",
+                  "$11,862.00",
+                  "$8,411.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$330.00",
+                  "$366.00",
+                  "$315.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$734.00",
+                  "$738.00",
+                  "$732.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,946.00",
+                  "$3,290.00",
+                  "$2,586.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "40/1,200",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$96.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,213.00",
+              "$16,722.00",
+              "$12,504.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "RMXXYLGGEPVNY9T4E",
+      "body_type": "Tractor",
+      "territory": "589",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8031 Katherine Parks, Deer Park, NY 12152"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "C9LNH389ENTTHZFUW",
+      "body_type": "Box Truck",
+      "territory": "466",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "8031 Katherine Parks, Deer Park, NY 12152"
+    },
+    {
+      "sequence": 3,
+      "year": "2025",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "AS4LEXKCAF7JVV9SL",
+      "body_type": "Truck",
+      "territory": "277",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8031 Katherine Parks, Deer Park, NY 12152"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Grace S Vargas",
+      "license_state": "NY",
+      "license_number": "370380162",
+      "date_of_birth": "7/26/1973"
+    },
+    {
+      "sequence": 2,
+      "name": "Lucia E Barrera",
+      "license_state": "NY",
+      "license_number": "603008911",
+      "date_of_birth": "8/4/1978"
+    },
+    {
+      "sequence": 3,
+      "name": "Tanya R Vargas",
+      "license_state": "NY",
+      "license_number": "914684284",
+      "date_of_birth": "2/20/1985"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Other Retail Trade Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8031 Katherine Parks",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "09905"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/14/2026",
+    "printed_at": "17:15",
+    "total_pages": 3
+  }
+}

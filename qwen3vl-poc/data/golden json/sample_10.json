@@ -1,0 +1,304 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/21/2026",
+    "transaction_effective_date": "5/3/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3856203315",
+    "billing_account_number": "6823195522",
+    "contract_number": "D67623",
+    "effective_date": "5/3/2026",
+    "expiration_date": "5/3/2027",
+    "term_amount": "$44,046.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Lindqvist Distributors Inc",
+    "address": {
+      "street": "8696 Executive Dr",
+      "city": "Ronkonkoma",
+      "state": "NY",
+      "zip": "75242"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "669-398-5472",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,046.00",
+    "inception_date": "5/3/2026",
+    "effective_date": "5/3/2026",
+    "net_change_amount": "$44,046.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "Isuzu Finance of America Inc",
+      "address": {
+        "street": "9153 Oser Ave",
+        "city": "Hauppauge",
+        "state": "NY",
+        "zip": "55063"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "526 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2023 FREIGHTLINER M2",
+              "2023 ISUZU FTR",
+              "2026 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,227.00",
+                  "$9,281.00",
+                  "$9,768.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$264.00",
+                  "$338.00",
+                  "$293.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$824.00",
+                  "$853.00",
+                  "$819.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$3,333.00",
+                  "$3,382.00",
+                  "$3,172.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$72.00",
+                  "$66.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$112.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$305.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,114.00",
+              "$14,347.00",
+              "$14,545.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2023",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "R37MSZHLEHZ3Z87DG",
+      "body_type": "Tractor",
+      "territory": "286",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "526 Industrial Loop, Deer Park, NY 10436"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "FTR",
+      "vin": "B5PR7RBL8J37B8N6V",
+      "body_type": "Truck",
+      "territory": "888",
+      "gvw": "25,950.00",
+      "registration_state": "New York",
+      "garaging_location": "526 Industrial Loop, Deer Park, NY 10436"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "KU7NDWY01ZKZSJXE7",
+      "body_type": "Van",
+      "territory": "201",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "526 Industrial Loop, Deer Park, NY 10436"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Rajiv Hollingsworth",
+      "license_state": "NY",
+      "license_number": "254796315",
+      "date_of_birth": "12/1/1954"
+    },
+    {
+      "sequence": 2,
+      "name": "Erick Whitfield",
+      "license_state": "NY",
+      "license_number": "517538319",
+      "date_of_birth": "2/8/1964"
+    },
+    {
+      "sequence": 3,
+      "name": "Lucia V Krishnan",
+      "license_state": "NY",
+      "license_number": "294519799",
+      "date_of_birth": "4/15/1996"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "General Freight Trucking - Local"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "526 Industrial Loop",
+        "city": "North Connorshire",
+        "state": "NY",
+        "zip": "91067"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Semi-Annual",
+    "number_of_payments": "2",
+    "bill_method": "Company Policy Billed",
+    "payor": "First Named Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/25/2026",
+    "printed_at": "08:00",
+    "total_pages": 3
+  }
+}

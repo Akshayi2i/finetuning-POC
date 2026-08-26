@@ -21,17 +21,35 @@ def load_system_prompt(cfg: dict) -> str:
 
 
 def build_ocr_text(pages: list[tuple[Path, Path]]) -> str:
-    """Concatenate per-page OCR markdown with explicit page delimiters."""
+    """Concatenate per-page OCR markdown with explicit page delimiters.
+
+    Used for reporting and for the coverage audit; the model itself is fed the
+    per-page chunks built by build_user_content.
+    """
     chunks = []
     for idx, (_, md) in enumerate(pages, start=1):
         chunks.append(f"--- OCR page {idx} ---\n{read_text(md).strip()}")
     return "\n\n".join(chunks)
 
 
-def build_user_content(pages: list[tuple[Path, Path]], ocr_text: str) -> list[dict]:
-    """User turn: every page image first, then the concatenated OCR markdown."""
-    content: list[dict] = [{"type": "image", "image": str(p.as_posix())} for p, _ in pages]
-    content.append({"type": "text", "text": ocr_text})
+def build_user_content(pages: list[tuple[Path, Path]], ocr_text: str | None = None) -> list[dict]:
+    """User turn: one chunk per page - header, that page's image, that page's OCR.
+
+    Both modalities go in, interleaved page by page rather than as one block of
+    images followed by one block of text. A page's picture and the text read off
+    that same page sit next to each other, so the model does not have to work out
+    which slab of markdown belongs to which image - which gets harder the more
+    pages a document has.
+    """
+    total = len(pages)
+    content: list[dict] = []
+    for idx, (png, md) in enumerate(pages, start=1):
+        content.append({"type": "text", "text": f"--- Page {idx} of {total} ---"})
+        content.append({"type": "image", "image": str(png.as_posix())})
+        text = read_text(md).strip()
+        content.append({"type": "text",
+                        "text": f"OCR text of page {idx}:\n{text}" if text
+                                else f"OCR text of page {idx}: (none - read this page from the image)"})
     return content
 
 
@@ -44,10 +62,9 @@ def build_messages(cfg: dict, doc_id: str,
     the inference prompt cannot drift apart.
     """
     pages = require_pages(ocr_dir_for(cfg, doc_id))
-    ocr_text = build_ocr_text(pages)
     messages: list[dict] = [
         {"role": "system", "content": load_system_prompt(cfg)},
-        {"role": "user", "content": build_user_content(pages, ocr_text)},
+        {"role": "user", "content": build_user_content(pages)},
     ]
     if assistant_text is not None:
         messages.append({"role": "assistant", "content": assistant_text})

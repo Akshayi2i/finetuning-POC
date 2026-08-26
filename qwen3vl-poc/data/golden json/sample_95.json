@@ -1,0 +1,302 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "4/23/2026",
+    "transaction_effective_date": "4/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "8571022136",
+    "billing_account_number": "1897956214",
+    "contract_number": "C88487",
+    "effective_date": "4/28/2026",
+    "expiration_date": "4/28/2027",
+    "term_amount": "$44,988.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Hollingsworth Transport Group Inc",
+    "address": {
+      "street": "5639 Industrial Loop",
+      "city": "Deer Park",
+      "state": "NY",
+      "zip": "30252"
+    },
+    "additional_named_insureds": [
+      "Rajiv",
+      "Priya"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Fax",
+      "information": "298-857-9684",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,988.00",
+    "inception_date": "4/28/2026",
+    "effective_date": "4/28/2026",
+    "net_change_amount": "$44,988.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Lienholder",
+      "name": "Signature Financial LLC",
+      "address": {
+        "street": "9630 Engineers Rd",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "51707"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "8464 OSER AVE",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 FORD TRANSIT 350",
+              "2024 INTERNATIONAL MV607",
+              "2026 PETERBILT 337"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,155.00",
+                  "$11,822.00",
+                  "$11,614.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$266.00",
+                  "$263.00",
+                  "$350.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$679.00",
+                  "$764.00",
+                  "$851.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,533.00",
+                  "$3,113.00",
+                  "$3,161.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$66.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$305.00",
+                  "$271.00",
+                  "$271.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$12,128.00",
+              "$16,439.00",
+              "$16,401.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "7TSFWBZUDRU3CZ4E7",
+      "body_type": "Tractor",
+      "territory": "160",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "8464 Oser Ave, Elmsford, NY 19058"
+    },
+    {
+      "sequence": 2,
+      "year": "2024",
+      "make": "INTERNATIONAL",
+      "model": "MV607",
+      "vin": "C0ZBH39WV6SMRXMLB",
+      "body_type": "Box Truck",
+      "territory": "527",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8464 Oser Ave, Elmsford, NY 19058"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "PETERBILT",
+      "model": "337",
+      "vin": "A34U2ACR2LEMNDAA7",
+      "body_type": "Truck",
+      "territory": "237",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "8464 Oser Ave, Elmsford, NY 19058"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Steven Whitfield",
+      "license_state": "NY",
+      "license_number": "776873160",
+      "date_of_birth": "12/22/1966"
+    },
+    {
+      "sequence": 2,
+      "name": "Priya Delgado",
+      "license_state": "NY",
+      "license_number": "399521924",
+      "date_of_birth": "12/5/1959"
+    },
+    {
+      "sequence": 3,
+      "name": "Beatriz Krishnan",
+      "license_state": "NY",
+      "license_number": "715241813",
+      "date_of_birth": "5/24/1987"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Appliance Sales And Service"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "8464 Oser Ave",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "73690"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Monthly",
+    "number_of_payments": "9",
+    "bill_method": "Direct Bill - Invoice",
+    "payor": "Additional Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "4/27/2026",
+    "printed_at": "16:15",
+    "total_pages": 3
+  }
+}

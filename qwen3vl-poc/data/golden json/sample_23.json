@@ -1,0 +1,301 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "5/19/2026",
+    "transaction_effective_date": "5/24/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "3826895290",
+    "billing_account_number": "8380791594",
+    "contract_number": "G58605",
+    "effective_date": "5/24/2026",
+    "expiration_date": "5/24/2027",
+    "term_amount": "$47,293.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Ferreira Industries Corp",
+    "address": {
+      "street": "9761 Industrial Loop",
+      "city": "Port Adrianfort",
+      "state": "NY",
+      "zip": "95912"
+    },
+    "additional_named_insureds": [
+      "Denise"
+    ]
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "ferreira@ferreiracorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$47,293.00",
+    "inception_date": "5/24/2026",
+    "effective_date": "5/24/2026",
+    "net_change_amount": "$47,293.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "2,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "10,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "500,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "Ascentium Capital LLC",
+      "address": {
+        "street": "4546 Corporate Center Dr",
+        "city": "Farmingdale",
+        "state": "NY",
+        "zip": "09039"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "381 EXECUTIVE DR",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2024 CHEVROLET SILVERADO 3500",
+              "2023 ISUZU NPR HD",
+              "2026 MERCEDES-BENZ SPRINTER 3500"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "2,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$10,796.00",
+                  "$12,601.00",
+                  "$10,815.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "10,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$354.00",
+                  "$361.00",
+                  "$370.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$736.00",
+                  "$733.00",
+                  "$731.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,642.00",
+                  "$2,748.00",
+                  "$2,932.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$84.00",
+                  "$84.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$96.00",
+                  "$78.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "500,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$15,006.00",
+              "$16,903.00",
+              "$15,364.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2024",
+      "make": "CHEVROLET",
+      "model": "SILVERADO 3500",
+      "vin": "12Y3PL64B59KVL3N3",
+      "body_type": "Tractor",
+      "territory": "125",
+      "gvw": "14,000.00",
+      "registration_state": "New York",
+      "garaging_location": "381 Executive Dr, Ronkonkoma, NY 10741"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "ISUZU",
+      "model": "NPR HD",
+      "vin": "71EEJLHBS2WXDCW6E",
+      "body_type": "Truck",
+      "territory": "119",
+      "gvw": "14,500.00",
+      "registration_state": "New York",
+      "garaging_location": "381 Executive Dr, Ronkonkoma, NY 10741"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER 3500",
+      "vin": "TMHU99X3H0WUKG9VY",
+      "body_type": "Box Truck",
+      "territory": "777",
+      "gvw": "11,030.00",
+      "registration_state": "New York",
+      "garaging_location": "381 Executive Dr, Ronkonkoma, NY 10741"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Victor L Hollingsworth",
+      "license_state": "NY",
+      "license_number": "765824382",
+      "date_of_birth": "12/5/1958"
+    },
+    {
+      "sequence": 2,
+      "name": "Erick Nakamura",
+      "license_state": "NY",
+      "license_number": "201867045",
+      "date_of_birth": "7/9/1969"
+    },
+    {
+      "sequence": 3,
+      "name": "Omar Castellano",
+      "license_state": "NY",
+      "license_number": "899850072",
+      "date_of_birth": "12/15/1961"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Wholesale Distribution Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "381 Executive Dr",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "14936"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Ten Pay",
+    "number_of_payments": "10",
+    "bill_method": "Company Policy Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "5/21/2026",
+    "printed_at": "17:45",
+    "total_pages": 3
+  }
+}

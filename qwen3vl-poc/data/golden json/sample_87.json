@@ -1,0 +1,304 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "1/29/2026",
+    "transaction_effective_date": "2/5/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "5761283292",
+    "billing_account_number": "3633726921",
+    "contract_number": "C83021",
+    "effective_date": "2/5/2026",
+    "expiration_date": "2/5/2027",
+    "term_amount": "$45,149.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Boone Services Corp",
+    "address": {
+      "street": "9589 Sunrise Hwy",
+      "city": "East Kimberlyton",
+      "state": "NY",
+      "zip": "19619"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Mobile Phone",
+      "information": "927-490-4738",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$45,149.00",
+    "inception_date": "2/5/2026",
+    "effective_date": "2/5/2026",
+    "net_change_amount": "$45,149.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "15,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "25,000/50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      },
+      {
+        "coverage": "Additional Insured",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$40.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Additional Insured",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "5853 Marcus Ave",
+        "city": "West Jessicastad",
+        "state": "NY",
+        "zip": "37016"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "1064 KATHERINE PARKS",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2026 GMC SAVANA 3500",
+              "2025 KENWORTH T270",
+              "2024 FREIGHTLINER CASCADIA"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,366.00",
+                  "$11,283.00",
+                  "$11,584.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "15,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$363.00",
+                  "$372.00",
+                  "$306.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "500 Ded",
+                "premiums": [
+                  "$692.00",
+                  "$778.00",
+                  "$810.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$2,758.00",
+                  "$3,179.00",
+                  "$3,184.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "75/2,250",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$66.00",
+                  "$84.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "25,000/50,000",
+                "deductible": null,
+                "premiums": [
+                  "$134.00",
+                  "$112.00",
+                  "$78.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$288.00",
+                  "$288.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$12,677.00",
+              "$16,088.00",
+              "$16,344.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2026",
+      "make": "GMC",
+      "model": "SAVANA 3500",
+      "vin": "JUMB9SYYU29V8V586",
+      "body_type": "Box Truck",
+      "territory": "340",
+      "gvw": "9,900.00",
+      "registration_state": "New York",
+      "garaging_location": "1064 Katherine Parks, Bay Shore, NY 13543"
+    },
+    {
+      "sequence": 2,
+      "year": "2025",
+      "make": "KENWORTH",
+      "model": "T270",
+      "vin": "1BNU8ER12XK5C9P8A",
+      "body_type": "Truck",
+      "territory": "572",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1064 Katherine Parks, Bay Shore, NY 13543"
+    },
+    {
+      "sequence": 3,
+      "year": "2024",
+      "make": "FREIGHTLINER",
+      "model": "CASCADIA",
+      "vin": "XNA7S2ZJ4JFGTF02B",
+      "body_type": "Box Truck",
+      "territory": "206",
+      "gvw": "33,000.00",
+      "registration_state": "New York",
+      "garaging_location": "1064 Katherine Parks, Bay Shore, NY 13543"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Beatriz Nakamura",
+      "license_state": "NY",
+      "license_number": "836445006",
+      "date_of_birth": "6/14/1966"
+    },
+    {
+      "sequence": 2,
+      "name": "Janet B Nakamura",
+      "license_state": "NY",
+      "license_number": "222583697",
+      "date_of_birth": "12/22/1994"
+    },
+    {
+      "sequence": 3,
+      "name": "Omar G Pierre-Louis",
+      "license_state": "NY",
+      "license_number": "835141769",
+      "date_of_birth": "5/19/1996"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "HVAC Contracting Operations"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "1064 Katherine Parks",
+        "city": "Yaphank",
+        "state": "NY",
+        "zip": "18981"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Direct Bill - EFT",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "2/3/2026",
+    "printed_at": "08:15",
+    "total_pages": 3
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "document_type": "Policy Declaration",
+  "carrier_name": "GEICO Marine Insurance Co",
+  "transaction": {
+    "transaction_type": "NEW BUSINESS",
+    "transaction_date": "6/20/2026",
+    "transaction_effective_date": "6/28/2026",
+    "policy_type": "Business Automobile",
+    "naic": "35882",
+    "policy_number": "9263082565",
+    "billing_account_number": "9263082565",
+    "contract_number": "B60502",
+    "effective_date": "6/28/2026",
+    "expiration_date": "6/28/2027",
+    "term_amount": "$44,496.00"
+  },
+  "named_insured": {
+    "entity_type": "CORPORATION",
+    "name": "Delgado Industries Corp",
+    "address": {
+      "street": "2455 Engineers Rd",
+      "city": "Deer Park",
+      "state": "NY",
+      "zip": "60272"
+    },
+    "additional_named_insureds": []
+  },
+  "contact_info": [
+    {
+      "type": "Email",
+      "information": "delgado@delgadocorp.com",
+      "contact_name": null
+    }
+  ],
+  "line_of_business": {
+    "name": "Business Automobile",
+    "premium": "$44,496.00",
+    "inception_date": "6/28/2026",
+    "effective_date": "6/28/2026",
+    "net_change_amount": "$44,496.00",
+    "coverages": [
+      {
+        "coverage": "Combined Single Limit Liability",
+        "limit": "1,000,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Personal Injury Protection",
+        "limit": "50,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Uninsured Motorist Bi Split Limit",
+        "limit": "100,000/300,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Suspension Of Uninsured Motorist Liability Coverage",
+        "limit": "250,000",
+        "premium": "Included"
+      },
+      {
+        "coverage": "Additional Interests",
+        "limit": null,
+        "premium": "$20.00"
+      }
+    ],
+    "total": "$20.00"
+  },
+  "additional_interests": [
+    {
+      "nature_of_interest": "Loss Payee",
+      "name": "P.c.richard&Son Long Island Corporation",
+      "address": {
+        "street": "4664 Executive Dr",
+        "city": "New Marcusview",
+        "state": "NY",
+        "zip": "81134"
+      },
+      "rank": "1",
+      "payor": null,
+      "account_number": null
+    }
+  ],
+  "states": [
+    {
+      "state": "New York",
+      "locations": [
+        {
+          "location_number": 1,
+          "location_address": "6080 INDUSTRIAL LOOP",
+          "vehicle_coverages": {
+            "vehicle_columns": [
+              "2025 FORD TRANSIT 350",
+              "2023 INTERNATIONAL MV607",
+              "2026 FREIGHTLINER M2"
+            ],
+            "rows": [
+              {
+                "description": "Combined Single Limit Liability",
+                "limit": "1,000,000",
+                "deductible": null,
+                "premiums": [
+                  "$8,562.00",
+                  "$11,190.00",
+                  "$10,410.00"
+                ]
+              },
+              {
+                "description": "Personal Injury Protection (I)",
+                "limit": "50,000",
+                "deductible": "0 Ded",
+                "premiums": [
+                  "$355.00",
+                  "$318.00",
+                  "$374.00"
+                ]
+              },
+              {
+                "description": "Comprehensive",
+                "limit": null,
+                "deductible": "1,000 Ded",
+                "premiums": [
+                  "$771.00",
+                  "$861.00",
+                  "$839.00"
+                ]
+              },
+              {
+                "description": "Collision",
+                "limit": null,
+                "deductible": "2,500 Ded",
+                "premiums": [
+                  "$2,971.00",
+                  "$3,233.00",
+                  "$3,198.00"
+                ]
+              },
+              {
+                "description": "Rental Reimbursement",
+                "limit": "50/1,500",
+                "deductible": null,
+                "premiums": [
+                  "$66.00",
+                  "$72.00",
+                  "$72.00"
+                ]
+              },
+              {
+                "description": "Uninsured Motorist Bi Split Limit",
+                "limit": "100,000/300,000",
+                "deductible": null,
+                "premiums": [
+                  "$78.00",
+                  "$78.00",
+                  "$134.00"
+                ]
+              },
+              {
+                "description": "Childcare Expenses",
+                "limit": "25",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Apip Death Benefits",
+                "limit": "2,000",
+                "deductible": null,
+                "premiums": [
+                  "Included",
+                  "Included",
+                  "Included"
+                ]
+              },
+              {
+                "description": "Suspension Of Uninsured Motorist Liability Coverage",
+                "limit": "250,000",
+                "deductible": null,
+                "premiums": [
+                  "$288.00",
+                  "$271.00",
+                  "$305.00"
+                ]
+              },
+              {
+                "description": "Law Enforcement Fee",
+                "limit": null,
+                "deductible": null,
+                "premiums": [
+                  "$10.00",
+                  "$10.00",
+                  "$10.00"
+                ]
+              }
+            ],
+            "totals": [
+              "$13,101.00",
+              "$16,033.00",
+              "$15,342.00"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "vehicles": [
+    {
+      "sequence": 1,
+      "year": "2025",
+      "make": "FORD",
+      "model": "TRANSIT 350",
+      "vin": "LERG55DM1KZ9X47NW",
+      "body_type": "Truck",
+      "territory": "609",
+      "gvw": "9,500.00",
+      "registration_state": "New York",
+      "garaging_location": "6080 Industrial Loop, Ronkonkoma, NY 11545"
+    },
+    {
+      "sequence": 2,
+      "year": "2023",
+      "make": "INTERNATIONAL",
+      "model": "MV607",
+      "vin": "22RSA7F06RT1RLC43",
+      "body_type": "Truck",
+      "territory": "692",
+      "gvw": "25,999.00",
+      "registration_state": "New York",
+      "garaging_location": "6080 Industrial Loop, Ronkonkoma, NY 11545"
+    },
+    {
+      "sequence": 3,
+      "year": "2026",
+      "make": "FREIGHTLINER",
+      "model": "M2",
+      "vin": "PKMEY2VHLLG8PJJNV",
+      "body_type": "Truck",
+      "territory": "424",
+      "gvw": "26,000.00",
+      "registration_state": "New York",
+      "garaging_location": "6080 Industrial Loop, Ronkonkoma, NY 11545"
+    }
+  ],
+  "drivers": [
+    {
+      "sequence": 1,
+      "name": "Dwayne C Lindqvist",
+      "license_state": "NY",
+      "license_number": "183781985",
+      "date_of_birth": "1/25/1978"
+    },
+    {
+      "sequence": 2,
+      "name": "Janet N Delgado",
+      "license_state": "NY",
+      "license_number": "127007125",
+      "date_of_birth": "9/5/1977"
+    },
+    {
+      "sequence": 3,
+      "name": "Hector Boone",
+      "license_state": "NY",
+      "license_number": "576184571",
+      "date_of_birth": "8/19/1971"
+    }
+  ],
+  "commercial_policy_information": {
+    "controlling_state": "New York",
+    "operation_business_description": "Contractor - Plumbing Services"
+  },
+  "locations": [
+    {
+      "location_number": "1",
+      "address": {
+        "street": "6080 Industrial Loop",
+        "city": "Elmsford",
+        "state": "NY",
+        "zip": "44700"
+      },
+      "legal_description": null
+    }
+  ],
+  "pay_plan": {
+    "payment_plan": "Quarterly",
+    "number_of_payments": "4",
+    "bill_method": "Agency Billed",
+    "payor": "Insured"
+  },
+  "disclaimer": "The insurance policy information contained herein is produced from data contained in the Client Management System and cannot be used to determine coverage provided by an insurance policy. Please refer to the insurance policy issued by your insurance carrier for coverage information.",
+  "document_metadata": {
+    "printed_on": "6/26/2026",
+    "printed_at": "13:30",
+    "total_pages": 3
+  }
+}

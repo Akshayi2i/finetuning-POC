@@ -189,9 +189,79 @@ def discover_documents(data_dir: Path) -> tuple[list[Document], list[Path], list
     return documents, unpaired_pdfs, [g for g in golds if g not in matched]
 
 
+def is_stale(target: Path, sources) -> str | None:
+    """Is `target` missing, or older than any of `sources`?
+
+    Returns a short reason when the target needs rebuilding, else None. Used so a
+    stage can rebuild what it depends on only when something actually changed,
+    rather than redoing the work on every run.
+    """
+    target = Path(target)
+    if not target.exists():
+        return f"{target.name} does not exist"
+    stamp = target.stat().st_mtime
+    for src in sources:
+        src = Path(src)
+        if src.exists() and src.stat().st_mtime > stamp:
+            return f"{src.name} is newer than {target.name}"
+    return None
+
+
 def ocr_dir_for(cfg: dict, doc_id: str) -> Path:
     """Per-document OCR folder: outputs/ocr/<doc_id>/page_N.png + page_N.md."""
     return cfg_path(cfg, "ocr_dir") / doc_id
+
+
+# --------------------------------------------------------------------------- results
+
+
+VERSION_RE = re.compile(r"^v\d+$")
+
+
+def is_version(model: str) -> bool:
+    """'v1', 'v2', ... name a fine-tuned model; 'base' names the untouched one."""
+    return bool(VERSION_RE.match(model or ""))
+
+
+def results_dir_for(cfg: dict, model: str, doc_id: str) -> Path:
+    """Where one model's extraction of one document lives.
+
+        outputs/results/base model results/<doc_id>/
+        outputs/results/trained model results/v1/<doc_id>/
+
+    Keeping each model's output in its own folder means a new version never
+    overwrites an earlier one, so v1 and v2 can be compared side by side.
+    """
+    root = cfg_path(cfg, "results_dir")
+    paths = cfg.get("paths", {})
+    if model == "base":
+        return root / paths.get("base_results_subdir", "base model results") / doc_id
+    if not is_version(model):
+        raise ValueError(f"model must be 'base' or a version like 'v1', got {model!r}")
+    return root / paths.get("trained_results_subdir", "trained model results") / model / doc_id
+
+
+def adapter_dir_for(cfg: dict, version: str) -> Path:
+    """Where a version's trained LoRA adapter lives: outputs/adapter/v1, .../v2.
+
+    Versioned for the same reason the merged weights are: training v2 must not
+    destroy the adapter that produced v1's results.
+    """
+    if not is_version(version):
+        raise ValueError(f"version must look like 'v1', got {version!r}")
+    return cfg_path(cfg, "adapter_dir") / version
+
+
+def merged_dir_for(cfg: dict, version: str) -> Path:
+    """Where a merged fine-tuned model lives: outputs/merged/v1, .../v2, ..."""
+    if not is_version(version):
+        raise ValueError(f"version must look like 'v1', got {version!r}")
+    return resolve(cfg["paths"].get("merged_root", "outputs/merged")) / version
+
+
+def model_version(cfg: dict) -> str:
+    """The fine-tuned version this run produces, from config (default v1)."""
+    return str(cfg.get("model", {}).get("version") or "v1")
 
 
 _PAGE_RE = re.compile(r"^page_(\d+)$")
