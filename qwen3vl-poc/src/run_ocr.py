@@ -98,10 +98,21 @@ def _md_from_content_list(items: list[dict], n_pages: int) -> list[str]:
                 per_page[idx].append(f"**{caption}**")
             if body:
                 per_page[idx].append(body)
+            for note in block.get("table_footnote") or []:
+                note = (note or "").strip()
+                if note:
+                    per_page[idx].append(note)
         elif kind == "equation":
             latex = (block.get("text") or "").strip()
             if latex:
                 per_page[idx].append(latex)
+        elif kind == "discarded":
+            # MinerU files headers, footers and page numbers as "discarded". It also
+            # misfiles real content there - on the declarations page a premium total
+            # landed in it. The spec says nothing present may be skipped, so keep it.
+            text = (block.get("text") or "").strip()
+            if text:
+                per_page[idx].append(text)
         elif kind == "image":
             caption = " ".join(block.get("image_caption") or []).strip()
             if caption:
