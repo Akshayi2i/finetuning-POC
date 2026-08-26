@@ -56,9 +56,9 @@ corpus:
   # Every PDF under paths.data_dir is paired with its gold JSON by file name, so you can
   # organise data/ however you like (subfolders, any naming). Add synthetic documents by
   # dropping the PDF and its gold JSON in; nothing here needs changing.
-  test_document: null               # doc_id or file stem of the held-out test doc.
+  test_document: sample_100         # = New Business 6.pdf (the real document), held out
                                     # null = the alphabetically first document.
-  include_test_in_training: true    # false: the test doc is HELD OUT, so a gain proves the
+  include_test_in_training: false   # test doc HELD OUT: a gain is real evidence, not memorisation
                                     #        model learned the document TYPE (real evidence).
                                     # true:  the test doc is also trained on, so a gain only
                                     #        proves memorisation (guaranteed signal, weaker).

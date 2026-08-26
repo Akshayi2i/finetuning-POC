@@ -18,11 +18,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import (  # noqa: E402
+    Document,
     cfg_path,
     ensure_dir,
     is_version,
     load_config,
     merged_dir_for,
+    name_key,
     read_json,
     recover_json_object,
     results_dir_for,
@@ -35,7 +37,7 @@ from common import (  # noqa: E402
 from common import discover_documents  # noqa: E402
 from modeling import load_model_and_processor  # noqa: E402
 from prompting import build_messages, conversation_fingerprint  # noqa: E402
-from run_ocr import ensure_ocr  # noqa: E402
+from run_ocr import ensure_ocr, ocr_document  # noqa: E402
 
 log = setup_logging("infer")
 
@@ -181,6 +183,9 @@ def main() -> int:
                     help="'base', or a fine-tuned version like v1 / v2")
     ap.add_argument("--config", default=None)
     ap.add_argument("--doc", default=None, help="doc_id to extract (default: the test document)")
+    ap.add_argument("--pdf", default=None,
+                    help="path to any PDF to extract, including one outside the corpus. "
+                         "Use instead of --doc; no gold JSON is needed.")
     ap.add_argument("--load-in-4bit", action="store_true",
                     help="load in 4-bit for inference on a small GPU (slightly changes outputs)")
     ap.add_argument("--device-map", default="auto")
@@ -195,18 +200,33 @@ def main() -> int:
                   inference.get("mode"))
         return 2
 
-    doc_id, expected_fp = resolve_doc(cfg, args.doc)
+    if args.pdf and args.doc:
+        log.error("pass either --pdf or --doc, not both")
+        return 2
 
     # One command does the whole extraction: OCR the document with MinerU if it has
     # not been done, then run it through the model you asked for.
-    if not args.no_ocr:
-        documents, _, _ = discover_documents(cfg_path(cfg, "data_dir"))
-        target = [d for d in documents if d.doc_id == doc_id]
-        if target:
-            ensure_ocr(cfg, target)
-        else:
-            log.warning("%s is not in %s; using whatever OCR output exists",
-                        doc_id, cfg_path(cfg, "data_dir"))
+    if args.pdf:
+        # An arbitrary PDF, which is the production case: no gold, no corpus entry.
+        pdf_path = Path(args.pdf).expanduser()
+        if not pdf_path.is_file():
+            log.error("no such PDF: %s", pdf_path)
+            return 2
+        doc_id, expected_fp = name_key(pdf_path.stem) or "adhoc", None
+        log.info("ad-hoc extraction of %s as doc_id=%s", pdf_path.name, doc_id)
+        if not args.no_ocr:
+            engine = cfg.get("ocr", {}).get("engine", "mineru")
+            ocr_document(Document(doc_id, pdf_path.resolve(), Path("(none)")), cfg, engine)
+    else:
+        doc_id, expected_fp = resolve_doc(cfg, args.doc)
+        if not args.no_ocr:
+            documents, _, _ = discover_documents(cfg_path(cfg, "data_dir"))
+            target = [d for d in documents if d.doc_id == doc_id]
+            if target:
+                ensure_ocr(cfg, target)
+            else:
+                log.warning("%s is not in %s; using whatever OCR output exists",
+                            doc_id, cfg_path(cfg, "data_dir"))
 
     max_pixels = set_vision_env(cfg)
     log.info("document=%s model=%s MAX_PIXELS=%d", doc_id, args.model, max_pixels)
@@ -258,8 +278,12 @@ def main() -> int:
         log.info("confidence: mean token probability %.4f, %d low-confidence token(s) (<0.5)",
                  confidence["mean_token_probability"], confidence["low_confidence_tokens"])
 
-    results_dir = ensure_dir(cfg_path(cfg, "results_dir") / doc_id)
-    write_text(results_dir / f"{args.model}_raw.txt", raw + "\n")
+    # Per-model, per-version folder so base / v1 / v2 never overwrite each other,
+    # and compare.py can find each one:
+    #   outputs/results/base model results/<doc_id>/
+    #   outputs/results/trained model results/v1/<doc_id>/
+    results_dir = ensure_dir(results_dir_for(cfg, args.model, doc_id))
+    write_text(results_dir / "raw.txt", raw + "\n")
 
     parsed, reason, repaired = recover_json_object(raw)
     hit_cap = int(len(new_tokens)) >= int(inference.get("max_new_tokens", 2048))
@@ -282,7 +306,7 @@ def main() -> int:
         stale = results_dir / "output.json"
         if stale.exists():
             stale.unlink()
-        log.error("output is not valid JSON (%s); raw text kept in %s_raw.txt", reason, args.model)
+        log.error("output is not valid JSON (%s); raw text kept in %s", reason, results_dir / "raw.txt")
 
     write_json(results_dir / "meta.json", {
         "model": args.model,

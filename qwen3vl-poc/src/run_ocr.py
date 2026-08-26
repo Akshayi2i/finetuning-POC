@@ -114,7 +114,7 @@ def run_mineru(pdf: Path, n_pages: int, backend: str, lang: str) -> list[str]:
     exe = shutil.which("mineru") or shutil.which("magic-pdf")
     if not exe:
         raise RuntimeError(
-            "MinerU CLI not found on PATH. Install it (pip install 'mineru[core]') "
+            "MinerU CLI not found on PATH. Install it (pip install 'mineru[pipeline]') "
             "or run with --engine pymupdf for a no-OCR dry run."
         )
 

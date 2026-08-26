@@ -21,7 +21,7 @@ qwen-vl-utils==0.0.14
 datasets==3.6.0
 
 # OCR
-mineru[core]==2.1.10
+mineru[pipeline]==2.1.10   # pipeline backend only: [core] also pulls the gradio UI, whose deps conflict (gradio<6 vs gradio-pdf>=6)
 pymupdf==1.26.3               # page rendering + no-OCR fallback text extraction
 
 # Support
