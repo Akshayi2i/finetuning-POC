@@ -38,6 +38,10 @@ from modeling import resolve_attn_impl  # noqa: E402
 log = setup_logging("train")
 
 LOSS_RE = re.compile(r"['\"]?\bloss['\"]?\s*[:=]\s*([0-9]*\.?[0-9]+)")
+# ms-swift dumps the first sample as "[LABELS] [-100 * 5231]{\"document_type\": ...".
+# Capturing the text after the tag lets analyse_labels() check the prompt is masked
+# and the target starts at the JSON, rather than assuming it.
+LABELS_RE = re.compile(r"\[LABELS(?:_IDS)?\]\s*(.+)")
 ADAPTER_KEEP = {
     "adapter_config.json",
     "adapter_model.safetensors",
