@@ -120,7 +120,26 @@ def _md_from_content_list(items: list[dict], n_pages: int) -> list[str]:
     return ["\n\n".join(chunks).strip() for chunks in per_page]
 
 
-def run_mineru(pdf: Path, n_pages: int, backend: str, lang: str) -> list[str]:
+def resolve_device(setting: str | None) -> str:
+    """MinerU device for -d. "auto" picks cuda when torch can see a GPU.
+
+    MinerU's own auto-detection silently fell back to CPU on a torch 2.11
+    image, which made OCR about three times slower, so the device is passed
+    explicitly rather than left to be inferred.
+    """
+    setting = (setting or "auto").strip()
+    if setting != "auto":
+        return setting
+    try:
+        import torch
+
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    except Exception:
+        return "cpu"
+
+
+def run_mineru(pdf: Path, n_pages: int, backend: str, lang: str,
+               device: str | None = None) -> list[str]:
     """Run the MinerU CLI on one PDF and return one markdown string per page."""
     exe = shutil.which("mineru") or shutil.which("magic-pdf")
     if not exe:
@@ -131,7 +150,9 @@ def run_mineru(pdf: Path, n_pages: int, backend: str, lang: str) -> list[str]:
 
     with tempfile.TemporaryDirectory(prefix="mineru_") as tmp:
         tmp_dir = Path(tmp)
-        cmd = [exe, "-p", str(pdf), "-o", str(tmp_dir), "-b", backend, "-l", lang]
+        dev = resolve_device(device)
+        cmd = [exe, "-p", str(pdf), "-o", str(tmp_dir), "-b", backend, "-l", lang,
+               "-d", dev]
         log.info("running: %s", " ".join(cmd))
         proc = subprocess.run(cmd, capture_output=True, text=True)
         if proc.returncode != 0:
@@ -197,6 +218,7 @@ def ocr_document(doc: Document, cfg: dict, engine: str) -> dict:
             doc.pdf, n_pages,
             ocr_cfg.get("mineru_backend", "pipeline"),
             ocr_cfg.get("mineru_lang", "en"),
+            ocr_cfg.get("mineru_device", "auto"),
         )
     else:
         pages_md = run_pymupdf(doc.pdf)

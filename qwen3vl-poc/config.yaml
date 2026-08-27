@@ -86,4 +86,6 @@ ocr:
   engine: mineru                    # mineru | pymupdf (pymupdf = no-OCR fallback for dry runs)
   mineru_backend: pipeline          # MinerU 2.x backend
   mineru_lang: en
+  mineru_device: auto              # auto | cuda | cpu | cuda:0. MinerU auto-detect fell back
+                                    # to CPU on torch 2.11 - about 3x slower - so pass it.
   dpi: 200                          # base render dpi before the long-side cap is applied
