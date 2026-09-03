@@ -2,7 +2,7 @@
 
 The base is loaded in bf16 (NOT 4-bit: merging into quantized weights loses the
 adapter's precision), the adapter is attached with PEFT, merge_and_unload folds
-it in, and the result is saved to outputs/merged_v1/ together with the processor
+it in, and the result is saved to <merged_root>/<version>/ together with the processor
 so it can be loaded standalone.
 """
 

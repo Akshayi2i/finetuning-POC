@@ -2,8 +2,8 @@
 
 Writes two encodings of the same conversations:
 
-  outputs/dataset/train.jsonl        the spec's chat format (content blocks)
-  outputs/dataset/train_swift.jsonl  ms-swift native form (<image> tags + images list)
+  training dataset/dataset/train.jsonl        the spec's chat format (content blocks)
+  training dataset/dataset/train_swift.jsonl  ms-swift native form (<image> tags + images list)
 
 The test document is held out of training by default (corpus.include_test_in_training),
 so a gain on it is evidence the model learned the document *type* rather than

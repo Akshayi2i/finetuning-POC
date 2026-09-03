@@ -523,7 +523,7 @@ def main() -> int:
     train_report = adapter_dir_for(cfg, version) / "train_report.json"
     training = read_json(train_report) if train_report.exists() else None
     if training and not training.get("loss_decreased"):
-        reasons.append("WARNING: training loss did not decrease (see outputs/adapter/train_report.json)")
+        reasons.append("WARNING: training loss did not decrease (see the adapter's train_report.json)")
 
     # A crashed inference stage leaves the previous run's *_output.json in place.
     # Both results must carry the fingerprint of the dataset currently on disk.

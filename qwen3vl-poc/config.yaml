@@ -68,12 +68,21 @@ paths:
   data_dir: data                    # PDFs + gold JSONs live here, in any layout
   system_prompt: prompts/system_prompt.txt
   json_schema: prompts/schema.json
-  ocr_dir: outputs/ocr
-  dataset: outputs/dataset/train.jsonl
-  swift_dataset: outputs/dataset/train_swift.jsonl   # ms-swift native form of the same example
-  adapter_dir: outputs/adapter
-  merged_root: outputs/merged       # each fine-tuned version lands in merged/<version>
-  results_dir: outputs/results
+  # Training inputs: OCR text/page renders and the assembled corpus. These stay
+  # with the project - they are derived from data/ and are what training reads.
+  ocr_dir: training dataset/ocr
+  dataset: training dataset/dataset/train.jsonl
+  swift_dataset: training dataset/dataset/train_swift.jsonl   # ms-swift native form
+
+  # Model weights: kept OUTSIDE the project, alongside the base model. The adapter
+  # is 174 MB and a merged version is 17.5 GB, so they do not belong next to the
+  # code. On RunPod that is /workspace/models, next to Qwen3-VL-8B-Instruct;
+  # point these at a local directory when running elsewhere.
+  adapter_dir: /workspace/models/adapter    # then /<version>/
+  merged_root: /workspace/models/merged     # then /<version>/
+
+  # Extraction results, one folder per model and version.
+  results_dir: results
   base_results_subdir: "base model results"
   trained_results_subdir: "trained model results"   # then /<version>/<doc_id>/
 

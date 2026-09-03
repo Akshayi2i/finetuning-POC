@@ -6,18 +6,14 @@ data/gold.json
 data/sample_input.pdf
 data/sample_gold.json
 
-# Regenerable or too large for git. The adapter is 174 MB (over GitHub's 100 MB
-# per-file limit) and the merged model is 17.5 GB, so both stay out; ship them
-# as release assets or via LFS if they ever need to be shared.
-outputs/ocr/
-outputs/merged/
-outputs/dataset/*.jsonl
-outputs/adapter/*/swift_run/
-outputs/adapter/*/*.safetensors
-outputs/adapter/*/*.bin
+# Derived training inputs - regenerable from data/, and large (page renders).
+training dataset/ocr/
+training dataset/dataset/*.jsonl
+
+# Model weights live outside the project entirely (paths.adapter_dir /
+# paths.merged_root, /workspace/models on RunPod), so nothing to ignore here.
 
 # Kept in git - small, and the evidence the POC produces:
-#   outputs/results/**            extractions, meta, comparison
-#   outputs/dataset/dataset_meta.json  which documents were trained on
-#   outputs/adapter/*/*.json      adapter config, args, train report
-!outputs/**/.gitkeep
+#   results/**                                   extractions, meta, comparison
+#   training dataset/dataset/dataset_meta.json   which documents were trained on
+!**/.gitkeep

@@ -4,7 +4,7 @@ ms-swift is driven through its `swift sft` CLI: it owns the multimodal collator
 and the -100 label masking (loss only on the assistant JSON), which is exactly
 the part of the pipeline this POC must not reimplement.
 
-After training the newest checkpoint's adapter is copied to outputs/adapter/ and
+After training the newest checkpoint's adapter is copied to <adapter_dir>/<version>/ and
 the loss curve is checked: a loss that does not fall is the primary failure
 signal in the spec, so this script exits non-zero when that happens.
 """

@@ -81,6 +81,6 @@ echo ""
 if [ "$VERDICT_CODE" -eq 0 ]; then
   echo "POC RESULT: PASS - $MODEL_ARG is closer to the gold JSON than the base model."
 else
-  echo "POC RESULT: INVESTIGATE - see outputs/results/comparison.json and the reasons above."
+  echo "POC RESULT: INVESTIGATE - see results/trained model results/<version>/<doc>/comparison.json and the reasons above."
 fi
 exit "$VERDICT_CODE"

@@ -208,7 +208,7 @@ def is_stale(target: Path, sources) -> str | None:
 
 
 def ocr_dir_for(cfg: dict, doc_id: str) -> Path:
-    """Per-document OCR folder: outputs/ocr/<doc_id>/page_N.png + page_N.md."""
+    """Per-document OCR folder: training dataset/ocr/<doc_id>/page_N.png + page_N.md."""
     return cfg_path(cfg, "ocr_dir") / doc_id
 
 
@@ -226,8 +226,8 @@ def is_version(model: str) -> bool:
 def results_dir_for(cfg: dict, model: str, doc_id: str) -> Path:
     """Where one model's extraction of one document lives.
 
-        outputs/results/base model results/<doc_id>/
-        outputs/results/trained model results/v1/<doc_id>/
+        results/base model results/<doc_id>/
+        results/trained model results/v1/<doc_id>/
 
     Keeping each model's output in its own folder means a new version never
     overwrites an earlier one, so v1 and v2 can be compared side by side.
@@ -242,7 +242,7 @@ def results_dir_for(cfg: dict, model: str, doc_id: str) -> Path:
 
 
 def adapter_dir_for(cfg: dict, version: str) -> Path:
-    """Where a version's trained LoRA adapter lives: outputs/adapter/v1, .../v2.
+    """Where a version's trained LoRA adapter lives: <adapter_dir>/v1, .../v2.
 
     Versioned for the same reason the merged weights are: training v2 must not
     destroy the adapter that produced v1's results.
@@ -253,10 +253,10 @@ def adapter_dir_for(cfg: dict, version: str) -> Path:
 
 
 def merged_dir_for(cfg: dict, version: str) -> Path:
-    """Where a merged fine-tuned model lives: outputs/merged/v1, .../v2, ..."""
+    """Where a merged fine-tuned model lives: <merged_root>/v1, .../v2, ..."""
     if not is_version(version):
         raise ValueError(f"version must look like 'v1', got {version!r}")
-    return resolve(cfg["paths"].get("merged_root", "outputs/merged")) / version
+    return resolve(cfg["paths"]["merged_root"]) / version
 
 
 def model_version(cfg: dict) -> str:

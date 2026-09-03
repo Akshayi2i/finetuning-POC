@@ -14,12 +14,12 @@ demonstrably changed the model in the intended direction.
 
 ```
 data/**.pdf + data/**.json      corpus: every PDF paired with its gold JSON
-   └─ run_ocr.py               MinerU -> outputs/ocr/<doc_id>/page_{n}.png + .md
+   └─ run_ocr.py               MinerU -> training dataset/ocr/<doc_id>/page_{n}.png + .md
        └─ build_dataset.py     one chat example per document, test document held out
-                               -> outputs/dataset/train.jsonl (+ train_swift.jsonl)
+                               -> training dataset/dataset/train.jsonl (+ train_swift.jsonl)
            ├─ infer.py --model base   BEFORE training -> results/base model results/<doc>/
-           ├─ train.py         ms-swift QLoRA over the corpus -> outputs/adapter/
-           │   └─ merge.py     PEFT merge_and_unload -> outputs/merged/<version>/
+           ├─ train.py         ms-swift QLoRA over the corpus -> /workspace/models/adapter/
+           │   └─ merge.py     PEFT merge_and_unload -> /workspace/models/merged/<version>/
            │       └─ infer.py --model v1 -> results/trained model results/v1/<doc>/
            └─ compare.py       -> results/<doc>/comparison.json + verdict
 ```
@@ -257,7 +257,7 @@ under the version it judged.
 to `v2` for the next run, or pass `--version v2` to `run_all.sh`, `merge.py` and
 `compare.py`. `infer.py --model` takes `base` or any version name.
 
-`outputs/results/trained model results/<version>/<doc_id>/comparison.json` holds per-field
+`results/trained model results/<version>/<doc_id>/comparison.json` holds per-field
 results for both models, both match rates, the per-section breakdown, the confidence delta
 and the verdict. With
 hundreds of fields the terminal prints the section table plus only the rows where base
@@ -265,7 +265,7 @@ and v1 disagree; `--all-fields` and `--max-rows N` widen that.
 
 Five things to check, in order:
 
-1. **Loss falls across steps** — `outputs/adapter/train_report.json` (`first_loss`,
+1. **Loss falls across steps** — `/workspace/models/adapter/train_report.json` (`first_loss`,
    `last_loss`, `loss_decreased`, `optimizer_steps_planned`). If it does not fall, the
    training loop is misconfigured. The same report carries `label_masking`, captured from
    ms-swift's own `[LABELS]` line: `prompt_masked` must be true, or the loss is covering

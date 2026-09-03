@@ -71,6 +71,6 @@ Write-Host ""
 if ($verdict -eq 0) {
     Write-Host "POC RESULT: PASS - $modelArg is closer to the gold JSON than the base model."
 } else {
-    Write-Host "POC RESULT: INVESTIGATE - see outputs/results/comparison.json and the reasons above."
+    Write-Host "POC RESULT: INVESTIGATE - see results/trained model results/<version>/<doc>/comparison.json and the reasons above."
 }
 exit $verdict

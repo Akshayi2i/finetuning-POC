@@ -1,8 +1,8 @@
 """Stage 1 - OCR every document in the corpus.
 
 For each PDF found under paths.data_dir:
-    outputs/ocr/<doc_id>/page_{n}.png   page image, capped at max_image_long_side_px
-    outputs/ocr/<doc_id>/page_{n}.md    the text MinerU read off that page
+    <ocr_dir>/<doc_id>/page_{n}.png   page image, capped at max_image_long_side_px
+    <ocr_dir>/<doc_id>/page_{n}.md    the text MinerU read off that page
 
 Page images are always rendered with PyMuPDF so the resolution cap is applied
 exactly. The text comes from a swappable engine:
@@ -200,7 +200,7 @@ def run_pymupdf(pdf: Path) -> list[str]:
 
 
 def ocr_document(doc: Document, cfg: dict, engine: str) -> dict:
-    """OCR one document into outputs/ocr/<doc_id>/. Returns a summary dict."""
+    """OCR one document into <ocr_dir>/<doc_id>/. Returns a summary dict."""
     out_dir = ensure_dir(ocr_dir_for(cfg, doc.doc_id))
     ocr_cfg = cfg.get("ocr", {})
     max_long_side = int(cfg["model"]["max_image_long_side_px"])

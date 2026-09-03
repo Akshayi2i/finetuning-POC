@@ -280,8 +280,8 @@ def main() -> int:
 
     # Per-model, per-version folder so base / v1 / v2 never overwrite each other,
     # and compare.py can find each one:
-    #   outputs/results/base model results/<doc_id>/
-    #   outputs/results/trained model results/v1/<doc_id>/
+    #   results/base model results/<doc_id>/
+    #   results/trained model results/v1/<doc_id>/
     results_dir = ensure_dir(results_dir_for(cfg, args.model, doc_id))
     write_text(results_dir / "raw.txt", raw + "\n")
 
